@@ -1,10 +1,12 @@
 </div> <!--End main-->
-<footer class="bg-gray-1000">
+<footer class="bg-white my-1 py-1">
     <div class="container">
-        <div class="row  justify-content-center align-items-center">
-            <div class="col  text-center">
-                Ministerio de Educación, Deportes y Culturas | Dirección avenida Arce Nro. 2147, La Paz - Bolivia | Teléfono (591 -2) 2442144 | Línea Gratuita 800-10-0050 | Casilla de correo 3116 <br />
-                <a href="http://www.minedu.gob.bo/">Ministerio de Educación</a> © <?=date("Y")?>
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-ld-8">
+                    Ministerio de Educación. Avenida Arce Nro. 2147 - La Paz, Bolivia.
+                </div>
+                <div class="col-sm-12 col-md-4 col-ld-4 text-right">
+                    <a href="http://www.minedu.gob.bo/">Ministerio de Educación</a> © <?=date("Y")?>
             </div>
         </div>
     </div>

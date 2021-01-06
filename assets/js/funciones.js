@@ -1,6 +1,8 @@
 $(document).ready(inicio);
 
 function inicio(){
+    //$("body").fadeIn("slow");
+	$("img").fadeIn("5000");
     $('#btnlogin').click(respLogin);
     $('[data-toggle="tooltip"]').tooltip();
     $('#mymodal').modal('toggle');

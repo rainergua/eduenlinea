@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Amplitude";
+    src: url("../font/amplitude-bold.otf");
+    font-display: auto;
+  }
+  *{
+    font-family: 'Amplitude';
+    /*, Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif*/
+  }
+  html, body{
+    margin: 0;
+    padding: 0;
+    /*background: url("../img/fondo.png") no-repeat center center fixed #ededed !important;
+    /*opacity: 0.9;*/
+    background-size: cover!important;
+    z-index: -20;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  img{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    display:none;
+  }
+  footer{
+    font-size: small;
+  }
+  
+  
+  .brand-logo{
+    background: transparent url(../img/logo.png);
+    background-size: cover;
+    float: inherit;
+    display: block;
+    margin: auto;
+    text-indent: -999px;
+    /*height: 200px;*/
+    width: 190px;
+    margin: none;
+  }
+  .contenido{
+    flex: 1;
+    background: url("../img/fondo1.png") no-repeat center center fixed #ededed !important;
+  }  
+  .contini{
+    flex: 1;
+    background: url("../img/fondoi.png") no-repeat center center fixed #ededed !important;
+  }  
