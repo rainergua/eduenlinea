@@ -26,8 +26,10 @@ class Contenido extends CI_Controller{
         $data['grados'] = $this->contenido_model->getgrado($nivel);
         if($nivel==4){
             $this->load->view('vistas/inicial', $data);
-        }else{
-            $this->load->view('vistas/grados', $data);
+        }elseif ($nivel==5) {
+            $this->load->view('vistas/primaria', $data);
+        }elseif($nivel==6){
+            $this->load->view('vistas/secundaria', $data);
         }
         $this->load->view('template/footer');
     }

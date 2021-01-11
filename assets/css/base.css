@@ -48,3 +48,7 @@
     flex: 1;
     background: url("../img/fondoi.png") no-repeat center center fixed #ededed !important;
   }  
+  .contpri{
+    flex: 1;
+    background: url("../img/prim/fondop.png") no-repeat center center fixed #ededed !important;
+  }  
