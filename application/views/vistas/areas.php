@@ -14,9 +14,9 @@
         if($nivel->cod_niv==4){
         foreach ($areas as $area) {?>
         <div class="col-12 col-sm-12 col-md-3 col-ld-3 text-center">
-            <a href="<?php echo base_url().'contenido/contarea/'.$area->cod_gra.'/'.$area->cod_area; ?>">
+            <!--a href="<php echo base_url().'contenido/contarea/'.$area->cod_gra.'/'.$area->cod_area; ?>"></a-->
                 <img src="<?php echo base_url().'assets/uploads/files/img/'.$area->img_area; ?>" class="<?=$fad?>">
-            </a>
+            
         </div>
         <?php
         }}

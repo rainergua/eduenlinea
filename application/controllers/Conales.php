@@ -20,9 +20,15 @@ class Conales extends CI_Controller{
         redirect(base_url());
     }
     /********************************* */
-    public function nivel($nivel=7){
+    public function nivel($nivel=9){
         $this->load->view('template/header');
-        $data['nivel'] = $this->conales_model->getsisniv($nivel);
+        $data='';
+        if($nivel==9){
+            $this->load->view('vistas/alesp/alter', $data);
+        }else{
+            $this->load->view('vistas/alesp/espe', $data);
+        }
+        /*$data['nivel'] = $this->conales_model->getsisniv($nivel);
         $data['grados'] = $this->conales_model->getgrado($nivel);
         switch ($nivel) {
             case 7:
@@ -44,7 +50,7 @@ class Conales extends CI_Controller{
                 $this->load->view('vistas/grados_alesp', $data);
                 break;
 
-        }
+        }*/
         $this->load->view('template/footer');
     }
     //TODO: Agregar en la vista Material de año de escolaridad getmatanio

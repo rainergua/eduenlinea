@@ -14,18 +14,19 @@ class Eduvit extends CI_Controller{
             redirect(base_url().'login');
         }
     }
+
     public function index(){
         $data['sis'] = $this->eduvit_model->retsis();
         $this->load->view('template/header');
-        $this->load->view('vistas/inicio', $data);
+        $this->load->view('vistas/indice', $data);
         $this->load->view('template/footer');
     }
     public function regular(){
-        $this->valido();
+        //$this->valido();
         $data['sis'] = $this->eduvit_model->retselec(1);
         $data['nivel'] = $this->eduvit_model->retnivel(1);
         $this->load->view('template/header');
-        $this->load->view('vistas/nivel', $data);
+        $this->load->view('vistas/inicio', $data);
         $this->load->view('template/footer');
     }
 
@@ -33,14 +34,14 @@ class Eduvit extends CI_Controller{
         $data['sis'] = $this->eduvit_model->retselec(2);
         $data['nivel'] = $this->eduvit_model->retnivel(2);
         $this->load->view('template/header');
-        $this->load->view('vistas/nivel', $data);
+        $this->load->view('vistas/ialesp', $data);
         $this->load->view('template/footer');
     }
     public function superior(){
         $data['sis'] = $this->eduvit_model->retselec(3);
         $data['nivel'] = $this->eduvit_model->retnivel(3);
         $this->load->view('template/header');
-        $this->load->view('vistas/superior/dirsup', $data);
+        $this->load->view('vistas/isuper', $data);
         $this->load->view('template/footer');
     }
 }
