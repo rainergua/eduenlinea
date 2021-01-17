@@ -50,6 +50,14 @@
 	'type' => 'text/css',
 	);
 	echo link_tag($link);?>
+	<?php
+	$this->load->helper('html');
+	$link = array(
+	'href' => 'assets/css/animate.min.css',
+	'rel' => 'stylesheet',
+	'type' => 'text/css',
+	);
+	echo link_tag($link);?>
 	
 </head>
 <body>
@@ -58,11 +66,11 @@
 	<div class="container-fluid bg-gray-1000"> <!--main-->
 	<div class="container">
         <div class="row justify-content-center align-items-center"><!--header-->
-            <div class="col-12 col-sm-12 col-md-4 col-ld-4">
+            <div class="col-12 col-sm-12 col-md-6 col-ld-6">
 				<a href="<?php echo base_url();?>"><img src="<?php echo base_url().'/assets/img/logo.png';?>" class="img-fluid">
 				</a>
             </div>
-			<div class="col-12 col-sm-12 col-md-8 col-ld-8 text-center">
+			<div class="col-12 col-sm-12 col-md-6 col-ld-6 text-center">
 
             </div>
 		</div>

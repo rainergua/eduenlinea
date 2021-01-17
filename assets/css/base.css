@@ -1,10 +1,10 @@
 @font-face {
-    font-family: "Amplitude";
-    src: url("../font/amplitude-bold.otf");
+    font-family: "Cambria";
+    src: url("../font/cambriab.ttf");
     font-display: auto;
   }
   *{
-    font-family: 'Amplitude';
+    font-family: 'Cambria';
     /*, Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif*/
   }
   html, body{
@@ -22,7 +22,8 @@
     margin-left:auto;
     margin-right:auto;
     display:block;
-    display:none;
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
   }
   footer{
     font-size: small;
@@ -42,13 +43,13 @@
   }
   .contenido{
     flex: 1;
-    background: url("../img/fondo1.png") no-repeat center center fixed #ededed !important;
+    background: url("../img1/fondo.png") no-repeat center center fixed #ededed !important;
   }  
   .contini{
     flex: 1;
-    background: url("../img/fondoi.png") no-repeat center center fixed #ededed !important;
+    background: url("../img1/fondo.png") no-repeat center center fixed #ededed !important;
   }  
   .contpri{
     flex: 1;
-    background: url("../img/prim/fondop.png") no-repeat center center fixed #ededed !important;
+    background: url("../img1/fondo.png") no-repeat center center fixed #ededed !important;
   }  

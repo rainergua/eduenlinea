@@ -5,6 +5,11 @@
     }elseif($nivel->cod_niv==5){
         $cla = "contpri";
         $fad = "fader";
+        $niv = "prim";
+    }elseif($nivel->cod_niv==6){
+        $cla = "contpri";
+        $fad = "fader";
+        $niv = "sec";
     }
 ?>
 <div class="container-fluid trans <?=$cla?>">
@@ -20,21 +25,16 @@
         </div>
         <?php
         }}
-        elseif($nivel->cod_niv==5 || $nivel->cod_niv==6){?>
+        elseif($nivel->cod_niv==5 || $nivel->cod_niv==6){
+        foreach ($areas as $area) {?>
         <div class="col-12 col-sm-12 col-md-3 col-ld-3 text-center">
-            <div class="mimg"><img src="<?php echo base_url().'assets/img/prim/prleng.png'; ?>" class="<?=$fad?>"></div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-ld-3 text-center">
-            <div class="mimg"><img src="<?php echo base_url().'assets/img/prim/prmat.png'; ?>" class="<?=$fad?>"></div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-ld-3 text-center">
-            <div class="mimg"><img src="<?php echo base_url().'assets/img/prim/prnat.png'; ?>" class="<?=$fad?>"></div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-ld-3 text-center">
-            <div class="mimg"><img src="<?php echo base_url().'assets/img/prim/prsoc.png'; ?>" class="<?=$fad?>"></div>
+            <!--a href="<php echo base_url().'contenido/contarea/'.$area->cod_gra.'/'.$area->cod_area; ?>"></a-->
+            <div class="mimg">
+                <img src="<?php echo base_url().'assets/img/'.$niv.'/'.$area->cod_niv.$area->corto_area.'.png'; ?>" class="<?=$fad?>" alt="<?=$area->des_area?>">
+            </div>
         </div>
         <?php
-        }?>
+        }}?>
     </div><!--ROW-->
 </div>
 </div>

@@ -9,17 +9,17 @@
 
             <div class="col-sm-12 col-md-4 col-ld-4 mt-4 pt-4 text-center">
                 <!--a href="<php echo base_url().'conales/nivel/9';?>"></a-->
-                    <img src="<?php echo base_url().'/assets/img/alesp/especial1.png';?>" class="boton-sec img-fluid">
+                    <img src="<?php echo base_url().'/assets/img/alesp/disc.png';?>" class="boton-sec img-fluid">
                 
             </div>
             <div class="col-sm-12 col-md-4 col-ld-4 mt-4 pt-4 text-center">
                 <!--a href="<php echo base_url().'conales/nivel/10';?>"></a-->
-                    <img src="<?php echo base_url().'/assets/img/alesp/especial2.png';?>" class="boton-sec img-fluid">
+                    <img src="<?php echo base_url().'/assets/img/alesp/difap.png';?>" class="boton-sec img-fluid">
                 
             </div>
             <div class="col-sm-12 col-md-4 col-ld-4 mt-4 pt-4 text-center">
                 <!--a href="<php echo base_url().'conales/nivel/10';?>"></a-->
-                    <img src="<?php echo base_url().'/assets/img/alesp/especial3.png';?>" class="boton-sec img-fluid">
+                    <img src="<?php echo base_url().'/assets/img/alesp/talent.png';?>" class="boton-sec img-fluid">
                 
             </div>
 
