@@ -43,6 +43,11 @@
     </div>
 
     <div class="row mt-2 pt-2"> 
+        <div class="col-sm-12 col-md-3 col-ld-3 text-center">
+            <a href="<?php echo '#'/* echo base_url().'contenido/nivel/5';*/?>">
+            <img src="<?php echo base_url().'/assets/img/recursos/tv.png';?>" class="img-fluid boton-sec mt-1 pt-1">
+            </a>
+        </div>
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
             <div class="card-block">
                 <h5 class="card-title">Transmisiones Televisivas</h5>
@@ -54,11 +59,6 @@
                     TV Culturas: Horario para Secundaria<br />
                 </p>
             </div>
-        </div>
-        <div class="col-sm-12 col-md-3 col-ld-3 text-center">
-            <a href="<?php echo '#'/* echo base_url().'contenido/nivel/5';*/?>">
-            <img src="<?php echo base_url().'/assets/img/recursos/tv.png';?>" class="img-fluid boton-sec mt-1 pt-1">
-            </a>
         </div>
     </div>
     <div class="row mt-2 pt-2"> 
@@ -81,6 +81,11 @@
         </div>
     </div>
     <div class="row mt-2 pt-2"> 
+        <div class="col-sm-12 col-md-3 col-ld-3 text-center">
+            <a href="<?php echo '#'/* echo base_url().'contenido/nivel/5';*/?>">
+            <img src="<?php echo base_url().'/assets/img/recursos/sat.png';?>" class="img-fluid boton-sec mt-1 pt-1">
+            </a>
+        </div>
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
             <div class="card-block">
                 <h5 class="card-title">Transmisiones Satelitales</h5>
@@ -92,11 +97,6 @@
                     Radio Satelital 2: Horario para Secundaria<br />
                 </p>
             </div>
-        </div>
-        <div class="col-sm-12 col-md-3 col-ld-3 text-center">
-            <a href="<?php echo '#'/* echo base_url().'contenido/nivel/5';*/?>">
-            <img src="<?php echo base_url().'/assets/img/recursos/sat.png';?>" class="img-fluid boton-sec mt-1 pt-1">
-            </a>
         </div>
     </div>
 

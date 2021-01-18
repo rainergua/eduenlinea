@@ -25,6 +25,28 @@
     </div>
 
     <div class="row mt-2 pt-2"> 
+        <div class="col-sm-12 col-md-3 col-ld-3 text-center">
+            <a href="<?php echo base_url().'assets/img/recursos/progini.pdf';?>" target="_blank">
+            <img src="<?php echo base_url().'/assets/img/recursos/progini.png';?>" class="img-fluid boton-sec mt-1 pt-1">
+            </a>
+        </div>
+        <div class="col-sm-12 col-md-9 col-ld-9 text-center">
+            <div class="card-block">
+                <h5 class="card-title">Programas de estudio dosificados</h5>
+                <p class="card-text text-justify">El documento de Programas de estudio de Educación Inicial en Familia Comunitaria con contenidos dosificados, excepcionalmente
+                    está dirigido y orientado para la presente gestión con carácter de emergencia sanitaria. En la presente gestión, el primer trimestre se
+                    considera de nivelación académica 2020; el segundo y tercero de desarrollo curricular 2021
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-2 pt-2"> 
+        <div class="col-sm-12 col-md-3 col-ld-3 text-center">
+            <a href="<?php echo '#'/* echo base_url().'contenido/nivel/5';*/?>">
+            <img src="<?php echo base_url().'/assets/img/recursos/tv.png';?>" class="img-fluid boton-sec mt-1 pt-1">
+            </a>
+        </div>
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
             <div class="card-block">
                 <h5 class="card-title">Transmisiones Televisivas</h5>
@@ -36,11 +58,6 @@
                     TV Culturas: Horario para Inicial<br />
                 </p>
             </div>
-        </div>
-        <div class="col-sm-12 col-md-3 col-ld-3 text-center">
-            <a href="<?php echo '#'/* echo base_url().'contenido/nivel/5';*/?>">
-            <img src="<?php echo base_url().'/assets/img/recursos/tv.png';?>" class="img-fluid boton-sec mt-1 pt-1">
-            </a>
         </div>
     </div>
     <div class="row mt-2 pt-2"> 
@@ -63,6 +80,11 @@
         </div>
     </div>
     <div class="row mt-2 pt-2"> 
+        <div class="col-sm-12 col-md-3 col-ld-3 text-center">
+            <a href="<?php echo '#'/* echo base_url().'contenido/nivel/5';*/?>">
+            <img src="<?php echo base_url().'/assets/img/recursos/sat.png';?>" class="img-fluid boton-sec mt-1 pt-1">
+            </a>
+        </div>
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
             <div class="card-block">
                 <h5 class="card-title">Transmisiones Satelitales</h5>
@@ -75,11 +97,7 @@
                 </p>
             </div>
         </div>
-        <div class="col-sm-12 col-md-3 col-ld-3 text-center">
-            <a href="<?php echo '#'/* echo base_url().'contenido/nivel/5';*/?>">
-            <img src="<?php echo base_url().'/assets/img/recursos/sat.png';?>" class="img-fluid boton-sec mt-1 pt-1">
-            </a>
-        </div>
+        
     </div>
 
     

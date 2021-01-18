@@ -33,81 +33,61 @@
 
 
 
-    <div class="container">
-        <!--div class="row">
+    <div class="container  mt-4 pt-4">
+        <div class="row">
             <div class="col-sm-12 col-md-12 col-ld-12  text-center">
-                <img src="<php echo base_url().'/assets/img/banda.png';?>" class="img-fluid">
+            <h1 class="text-center">2021 AÑO POR LA RECUPERACIÓN DEL DERECHO A LA EDUCACIÓN</h1>
             </div>
-        </div-->
+        </div>
 
         <div class="row mt-4 pt-4">
-            <div class="col-sm-12 col-md-9 col-ld-9 text-justify">
-                <h2 class="text-center">2021 AÑO POR LA RECUPERACIÓN DEL DERECHO A LA EDUCACIÓN</h2>
-                I. De	acuerdo	a	las	conclusiones	del	“6to.	Encuentro	Pedagógico”,	
-                las modalidades de atención educativa para la Gestión 2021 son:<br />
-                a) Modalidad Presencial. Implica la presencia física de las y los
-                estudiantes,	personal	docente	y	administrativo,	que	interactúan	
-                en	el	desarrollo	del	proceso	de	aprendizaje	en	el	espacio	de	la	
-                unidad educativa. <br />
-                Las unidades educativas que cuenten con un número menor
-                o	 igual	 a	 20	 estudiantes	 por	 paralelo	 y	 año	 de	 escolaridad,	
-                podrán optar por esta modalidad con todas las medidas de 
-                bioseguridad de acuerdo al protocolo establecido. <br />   
-                b) Semipresencial. Consiste en la combinación de la Modalidad
-                Presencial	 y	 a	 Distancia,	 con	 alternancia	 entre	 ambas	
-                modalidades,	desarrollando	los	procesos	de	aprendizaje	en	la	
-                unidad educativa y domicilio.<br />
-                Las unidades educativas que cuenten con un número mayor a
-                20 estudiantes por paralelo y año de escolaridad optarán por 
-                esta modalidad.<br />
-                    Cada	paralelo	se	dividirá	en	dos	grupos,	los	cuales	asistirán	a	
-                la unidad educativa de manera alterna de acuerdo al horario
-                establecido	por	el	director	de	la	unidad	educativa,	debiendo	la	
-                comunidad educativa dar estricto cumplimiento a la aplicación
-                de todas las medidas de bioseguridad de acuerdo al protocolo
-                establecido.<br />
-                c) A Distancia.	 Los	 procesos	 de	 aprendizaje	 se	 desarrollan	
-                con	 el	 apoyo	 de	 tecnologías	 de	 la	 información,	 medios	 de	
-                comunicación	masiva,	materiales	en	formato	impreso,	digital	y	
-                otros. Esta modalidad no requiere la presencia física de las y
-                los estudiantes.<br />
-                    Ante	 el	 rebrote	 inminente	 de	 la	 propagación	 de	 la	 COVID-19,	
-                se aplicará la Modalidad a Distancia con el apoyo de recursos
-                pedagógicos:	 material	 impreso	 y	 digital,	 medios	 tecnológicos	
-                (plataformas	virtuales)	o	medios	de	comunicación	masiva	(radio,	
-                televisión),	de	acuerdo	a	las	características	de	su	contexto.
-            </div>
-            <div class="col-sm-12 col-md-3 col-ld-3 text-justify">
-                <div class="row">
+            <div class="col-sm-12 col-md-4 col-ld-4 text-justify">
 
-                    <div class="col-sm-12 col-md-12 col-ld-12 text-center">
-                        <a href="<?php echo base_url().'eduvit/regular';?>">
-                        <img src="<?php echo base_url().'/assets/img/btnreg.png';?>" class="img-fluid boton-sec mt-1 pt-1">
-                        </a>
+                <div class="card">
+                    <a href="<?php echo base_url().'eduvit/regular';?>">
+                    <img src="<?php echo base_url().'/assets/img/btnreg.png';?>" class="card-img-top boton-sec" alt="Primaria">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Regular</h5>
+                        <p class="card-text">Educación Inicial en Familia Comunitaria, Educación Primaria Comunitaria Vocacional y Educación Secundaria Comunitaria Productiva.</p>
+                        <a href="<?php echo base_url().'eduvit/regular';?>" class="btn btn-danger">Ir a Regular</a>
                     </div>
+                </div>
 
-                </div>
-                <div class="row">
-                        <div class="col-sm-12 col-md-12 col-ld-12 text-center">
-                            <a href="<?php echo base_url().'eduvit/alternativa';?>">
-                            <img src="<?php echo base_url().'/assets/img/btnalt.png';?>" class="img-fluid boton-sec mt-1 pt-1">
-                            </a>
-                        </div>
-                </div>
-                <div class="row">
-                        <div class="col-sm-12 col-md-12 col-ld-12 text-center">
-                            <a href="<?php echo base_url().'eduvit/superior';?>">
-                            <img src="<?php echo base_url().'/assets/img/btnsup.png';?>" class="img-fluid boton-sec mt-1 pt-1">
-                            </a>
-                        </div>    
+            </div>   
+            <div class="col-sm-12 col-md-4 col-ld-4 text-justify">
+                
+                <div class="card">
+                    <a href="<?php echo base_url().'eduvit/alternativa';?>">
+                    <img src="<?php echo base_url().'/assets/img/btnalt.png';?>" class="card-img-top boton-sec" alt="Primaria">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alternativa y Especial</h5>
+                        <p class="card-text">La Educación Alternativa y Especial es intracultural, intercultural y plurilingüe. Comprende ambitos de Educación Alternativa y Educación Especial.</p>
+                        <a href="<?php echo base_url().'eduvit/alternativa';?>" class="btn btn-warning text-white">Ir a Alternativa y Especial</a>
                     </div>
+                </div>
+
             </div>
-            
+            <div class="col-sm-12 col-md-4 col-ld-4 text-justify">
+                
+                <div class="card">
+                    <a href="<?php echo base_url().'eduvit/superior';?>">
+                    <img src="<?php echo base_url().'/assets/img/btnsup.png';?>" class="card-img-top boton-sec" alt="Primaria">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Superior</h5>
+                        <p class="card-text">Forma profesionales con compromiso social y conciencia crítica al servicio del pueblo, que sean capaces de resolver problemas y transformar la realidad.</p>
+                        <a href="<?php echo base_url().'eduvit/superior';?>" class="btn btn-success">Ir a Superior</a>
+                    </div>
+                </div>
+                
+            </div>
         </div>
 
         <div class="row my-4 py-4">
             <div class="col-sm-12 col-md-4 col-ld-4 text-center">
-                <div class="row">
+                <div class="row my-1 py-1">
                     <div class="col-sm-12 col-md-4 col-ld-4 text-center">
                         <img src="<?php echo base_url().'/assets/img/recursos/001-reg.png';?>" class="img-fluid">
                     </div>
@@ -120,7 +100,7 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-4 col-ld-4 text-center">
-                <div class="row">
+                <div class="row my-1 py-1">
                     <div class="col-sm-12 col-md-4 col-ld-4 text-center">
                         <img src="<?php echo base_url().'/assets/img/recursos/001-esp.jpg';?>" class="img-fluid">
                     </div>
@@ -133,7 +113,7 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-4 col-ld-4 text-center">
-                <div class="row">
+                <div class="row my-1 py-1">
                     <div class="col-sm-12 col-md-4 col-ld-4 text-center">
                         <img src="<?php echo base_url().'/assets/img/recursos/001-sup.jpg';?>" class="img-fluid">
                     </div>

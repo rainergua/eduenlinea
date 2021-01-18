@@ -18,7 +18,7 @@ class Contenido_Model extends CI_Model {
         return $this->db->get()->row(); 
     }
     public function getsisnivgra($grado){
-        $this->db->select('desc_sis, des_niv, des_gra, txt_gra, link_sis, n.cod_niv');
+        $this->db->select('desc_sis, des_niv, des_gra, txt_gra, link_sis, n.cod_niv, g.cod_gra');
         $this->db->from('grado g');
         $this->db->join('nivel n', 'g.cod_niv=n.cod_niv', 'inner');
         $this->db->join('subsistema s', 'n.cod_sis=s.cod_sis', 'inner');
@@ -129,6 +129,7 @@ class Contenido_Model extends CI_Model {
     }
     public function getareas($grado){
         $this->db->where('cod_gra', $grado);
+        $this->db->where('hab', 1);
         return $this->db->get('area')->result();
     }
     public function getgrado($nivel){

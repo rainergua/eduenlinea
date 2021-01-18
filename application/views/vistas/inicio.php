@@ -2,7 +2,7 @@
        <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-ld-12  text-center">
-                <img src="<?php echo base_url().'/assets/img/txtfnd.png';?>" class="img-fluid mt-4 pt-4">
+                <img src="<?php echo base_url().'/assets/img/txtfnd.png';?>" class="img-fluid mt-2 pt-2">
             </div>
         </div>
 
@@ -25,6 +25,11 @@
             </div>
         </div>
         <div class="row mt-2 pt-2"> 
+            <div class="col-sm-12 col-md-3 col-ld-3 text-center">
+                <a href="<?php echo base_url().'contenido/nivel/5';?>">
+                <img src="<?php echo base_url().'/assets/img/rprim.png';?>" class="img-fluid boton-sec mt-1 pt-1">
+                </a>
+            </div>
             <div class="col-sm-12 col-md-9 col-ld-9 text-center">
                 <div class="card-block">
                     <h5 class="card-title">Nivel Primario</h5>
@@ -39,11 +44,7 @@
                     productivos, educación física, deportiva y artística. De seis años de duración. </p>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-3 col-ld-3 text-center">
-                <a href="<?php echo base_url().'contenido/nivel/5';?>">
-                <img src="<?php echo base_url().'/assets/img/rprim.png';?>" class="img-fluid boton-sec mt-1 pt-1">
-                </a>
-            </div>
+            
         </div>
         <div class="row mt-2 pt-2">
             <div class="col-sm-12 col-md-3 col-ld-3 text-center">
