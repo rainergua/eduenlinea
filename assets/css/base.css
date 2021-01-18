@@ -43,13 +43,13 @@
   }
   .contenido{
     flex: 1;
-    background: url("../img1/fondo.png") no-repeat center center fixed #ededed !important;
+    background: url("../img/fondo.png") no-repeat center center fixed #ededed !important;
   }  
   .contini{
     flex: 1;
-    background: url("../img1/fondo.png") no-repeat center center fixed #ededed !important;
+    background: url("../img/fondo.png") no-repeat center center fixed #ededed !important;
   }  
   .contpri{
     flex: 1;
-    background: url("../img1/fondo.png") no-repeat center center fixed #ededed !important;
+    background: url("../img/fondo.png") no-repeat center center fixed #ededed !important;
   }  
