@@ -20,6 +20,21 @@ class Conales extends CI_Controller{
         redirect(base_url());
     }
     /********************************* */
+    public function discapacidad(){
+        $this->load->view('template/header');
+        $this->load->view('vistas/alesp/discapacidad');
+        $this->load->view('template/footer');
+    }
+    public function dificultad(){
+        $this->load->view('template/header');
+        $this->load->view('vistas/alesp/dificultad');
+        $this->load->view('template/footer');
+    }
+    public function talento(){
+        $this->load->view('template/header');
+        $this->load->view('vistas/alesp/talento');
+        $this->load->view('template/footer');
+    }
     public function nivel($nivel=9){
         $this->load->view('template/header');
         $data='';
