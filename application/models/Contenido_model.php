@@ -10,6 +10,9 @@ class Contenido_Model extends CI_Model {
         $this->db->order_by('cod_per');
         return $this->db->get('periodo')->result();
     }
+    public function getcampos(){
+        return $this->db->get('campo')->result();
+    }
     public function getsisniv($nivel){
         $this->db->select('desc_sis, des_niv, txt_niv, cod_niv, link_sis');
         $this->db->from('nivel n');
@@ -127,8 +130,9 @@ class Contenido_Model extends CI_Model {
         //$this->db->order_by('cod_tema');
         return $this->db->get('material_area')->result();
     }
-    public function getareas($grado){
+    public function getareas($grado, $campo){
         $this->db->where('cod_gra', $grado);
+        $this->db->where('cod_cam', $campo);
         $this->db->where('hab', 1);
         return $this->db->get('area')->result();
     }

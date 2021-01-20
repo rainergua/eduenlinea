@@ -34,9 +34,17 @@ class Contenido extends CI_Controller{
         $this->load->view('template/footer');
     }
 
-    public function areas($curso=11){
+    public function campos($curso=11){
+        $data['curso'] = $curso;
+        $data['campos'] = $this->contenido_model->getcampos();
         $data['nivel'] = $this->contenido_model->getsisnivgra($curso);
-        $data['areas'] = $this->contenido_model->getareas($curso);
+        $this->load->view('template/header');
+        $this->load->view('vistas/campos', $data);
+        $this->load->view('template/footer');
+    }
+    public function areas($curso=11, $campo=1){
+        $data['nivel'] = $this->contenido_model->getsisnivgra($curso);
+        $data['areas'] = $this->contenido_model->getareas($curso, $campo);
         $this->load->view('template/header');
         $this->load->view('vistas/areas', $data);
         $this->load->view('template/footer');

@@ -12,6 +12,14 @@
       margin: 0px;
       padding: 0px;
     }
+  .mimgc{
+      overflow: hidden;
+      position: relative;
+      height: 145px;
+      width: 175px;
+      margin: 0px;
+      padding: 0px;
+    }
   img.fader{
     height: 100%;
     margin: 1px;
