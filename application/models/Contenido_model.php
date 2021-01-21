@@ -136,6 +136,11 @@ class Contenido_Model extends CI_Model {
         $this->db->where('hab', 1);
         return $this->db->get('area')->result();
     }
+    public function getareasini($grado){
+        $this->db->where('cod_gra', $grado);
+        $this->db->where('hab', 1);
+        return $this->db->get('area')->result();
+    }
     public function getgrado($nivel){
         $this->db->where('cod_niv', $nivel);
         return $this->db->get('grado')->result();   

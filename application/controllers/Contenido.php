@@ -44,7 +44,10 @@ class Contenido extends CI_Controller{
     }
     public function areas($curso=11, $campo=1){
         $data['nivel'] = $this->contenido_model->getsisnivgra($curso);
-        $data['areas'] = $this->contenido_model->getareas($curso, $campo);
+        if($curso==9 || $curso ==10)
+            $data['areas'] = $this->contenido_model->getareasini($curso);
+        else
+            $data['areas'] = $this->contenido_model->getareas($curso, $campo);
         $this->load->view('template/header');
         $this->load->view('vistas/areas', $data);
         $this->load->view('template/footer');

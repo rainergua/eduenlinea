@@ -1,4 +1,10 @@
 <div class="container-fluid contini">
+    <div class=" container d-flex justify-content-center py-2 my-2">
+        <ul class="pagination shadow-lg">
+            <li class="page-item "><a class="page-link" href="<?php echo base_url()?>"><i class="fa fa-home "></i> Inicio </a></li>
+            <li class="page-item  active"><a class="page-link " href="<?php echo base_url().'eduvit/regular'?>">Educación Regular &nbsp; </a></li>
+        </ul>
+    </div>
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-12 col-ld-12 mt-4 pt-4 text-center">
