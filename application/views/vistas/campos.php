@@ -7,13 +7,22 @@
         $cla = "contpri";
         $fad = "fader";
         $niv = "prim";
+        $bread = 'Primaria';
     }elseif($nivel->cod_niv==6){
         $cla = "contpri";
         $fad = "fader";
         $niv = "sec";
+        $bread = 'Secundaria';
     }
 ?>
 <div class="container-fluid trans <?=$cla?>">
+    <div class=" container d-flex justify-content-center py-2 my-2">
+        <ul class="pagination shadow-lg">
+            <li class="page-item"><a class="page-link" href="<?php echo base_url()?>"><i class="fa fa-home "></i> Inicio </a></li>
+            <li class="page-item"><a class="page-link " href="<?php echo base_url().'eduvit/regular'?>">Educación Regular</a></li>
+            <li class="page-item active"><a class="page-link" href="<?php echo base_url().'contenido/nivel/'.$nivel->cod_niv?>"><?=$bread?></a></li>
+        </ul>
+    </div>
 <div class="container">
     <div class="row my-2 py-2">
         <div class="col-sm-12 col-md-3 col-ld-3 text-center">
