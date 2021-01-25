@@ -26,13 +26,31 @@ class Conales extends CI_Controller{
         $this->load->view('template/footer');
     }
     public function dificultad(){
+        $data['material'] = $this->conales_model->getcontenidos(6);
+        $data['tipo'] = $this->conales_model->gettipocont(6);
         $this->load->view('template/header');
-        $this->load->view('vistas/alesp/dificultad');
+        $this->load->view('vistas/alesp/dificultad', $data);
         $this->load->view('template/footer');
     }
     public function talento(){
+        $data['material'] = $this->conales_model->getcontenidos(7);
+        $data['tipo'] = $this->conales_model->gettipocont(7);
         $this->load->view('template/header');
-        $this->load->view('vistas/alesp/talento');
+        $this->load->view('vistas/alesp/talento', $data);
+        $this->load->view('template/footer');
+    }
+    public function tipodisc($cod_dis=1){
+        $data['material'] = $this->conales_model->getcontenidos($cod_dis);
+        $data['tipo'] = $this->conales_model->gettipocont($cod_dis);
+        $this->load->view('template/header');
+        $this->load->view('vistas/alesp/contesp', $data);
+        $this->load->view('template/footer');
+    }
+    public function alteruno($cod_dis=8){
+        $data['material'] = $this->conales_model->getcontenidos($cod_dis);
+        $data['tipo'] = $this->conales_model->gettipocont($cod_dis);
+        $this->load->view('template/header');
+        $this->load->view('vistas/alesp/contal', $data);
         $this->load->view('template/footer');
     }
     public function nivel($nivel=9){

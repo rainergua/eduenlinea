@@ -10,6 +10,26 @@ class Conales_Model extends CI_Model {
         $this->db->order_by('cod_per');
         return $this->db->get('periodo')->result();
     }
+
+    public function getcontenidos($cod_disc){
+        $this->db->select('cod_matanio, des_matanio, arch_matanio, t.tipo_cont, t.cod_tipo, genes');
+        $this->db->from('matanio m');
+        $this->db->join('tipo_contenido t', 'm.tipo_cont=t.cod_tipo', 'inner');
+        $this->db->where('m.cod_dis', $cod_disc);
+        $this->db->order_by('genes, t.cod_tipo, des_matanio');
+        return $this->db->get()->result(); 
+    }
+    public function gettipocont($cod_disc){
+        $this->db->select('t.tipo_cont, t.cod_tipo');
+        $this->db->distinct();
+        $this->db->from('matanio m');
+        $this->db->join('tipo_contenido t', 'm.tipo_cont=t.cod_tipo', 'inner');
+        $this->db->where('m.cod_dis', $cod_disc);
+        $this->db->order_by('t.cod_tipo');
+        return $this->db->get()->result(); 
+    }
+
+    /*
     public function getsisniv($nivel){
         $this->db->select('desc_sis, des_niv, txt_niv, cod_niv, link_sis');
         $this->db->from('nivel n');
@@ -152,7 +172,7 @@ class Conales_Model extends CI_Model {
     public function getarchivoscon($tema){
         $this->db->where('cod_tema', $tema);
         return $this->db->get('contenido')->result();
-    }
+    }*/
 
 }
 

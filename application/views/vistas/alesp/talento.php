@@ -19,8 +19,53 @@
                         CONTENIDOS GENERALES Y ESPECÍFICOS
                     </h5>
                     <div class="card-body">
-                        <h5 class="card-title">Curriculo priorizado, Documentos oficiales y de trabajo además de tutoriales</h5>
-                        <p class="card-text">Aquí se reflejan los contenidos correspondientes.</p>
+
+
+                        <div id="accordion">
+         <?php
+            foreach ($tipo as $tip) {
+                if($tip->cod_tipo == 3)
+                    $icon = 'fa-file-video';
+                else
+                    $icon = 'fa-file-pdf';
+         ?>
+                <div class="card">
+                    <div class="card-header acordion-header" id="heading<?=$tip->cod_tipo?>">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link acordion-link" data-toggle="collapse" data-target="#collapse<?=$tip->cod_tipo?>" aria-expanded="true" aria-controls="collapse<?=$tip->cod_tipo?>">
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span> 
+                        <?=$tip->tipo_cont?>
+                        </button>
+                    </h5>
+                    </div>
+
+                    <div id="collapse<?=$tip->cod_tipo?>" class="collapse" aria-labelledby="heading<?=$tip->cod_tipo?>" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row" id="row">
+                        <?php foreach ($material as $mat) {
+                            if($mat->cod_tipo==$tip->cod_tipo){
+                         ?>
+                            <div class="col-12 col-sm-12 col-md-4 col-ld-4">
+                                <a href="<?php echo base_url().'/assets/uploads/files/cont/ales/'.$mat->arch_matanio;?>" target="_blank">
+                                <div class="caption text-center"><i class="fas <?=$icon?> px-1"></i><?=$mat->des_matanio?></div>
+                            </a>
+                            </div>
+                        <?php }
+                    }?>    
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            <?php
+            }
+            ?>
+        </div> 
+
+
+
                     </div>
                 </div>
             </div>

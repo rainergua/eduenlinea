@@ -8,35 +8,31 @@
     <div class="row pb-4">
         <div class="col-12 col-sm-12 col-md-12 col-ld-12">
             <!----------AQUI EMPIEZA EL ACORDEON-->
-         <div id="accordion">
-                <div class="card">
-                    <div class="card-header acordion-header" id="heading10">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link acordion-link collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                        <span class="fa-stack fa-sm">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-                        </span>
-                        GENERALES
-                        </button>
-                    </h5>
-                    </div>
-                    <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
-                    <div class="card-body text-justify">
-                    Profesor si desea modificar o verificar su correo y su inscripción debe ingresar a:  <br>
-                    <a href="https://dgtic.minedu.gob.bo/inscripcion/login" target="_blank">https://dgtic.minedu.gob.bo/inscripcion/login </a> <br>
-
-                    Profesor si no logro inscribirse le invitamos a participar de los cursos habilitados a partir del día 25 de mayo y registraste en la fecha indicada en el siguiente enlace:
-                    <a href="https://dgtic.minedu.gob.bo/inscripcion/login" target="_blank">https://dgtic.minedu.gob.bo/inscripcion/login</a> <br>
-
-                    Profesor si no pudo inscribirse debe ingresar al enlace: <br>
-                    <a href="https://dgtic.minedu.gob.bo/inscripcion/login" target="_blank">https://dgtic.minedu.gob.bo/inscripcion/login</a><br>
-                    a partir del 25 de mayo
-
-                    </div>
-                    </div>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header acordion-header" id="heading10">
+                <h5 class="mb-0">
+                    <button class="btn btn-link acordion-link collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    GENERALES
+                    </button>
+                </h5>
                 </div>
-
+                <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
+                <div class="card-body text-justify">
+                Profesor si desea modificar o verificar su correo y su inscripción debe ingresar a:  <br>
+                <a href="https://dgtic.minedu.gob.bo/inscripcion/login" target="_blank">https://dgtic.minedu.gob.bo/inscripcion/login </a> <br>
+                Profesor si no logro inscribirse le invitamos a participar de los cursos habilitados a partir del día 25 de mayo y registraste en la fecha indicada en el siguiente enlace:
+                <a href="https://dgtic.minedu.gob.bo/inscripcion/login" target="_blank">https://dgtic.minedu.gob.bo/inscripcion/login</a> <br>
+                Profesor si no pudo inscribirse debe ingresar al enlace: <br>
+                <a href="https://dgtic.minedu.gob.bo/inscripcion/login" target="_blank">https://dgtic.minedu.gob.bo/inscripcion/login</a><br>
+                a partir del 25 de mayo
+                </div>
+                </div>
+            </div>
                 <div class="card">
                     <div class="card-header acordion-header" id="headingTwo">
                     <h5 class="mb-0">

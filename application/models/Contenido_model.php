@@ -28,6 +28,66 @@ class Contenido_Model extends CI_Model {
         $this->db->where('g.cod_gra', $grado);
         return $this->db->get()->row(); 
     }
+
+    public function getsisnivgrarea($grado, $area){
+        $this->db->select('desc_sis, des_niv, des_gra, txt_area, des_area, cod_area, a.cod_area, g.cod_gra, link_sis, n.cod_niv, c.desc_cam');
+        $this->db->from('area a');
+        $this->db->join('grado g', 'a.cod_gra=g.cod_gra', 'inner');
+        $this->db->join('nivel n', 'g.cod_niv=n.cod_niv', 'inner');
+        $this->db->join('subsistema s', 'n.cod_sis=s.cod_sis', 'inner');
+        $this->db->join('campo c', 'a.cod_cam=c.cod_cam', 'inner');
+        $this->db->where('g.cod_gra', $grado);
+        $this->db->where('a.cod_area', $area);
+        return $this->db->get()->row(); 
+    }
+
+    public function getareas($grado, $campo){
+        $this->db->where('cod_gra', $grado);
+        $this->db->where('cod_cam', $campo);
+        $this->db->where('hab', 1);
+        return $this->db->get('area')->result();
+    }
+    public function getareasini($grado){
+        $this->db->where('cod_gra', $grado);
+        $this->db->where('hab', 1);
+        return $this->db->get('area')->result();
+    }
+    public function getcontenidos($grado, $area){
+        $this->db->where('cod_area', $area);
+        $this->db->where('cod_gra', $grado);
+        $this->db->order_by('txt_mat');
+        return $this->db->get('material_area')->result();
+    }
+    public function gettipocont($grado, $area){
+        $this->db->select('t.tipo_cont, t.cod_tipo');
+        $this->db->distinct();
+        $this->db->from('material_area m');
+        $this->db->join('tipo_contenido t', 'm.cod_tipo=t.cod_tipo', 'inner');
+        $this->db->where('cod_area', $area);
+        $this->db->where('cod_gra', $grado);
+        $this->db->order_by('t.cod_tipo');
+        return $this->db->get()->result(); 
+    }
+    public function getgrado($nivel){
+        $this->db->where('cod_niv', $nivel);
+        return $this->db->get('grado')->result();   
+    } 
+    
+    public function getcont($grado, $area){
+        $this->db->where('cod_area', $area);
+        $this->db->where('cod_gra', $grado);
+        $this->db->order_by('clave_tema');
+        return $this->db->get('contenido')->result();
+    }
+    public function gettemas($grado, $area){
+        $this->db->where('cod_area', $area);
+        $this->db->where('cod_gra', $grado);
+        $this->db->order_by('clave_tema');
+        return $this->db->get('tema')->result();
+    }
+
+/*
+
     public function getsisnivgrarea($grado, $area){
         $this->db->select('desc_sis, des_niv, des_gra, txt_area, des_area, cod_area, a.cod_area, g.cod_gra, link_sis, n.cod_niv');
         $this->db->from('area a');
@@ -116,12 +176,7 @@ class Contenido_Model extends CI_Model {
         $query = array_merge($query1, $query2);
         return $query;
     }
-    public function getcontenidos($grado, $area){
-        $this->db->where('cod_area', $area);
-        $this->db->where('cod_gra', $grado);
-        $this->db->order_by('cod_tema');
-        return $this->db->get('tema')->result();
-    }
+    
     public function getlink($grado, $area){
 
         $this->db->where('cod_area', $area);
@@ -130,21 +185,8 @@ class Contenido_Model extends CI_Model {
         //$this->db->order_by('cod_tema');
         return $this->db->get('material_area')->result();
     }
-    public function getareas($grado, $campo){
-        $this->db->where('cod_gra', $grado);
-        $this->db->where('cod_cam', $campo);
-        $this->db->where('hab', 1);
-        return $this->db->get('area')->result();
-    }
-    public function getareasini($grado){
-        $this->db->where('cod_gra', $grado);
-        $this->db->where('hab', 1);
-        return $this->db->get('area')->result();
-    }
-    public function getgrado($nivel){
-        $this->db->where('cod_niv', $nivel);
-        return $this->db->get('grado')->result();   
-    }
+    
+    
     public function retnivel($cod_sis){
         $this->db->where('cod_sis', $cod_sis);
         return $this->db->get('nivel')->result();
@@ -160,7 +202,7 @@ class Contenido_Model extends CI_Model {
     public function getarchivoscon($tema){
         $this->db->where('cod_tema', $tema);
         return $this->db->get('contenido')->result();
-    }
+    }*/
 
 }
 
