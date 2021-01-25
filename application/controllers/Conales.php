@@ -46,6 +46,11 @@ class Conales extends CI_Controller{
         $this->load->view('vistas/alesp/contesp', $data);
         $this->load->view('template/footer');
     }
+    public function pnp(){
+        $this->load->view('template/header');
+        $this->load->view('vistas/alesp/pnp');
+        $this->load->view('template/footer');
+    }
     public function alteruno($cod_dis=8){
         $data['material'] = $this->conales_model->getcontenidos($cod_dis);
         $data['tipo'] = $this->conales_model->gettipocont($cod_dis);

@@ -50,7 +50,7 @@
                 </a>
             </div>
             <div class="col-sm-12 col-md-3 col-ld-3 mt-4 pt-4 text-center">
-                <a href="<?php echo base_url().'conales/alteruno/13';?>">
+                <a href="<?php echo base_url().'conales/pnp';?>">
                     <img src="<?php echo base_url().'/assets/img/alesp/pnp.png';?>" class="boton-sec img-fluid">
                 </a>
             </div>
