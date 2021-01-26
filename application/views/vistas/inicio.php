@@ -14,7 +14,7 @@
             </div>
             <div class="col-sm-12 col-md-9 col-ld-9 text-center">
                 <div class="card-block">
-                    <h5 class="card-title">Nivel Inicial</h5>
+                    <h5 class="card-title">Nivel Inicial en Familia Comunitaria</h5>
                     <p class="card-text text-justify">La Educación Inicial en Familia Comunitaria, escolarizada,
                     Desarrolla las capacidades y habilidades cognitivas, lingüísticas,
                     psicomotrices, socio-afectivas, espirituales y artísticas que favorezcan a las
@@ -32,7 +32,7 @@
             </div>
             <div class="col-sm-12 col-md-9 col-ld-9 text-center">
                 <div class="card-block">
-                    <h5 class="card-title">Nivel Primario</h5>
+                    <h5 class="card-title">Nivel Primaria Comunitaria Vocacional</h5>
                     <p class="card-text text-justify">Educación Primaria Comunitaria Vocacional. Comprende la formación básica, 
                     cimiento de todo el proceso de formación posterior y tiene carácter intracultural, 
                     intercultural y plurilingüe. Los conocimientos y la formación cualitativa de 
@@ -54,7 +54,7 @@
             </div>
             <div class="col-sm-12 col-md-9 col-ld-9 text-center">
                 <div class="card-block">
-                    <h5 class="card-title">Nivel Secundario</h5>
+                    <h5 class="card-title">Nivel Secundaria Comunitaria Productiva</h5>
                     <p class="card-text text-justify"> Educación Secundaria Comunitaria Productiva. 
                      Articula la educación humanística y la educación técnica-tecnológica con la producción, 
                     que valora y desarrolla los saberes y conocimientos de las diversas culturas en diálogo 

@@ -35,11 +35,11 @@
         <div class="col-sm-6 col-md-3 col-ld-3 text-center">
             <div class="card-block">
                 <h5 class="card-title">Texto Escolar</h5>
-                <p class="card-text text-justify">Queremos compartirte este cuaderno de Fortalecimiento de
+                <p class="card-text text-justify">Queremos compartir este cuaderno de Fortalecimiento de
                 Procesos Educativos integrales, que te permitirá
-                nivelar tus aprendizajes, para encarar este nuevo año educativo. Este material
-                está pensado para fortalecer las Capacidades, Potencialidades y Cualidades en
-                el desarrollo de todas las áreas.</p>
+                nivelar tus aprendizajes, para encarar este nuevo año educativo. Este material está pensado 
+                para fortalecer las Capacidades, Potencialidades y Habilidades en el desarrollo integral 
+                y holístico.</p>
             </div>
         </div>
         <div class="col-sm-6 col-md-3 col-ld-3 text-center">
@@ -50,11 +50,11 @@
         <div class="col-sm-6 col-md-3 col-ld-3 text-center">
             <div class="card-block">
                 <h5 class="card-title">Evaluación de aprendizaje</h5>
-                <p class="card-text text-justify">Queremos compartirte este cuaderno de Fortalecimiento de
+                <p class="card-text text-justify">Queremos compartir este cuaderno de Fortalecimiento de
                 Procesos Educativos integrales, que te permitirá
-                nivelar tus aprendizajes, para encarar este nuevo año educativo. Este material
-                está pensado para fortalecer las Capacidades, Potencialidades y Cualidades en
-                el desarrollo de todas las áreas.</p>
+                nivelar tus aprendizajes, para encarar este nuevo año educativo. Este material está pensado 
+                para fortalecer las Capacidades, Potencialidades y Habilidades en el desarrollo integral 
+                y holístico.</p>
             </div>
         </div>
     </div>

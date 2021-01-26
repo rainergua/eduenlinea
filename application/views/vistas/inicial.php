@@ -56,8 +56,8 @@
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
             <div class="card-block">
                 <h5 class="card-title">Transmisiones Televisivas</h5>
-                <p class="card-text text-justify">Las transmisiones televisivas estaran disponibles en diferentes horarios y frecuencias de canales televisivos.  
-                    Además si te perdiste algunos de los temas puedes encontrarlos en tu curso y respectivo recursos, por favor te pedimos que puedas visitar tu área correspondiente
+                <p class="card-text text-justify">Las transmisiones televisivas estarán disponibles en diferentes horarios y frecuencias de canales televisivos.  
+                    Además, si te perdiste algunos de los temas puedes encontrarlos en tu curso y respectivos recursos, por favor te pedimos que puedas visitar tu área correspondiente
                     y estés atento a los siguientes horarios en las siguientes cadenas televisivas: <br />
                     TVB: Horario para Inicial<br />
                     AbyAyala TV: Horario para Inicial<br />
@@ -75,8 +75,8 @@
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
             <div class="card-block">
                 <h5 class="card-title">Transmisiones Radiales</h5>
-                <p class="card-text text-justify">Las transmisiones radiales estaran disponibles en diferentes horarios y frecuencias radiales.  
-                    Además si te perdiste algunos de los temas puedes encontrarlos en tu curso y respectivo recursos, por favor te pedimos que puedas visitar tu área correspondiente
+                <p class="card-text text-justify">Las transmisiones radiales estarán disponibles en diferentes horarios y frecuencias radiales.  
+                    Además, si te perdiste algunos de los temas puedes encontrarlos en tu curso y respectivos recursos, por favor te pedimos que puedas visitar tu área correspondiente
                     y estés atento a los siguientes horarios en las siguientes cadenas radiales: <br />
                     Radio 1: Horario para Inicial<br />
                     Radio 2: Horario para Inicial<br />
@@ -94,8 +94,8 @@
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
             <div class="card-block">
                 <h5 class="card-title">Transmisiones Satelitales</h5>
-                <p class="card-text text-justify">Si cuentas con tu atena satelital, el Ministerio de Educación en coordinacioón con la Agencia Bolivia Espacial, ponen al servicio de 
-                    la comunidad educativa las transmisiones por medio de radio y television satelital, para tener una cobertura en todo el territorio del Estado Plurinacional de Bolivia.  
+                <p class="card-text text-justify">Si cuentas con tu antena satelital, el Ministerio de Educación en coordinación con la Agencia Bolivia Espacial, ponen al servicio de 
+                    la comunidad educativa las transmisiones por medio de radio y televisión satelital, para tener una cobertura en todo el territorio del Estado Plurinacional de Bolivia.  
                     Los canales de radio y television asignados para la atención en modalidad a distancias son: <br />
                     Canal Satelital 1: Horario para Inicial<br />
                     Radio Satelital 1: Horario para Inicial<br />

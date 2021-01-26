@@ -35,8 +35,8 @@
             <div class="col-sm-12 col-md-12 col-ld-12 text-center">
                 <div class="card">
                     <h5 class="card-header">
-                        Contenidos para el <?=$nivel->des_gra?> año de escolaridad del <?=$nivel->des_niv?><br />
-                        Campo: <?=$nivel->desc_cam?>; Área: <?=$nivel->des_area?>
+                        Año de escolaridad: <?=$nivel->des_gra?> | <?=$nivel->des_niv?><br />
+                        Campo: <?=$nivel->desc_cam?> | Área: <?=$nivel->des_area?>
                     </h5>
                     <div class="card-body">
 
