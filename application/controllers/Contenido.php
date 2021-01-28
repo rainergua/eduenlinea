@@ -36,7 +36,11 @@ class Contenido extends CI_Controller{
 
     public function campos($curso=11){
         $data['curso'] = $curso;
-        $data['campos'] = $this->contenido_model->getcampos();
+        if($curso >10 && $curso<17){
+            $data['campos'] = $this->contenido_model->getmatcampos($curso);
+        }else{
+            $data['campos'] = $this->contenido_model->getcampos();
+        }
         $data['nivel'] = $this->contenido_model->getsisnivgra($curso);
         $this->load->view('template/header');
         $this->load->view('vistas/campos', $data);

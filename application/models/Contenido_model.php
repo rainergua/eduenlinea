@@ -13,6 +13,20 @@ class Contenido_Model extends CI_Model {
     public function getcampos(){
         return $this->db->get('campo')->result();
     }
+    public function getmatcampos($grado){
+
+        $this->db->distinct();
+        $this->db->from('mat_campo m');
+        $this->db->join('campo c', 'm.cod_cam=c.cod_cam', 'inner');
+        $this->db->where('cod_gra', $grado);
+        $this->db->order_by('des_concam');
+        return $this->db->get()->result();
+
+
+        
+        
+
+    }
     public function getsisniv($nivel){
         $this->db->select('desc_sis, des_niv, txt_niv, cod_niv, link_sis');
         $this->db->from('nivel n');
@@ -85,6 +99,7 @@ class Contenido_Model extends CI_Model {
         $this->db->order_by('clave_tema');
         return $this->db->get('tema')->result();
     }
+    
 
 /*
 
