@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row pb-2">
             <div class="col-sm-12 col-md-12 col-ld-12  text-center">
-                <img src="<?php echo base_url().'/assets/img/txtfnd.png';?>" class="img-fluid mt-4 pt-4">
+                <img src="<?php echo base_url().'/assets/img/txtfndal.png';?>" class="img-fluid mt-4 pt-4">
             </div>
         </div>
 

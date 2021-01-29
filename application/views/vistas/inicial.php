@@ -39,9 +39,9 @@
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
             <div class="card-block">
                 <h5 class="card-title">Programas de estudio dosificados</h5>
-                <p class="card-text text-justify">El documento de Programas de estudio de Educación Inicial en Familia Comunitaria con contenidos dosificados, excepcionalmente
-                    está dirigido y orientado para la presente gestión con carácter de emergencia sanitaria. En la presente gestión, el primer trimestre se
-                    considera de nivelación académica 2020; el segundo y tercero de desarrollo curricular 2021
+                <p class="card-text text-justify">El documento de Programas de estudio de Educación Inicial en Familia Comunitaria con contenidos dosificados, 
+                excepcionalmente está dirigido en una primera instancia a fortalecer y desarrollar habilidades, capacidades y potencialidades que las y los 
+                estudiantes debían alcanzar la gestión 2020 y posteriormente desarrollar capacidades de la gestión 2021.
                 </p>
             </div>
         </div>
@@ -56,12 +56,10 @@
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
             <div class="card-block">
                 <h5 class="card-title">Transmisiones Televisivas</h5>
-                <p class="card-text text-justify">Las transmisiones televisivas estarán disponibles en diferentes horarios y frecuencias de canales televisivos.  
-                    Además, si te perdiste algunos de los temas puedes encontrarlos en tu curso y respectivos recursos, por favor te pedimos que puedas visitar tu área correspondiente
-                    y estés atento a los siguientes horarios en las siguientes cadenas televisivas: <br />
-                    TVB: Horario para Inicial<br />
-                    AbyAyala TV: Horario para Inicial<br />
-                    TV Culturas: Horario para Inicial<br />
+                <p class="card-text text-justify">Las transmisiones televisivas tienen la finalidad de apoyar los contenidos curriculares dosificados en los 
+                cuadernos de fortalecimiento de cada año de escolaridad.  <br />
+                    ATB: Los mismos serán difundidos por los medios de comunicación y en función a un horario establecido.<br />
+                    BTV: Los mismos serán difundidos por los medios de comunicación y en función a un horario establecido.<br />
                 </p>
             </div>
         </div>
@@ -75,12 +73,13 @@
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
             <div class="card-block">
                 <h5 class="card-title">Transmisiones Radiales</h5>
-                <p class="card-text text-justify">Las transmisiones radiales estarán disponibles en diferentes horarios y frecuencias radiales.  
-                    Además, si te perdiste algunos de los temas puedes encontrarlos en tu curso y respectivos recursos, por favor te pedimos que puedas visitar tu área correspondiente
-                    y estés atento a los siguientes horarios en las siguientes cadenas radiales: <br />
-                    Radio 1: Horario para Inicial<br />
-                    Radio 2: Horario para Inicial<br />
-                    Radio 3: Horario para Inicial<br />
+                <p class="card-text text-justify">Las transmisiones radiales estarán disponibles en diferentes horarios y frecuencias radiales. 
+                Cada programa responde al currículo dosificado y al cuaderno de fortalecimientos de procesos educativos.<br />
+                    Además, si te perdiste algunos de los temas puedes encontrarlos en tu curso y respectivos recursos, 
+                    por favor te pedimos que puedas visitar tu área correspondiente y estés atento a los siguientes horarios en las siguientes cadenas radiales:<br />
+                    Patria Nueva: Responde al currículo dosificado y al cuaderno de fortalecimiento.<br />
+                    RPOS: Responde al currículo dosificado y al cuaderno de fortalecimiento.<br />
+
                 </p>
             </div>
         </div>

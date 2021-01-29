@@ -16,7 +16,7 @@
             <div class="col-sm-12 col-md-12 col-ld-12 text-center">
                 <div class="card">
                     <h5 class="card-header">
-                        CONTENIDOS GENERALES Y ESPECÍFICOS
+                        GENERALES Y ESPECÍFICOS
                     </h5>
                     <div class="card-body">
 

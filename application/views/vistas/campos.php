@@ -1,8 +1,10 @@
 <?php 
+    $texto = "Este material tiene la finalidad de fortalecer capacidades, potencialidades y cualidades a partir de contenidos dosificados planteados en el currículo. Asimismo, permitirá coadyuvar la nivelación de aprendizajes para encarar esta gestión escolar.";
     if($nivel->cod_niv==4){
         $cla = "contini";
         $fad = "img-fluid boton-sec";
         $niv = "prim";
+        $bread = 'Inicial';
     }elseif($nivel->cod_niv==5){
         $cla = "contpri";
         $fad = "fader";
@@ -13,6 +15,7 @@
         $fad = "fader";
         $niv = "sec";
         $bread = 'Secundaria';
+        $texto = "Este material tiene la finalidad de fortalecer capacidades, potencialidades, habilidades y cualidades productivas a partir de contenidos dosificados planteados en el currículo para el primer trimestre. Asimismo, permitirá coadyuvar la nivelación de aprendizajes para encarar esta gestión escolar.  ";
     }
 ?>
 <div class="container-fluid trans <?=$cla?>">
@@ -32,14 +35,13 @@
         </div>
         <div class="col-sm-6 col-md-3 col-ld-3 text-center">
             <div class="card-block">
-                <h5 class="card-title">Texto Escolar</h5>
-                <p class="card-text text-justify">queremos compartirte este cuaderno de Fortalecimiento de
-                Procesos Educativos integrales, que te permitirá
-                nivelar tus aprendizajes, para encarar este nuevo año educativo. Este material
-                está pensado para fortalecer las Capacidades, Potencialidades y Cualidades en
-                el desarrollo de todas las áreas.</p>
+                <h5 class="card-title">Texto de Aprendizajes</h5>
+                <p class="card-text text-justify"><?=$texto?></p>
             </div>
         </div>
+        <?php
+        if($nivel->cod_niv==4 || $nivel->cod_niv==5){
+        ?>
         <div class="col-sm-6 col-md-3 col-ld-3 text-center">
             <a href="<?php echo base_url().'assets/img/'.$niv.'/cont/'.$nivel->cod_niv.$nivel->cod_gra.'.pdf';?>" target="_blank">
             <img src="<?php echo base_url().'assets/img/'.$niv.'/cont/'.$nivel->cod_niv.$nivel->cod_gra.'.png';?>" class="img-fluid boton-sec mt-1 pt-1">
@@ -47,23 +49,38 @@
         </div>
         <div class="col-sm-6 col-md-3 col-ld-3 text-center">
             <div class="card-block">
-                <h5 class="card-title">Texto Escolar</h5>
-                <p class="card-text text-justify">queremos compartirte este cuaderno de Fortalecimiento de
-                Procesos Educativos integrales, que te permitirá
-                nivelar tus aprendizajes, para encarar este nuevo año educativo. Este material
-                está pensado para fortalecer las Capacidades, Potencialidades y Cualidades en
-                el desarrollo de todas las áreas.</p>
+                <h5 class="card-title">Evaluación de Aprendizajes</h5>
+                <p class="card-text text-justify">El proceso de Evaluación de Aprendizajes, se desarrollará en la primera semana de clases, del 1 al 5 de febrero del 2021. 
+                    El objetivo es evaluar, en cada estudiante, el desarrollo de conocimientos y capacidades en los cuatro Campos de Saberes y Conocimientos.
+                    Este será el punto de partida para que la o el maestro defina de mejor manera la planificación de los procesos educativos.</p>
             </div>
         </div>
+        </div>
+        <?php
+        }
+        ?>
     </div>
     <div class="row pt-4 mt-4">
         <?php 
         foreach ($campos as $campo) {?>
         <div class="col-12 col-sm-12 col-md-3 col-ld-3 text-center">
             <div class="mimgc">
+
+            <?php
+            if($nivel->cod_niv==5){
+            ?>
+                <a href="<?php echo base_url().'assets/uploads/files/cont/pri2/'.$campo->arch_concam; ?>" target="_blank">
+                <img src="<?php echo base_url().'assets/img/campos/'.$campo->img_cam.$niv.'.png'; ?>" class="<?=$fad?>">
+                </a>
+            <?php
+                }else{
+                    ?>
                 <a href="<?php echo base_url().'contenido/areas/'.$curso.'/'.$campo->cod_cam; ?>">
                 <img src="<?php echo base_url().'assets/img/campos/'.$campo->img_cam.$niv.'.png'; ?>" class="<?=$fad?>">
                 </a>
+            <?php
+                }
+                ?>
             </div>
         </div>
         <?php

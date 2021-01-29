@@ -9,40 +9,43 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-ld-12 text-center">
-                <img src="<?php echo base_url().'/assets/img/txtfnd.png';?>" class="img-fluid mt-4 pt-4">
+                <img src="<?php echo base_url().'/assets/img/txtfndal.png';?>" class="img-fluid mt-4 pt-4">
             </div>
         </div>
         <div class="row align-items-end mt-4 pt-4">
             <div class="col-sm-12 col-md-4 col-ld-4 text-center">
                 <a href="<?php echo base_url().'conales/tipodisc/1';?>">
-                    <img src="<?php echo base_url().'/assets/img/alesp/audi.png';?>" class="boton-sec img-fluid px-4 pt-4 mx-4 my-4">
+                <div class="mimgal"><img src="<?php echo base_url().'/assets/img/alesp/audi.png';?>" class="fader"></div>
                 </a>
             </div>
             <div class="col-sm-12 col-md-4 col-ld-4 text-center">
                 <a href="<?php echo base_url().'conales/tipodisc/2';?>">
-                    <img src="<?php echo base_url().'/assets/img/alesp/fisico.png';?>" class="boton-sec img-fluid px-4 pt-4 mx-4 my-4">
+                <div class="mimgal"><img src="<?php echo base_url().'/assets/img/alesp/fisico.png';?>" class="fader"></div>
                 </a>
             </div>
             <div class="col-sm-12 col-md-4 col-ld-4 text-center">
                 <a href="<?php echo base_url().'conales/tipodisc/3';?>">
-                    <img src="<?php echo base_url().'/assets/img/alesp/intel.png';?>" class="boton-sec img-fluid px-4 pt-4 mx-4 my-4">
+                <div class="mimgal"><img src="<?php echo base_url().'/assets/img/alesp/intel.png';?>" class="fader"></div>
                 </a>
             </div>
         </div>
 
         <div class="row align-items-end mt-4 pt-4">
-            <div class="col-sm-12 col-md-2 col-ld-2 text-center"></div>
             <div class="col-sm-12 col-md-4 col-ld-4 text-center">
                 <a href="<?php echo base_url().'conales/tipodisc/4';?>">
-                    <img src="<?php echo base_url().'/assets/img/alesp/multi.png';?>" class="boton-sec img-fluid px-4 pt-4 mx-4 my-4">
+                <div class="mimgal"><img src="<?php echo base_url().'/assets/img/alesp/multi.png';?>" class="fader"></div>
                 </a>
             </div>
             <div class="col-sm-12 col-md-4 col-ld-4 text-center">
                 <a href="<?php echo base_url().'conales/tipodisc/5';?>">
-                    <img src="<?php echo base_url().'/assets/img/alesp/visual.png';?>" class="boton-sec img-fluid px-4 pt-4 mx-4 my-4">
+                <div class="mimgal"><img src="<?php echo base_url().'/assets/img/alesp/visual.png';?>" class="fader"></div>
                 </a>
             </div>
-            <div class="col-sm-12 col-md-2 col-ld-2 text-center"></div>
+            <div class="col-sm-12 col-md-4 col-ld-4 text-center">
+                <a href="<?php echo base_url().'conales/tipodisc/15';?>">
+                <div class="mimgal"><img src="<?php echo base_url().'/assets/img/alesp/pesc.png';?>" class="fader"></div>
+                </a>
+            </div>
         </div>
     </div>
 </div>

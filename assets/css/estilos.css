@@ -15,6 +15,15 @@
       margin: 0px;
       padding: 0px;
     }
+
+    .mimgal{
+      overflow: hidden;
+      position: relative;
+      height: 280px;
+      width: 283px;
+      margin: 0px;
+      padding: 0px;
+    }
   .mimgc{
       overflow: hidden;
       position: relative;

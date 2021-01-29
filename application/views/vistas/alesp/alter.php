@@ -11,7 +11,7 @@
                 <img src="<?php echo base_url().'/assets/img/txtfnd.png';?>" class="img-fluid mt-4 pt-4">
             </div>
         </div>
-        <div class="row">
+        <div class="row">            
             <div class="col-sm-12 col-md-3 col-ld-3 mt-4 pt-4 text-center">
                 <a href="<?php echo base_url().'conales/alteruno/8';?>">
                     <img src="<?php echo base_url().'/assets/img/alesp/epa.png';?>" class="boton-sec img-fluid">
@@ -22,21 +22,28 @@
                     <img src="<?php echo base_url().'/assets/img/alesp/esa.png';?>" class="boton-sec img-fluid">
                 </a>
             </div>
-            <div class="col-sm-12 col-md-3 col-ld-3 mt-4 pt-4 text-center">
-                <a href="<?php echo base_url().'conales/alteruno/10';?>">
-                    <img src="<?php echo base_url().'/assets/img/alesp/bth.png';?>" class="boton-sec img-fluid">
-                </a>
-            </div>
+            <!--div class="col-sm-12 col-md-3 col-ld-3 mt-4 pt-4 text-center"></div-->
+                <!--a href="<php echo base_url().'conales/alteruno/10';?>"></a-->
+                    <!--img src="<php echo base_url().'/assets/img/alesp/bth.png';?>" class="boton-sec img-fluid"-->
+                
+            
             <div class="col-sm-12 col-md-3 col-ld-3 mt-4 pt-4 text-center">
                 <a href="<?php echo base_url().'conales/alteruno/11';?>">
                     <img src="<?php echo base_url().'/assets/img/alesp/eta.png';?>" class="boton-sec img-fluid">
                 </a>
             </div>
-        </div>
-        <div class="row">
             <div class="col-sm-12 col-md-3 col-ld-3 mt-4 pt-4 text-center">
                 <a href="<?php echo base_url().'conales/alteruno/12';?>">
                     <img src="<?php echo base_url().'/assets/img/alesp/eduper.png';?>" class="boton-sec img-fluid">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-1 col-ld-1 mt-4 pt-4 text-center"></div>
+            <div class="col-sm-12 col-md-1 col-ld-1 mt-4 pt-4 text-center"></div>
+            <div class="col-sm-12 col-md-3 col-ld-3 mt-4 pt-4 text-center">
+                <a href="<?php echo base_url().'conales/pnp';?>">
+                    <img src="<?php echo base_url().'/assets/img/alesp/pnp.png';?>" class="boton-sec img-fluid">
                 </a>
             </div>
             <div class="col-sm-12 col-md-3 col-ld-3 mt-4 pt-4 text-center">
@@ -49,11 +56,7 @@
                     <img src="<?php echo base_url().'/assets/img/alesp/cepead.png';?>" class="boton-sec img-fluid">
                 </a>
             </div>
-            <div class="col-sm-12 col-md-3 col-ld-3 mt-4 pt-4 text-center">
-                <a href="<?php echo base_url().'conales/pnp';?>">
-                    <img src="<?php echo base_url().'/assets/img/alesp/pnp.png';?>" class="boton-sec img-fluid">
-                </a>
-            </div>
+            <div class="col-sm-12 col-md-1 col-ld-1 mt-4 pt-4 text-center"></div>
         </div>
     </div>
 </div>

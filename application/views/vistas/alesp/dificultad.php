@@ -16,7 +16,7 @@
             <div class="col-sm-12 col-md-12 col-ld-12 text-center">
                 <div class="card">
                     <h5 class="card-header">
-                        CONTENIDOS GENERALES
+                        GENERALES
                     </h5>
                     <div class="card-body">
                         <div id="accordion">
@@ -71,7 +71,7 @@
             <div class="col-sm-12 col-md-12 col-ld-12 text-center">
                 <div class="card">
                     <h5 class="card-header">
-                        CONTENIDOS ESPECÍFICOS
+                        ESPECÍFICOS
                     </h5>
                     <div class="card-body">
                         
