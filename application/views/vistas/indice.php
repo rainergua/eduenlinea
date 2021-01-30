@@ -44,13 +44,13 @@
             <div class="col-sm-12 col-md-4 col-ld-4 text-justify">
 
                 <div class="card">
-                    <a href="<?php echo base_url().'eduvit/regular';?>">
+                    <!--a href="<php echo base_url().'eduvit/regular';?>"></a-->
                     <img src="<?php echo base_url().'/assets/img/btnreg.png';?>" class="card-img-top boton-sec" alt="Primaria">
-                    </a>
                     <div class="card-body">
                         <h5 class="card-title">Regular</h5>
                         <p class="card-text">Educación Inicial en Familia Comunitaria, Educación Primaria Comunitaria Vocacional y Educación Secundaria Comunitaria Productiva.</p>
-                        <a href="<?php echo base_url().'eduvit/regular';?>" class="btn btn-danger">Ir a Regular</a>
+                        <a href="<?php echo base_url().'eduvit/regular';?>" class="btn btn-danger">Biblioteca</a>
+                        <a href="#" class="btn btn-info">Aula</a>
                     </div>
                 </div>
 
@@ -58,13 +58,14 @@
             <div class="col-sm-12 col-md-4 col-ld-4 text-justify">
                 
                 <div class="card">
-                    <a href="<?php echo base_url().'eduvit/alternativa';?>">
+                    <!--a href="<php echo base_url().'eduvit/alternativa';?>"></a-->
                     <img src="<?php echo base_url().'/assets/img/btnalt.png';?>" class="card-img-top boton-sec" alt="Primaria">
-                    </a>
+                    
                     <div class="card-body">
                         <h5 class="card-title">Alternativa y Especial</h5>
                         <p class="card-text">La Educación Alternativa y Especial es intracultural, intercultural y plurilingüe. Comprende ambitos de Educación Alternativa y Educación Especial.</p>
-                        <a href="<?php echo base_url().'eduvit/alternativa';?>" class="btn btn-warning text-white">Ir a Alternativa y Especial</a>
+                        <a href="<?php echo base_url().'eduvit/alternativa';?>" class="btn btn-warning text-white">Biblioteca</a>
+                        <a href="#" class="btn btn-secondary text-white">Aula</a>
                     </div>
                 </div>
 
@@ -72,13 +73,14 @@
             <div class="col-sm-12 col-md-4 col-ld-4 text-justify">
                 
                 <div class="card">
-                    <a href="<?php echo base_url().'eduvit/superior';?>">
+                    <!--a href="<php echo base_url().'eduvit/superior';?>"></a-->
                     <img src="<?php echo base_url().'/assets/img/btnsup.png';?>" class="card-img-top boton-sec" alt="Primaria">
-                    </a>
+                    
                     <div class="card-body">
                         <h5 class="card-title">Superior</h5>
                         <p class="card-text">Forma profesionales con compromiso social y conciencia crítica al servicio del pueblo, que sean capaces de resolver problemas y transformar la realidad.</p>
-                        <a href="<?php echo base_url().'eduvit/superior';?>" class="btn btn-success">Ir a Superior</a>
+                        <a href="<?php echo base_url().'eduvit/superior';?>" class="btn btn-success">Biblioteca</a>
+                        <a href="#" class="btn btn-primary">Aula</a>
                     </div>
                 </div>
                 
