@@ -45,7 +45,7 @@
         ?>
         <div class="col-sm-6 col-md-3 col-ld-3 text-center">
             <a href="<?php echo base_url().'assets/img/'.$niv.'/cont/'.$nivel->cod_niv.$nivel->cod_gra.'e.pdf';?>" target="_blank">
-            <img src="<?php echo base_url().'assets/img/'.$niv.'/cont/'.$nivel->cod_niv.$nivel->cod_gra.'.png';?>" class="img-fluid boton-sec mt-1 pt-1">
+            <img src="<?php echo base_url().'assets/img/'.$niv.'/cont/'.$nivel->cod_niv.$nivel->cod_gra.'e.png';?>" class="img-fluid boton-sec mt-1 pt-1">
             </a>
         </div>
         <div class="col-sm-6 col-md-3 col-ld-3 text-center">

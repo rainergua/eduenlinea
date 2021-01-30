@@ -43,8 +43,8 @@
         if($nivel->cod_niv==4 || $nivel->cod_niv==5){
         ?>
         <div class="col-sm-6 col-md-3 col-ld-3 text-center">
-            <a href="<?php echo base_url().'assets/img/'.$niv.'/cont/'.$nivel->cod_niv.$nivel->cod_gra.'.pdf';?>" target="_blank">
-            <img src="<?php echo base_url().'assets/img/'.$niv.'/cont/'.$nivel->cod_niv.$nivel->cod_gra.'.png';?>" class="img-fluid boton-sec mt-1 pt-1">
+            <a href="<?php echo base_url().'assets/img/'.$niv.'/cont/'.$nivel->cod_niv.$nivel->cod_gra.'e.pdf';?>" target="_blank">
+            <img src="<?php echo base_url().'assets/img/'.$niv.'/cont/'.$nivel->cod_niv.$nivel->cod_gra.'e.png';?>" class="img-fluid boton-sec mt-1 pt-1">
             </a>
         </div>
         <div class="col-sm-6 col-md-3 col-ld-3 text-center">
@@ -54,7 +54,6 @@
                     El objetivo es evaluar, en cada estudiante, el desarrollo de conocimientos y capacidades en los cuatro Campos de Saberes y Conocimientos.
                     Este será el punto de partida para que la o el maestro defina de mejor manera la planificación de los procesos educativos.</p>
             </div>
-        </div>
         </div>
         <?php
         }
