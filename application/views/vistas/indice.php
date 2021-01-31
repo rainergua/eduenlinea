@@ -143,6 +143,24 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-ld-4 text-center">
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="<?php echo base_url().'/assets/img/video/prop.mp4';?>" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-ld-4 text-center">
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="<?php echo base_url().'/assets/img/video/regu.mp4';?>" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-ld-4 text-center">
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="<?php echo base_url().'/assets/img/video/alter.mp4';?>" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 </div>

@@ -10,7 +10,7 @@
   html, body{
     margin: 0;
     padding: 0;
-    /*background: url("../img/fondo.png") no-repeat center center fixed #ededed !important;
+    background: url("../img/fondo.png") no-repeat center center fixed #ededed !important;
     /*opacity: 0.9;*/
     background-size: cover!important;
     z-index: -20;
