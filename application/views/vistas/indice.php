@@ -33,10 +33,10 @@
 
 
 
-    <div class="container  mt-4 pt-4">
+    <div class="container-fluid  mt-4 pt-4">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-ld-12  text-center">
-            <h1 class="text-center">2021 AÑO POR LA RECUPERACIÓN DEL DERECHO A LA EDUCACIÓN</h1>
+            <h2 class="text-center">2021 AÑO POR LA RECUPERACIÓN DEL DERECHO A LA EDUCACIÓN</h2>
             </div>
         </div>
 
@@ -48,9 +48,12 @@
                     <img src="<?php echo base_url().'/assets/img/btnreg.png';?>" class="card-img-top boton-sec" alt="Primaria">
                     <div class="card-body">
                         <h5 class="card-title">Regular</h5>
-                        <p class="card-text">Educación Inicial en Familia Comunitaria, Educación Primaria Comunitaria Vocacional y Educación Secundaria Comunitaria Productiva.</p>
-                        <a href="<?php echo base_url().'eduvit/regular';?>" class="btn btn-danger">Biblioteca</a>
-                        <a href="#" class="btn btn-info">Aula</a>
+                        <p class="card-text">Educación Inicial en Familia Comunitaria, Educación Primaria Comunitaria Vocacional y Educación Secundaria Comunitaria Productiva. 
+                            Tu biblioteca en linea, para que puedas desfrutar del contenido elaborado para tí.</p>
+                            <div class="row">
+                            <div class="col-6"><a href="<?php echo base_url().'eduvit/regular';?>" class="btn btn-danger btn-block">Biblioteca</a></div>
+                            <div class="col-6"><a href="http://regular.minedu.gob.bo" class="btn btn-info btn-block" target="_blank">Aula Regular</a></div>
+                            </div>
                     </div>
                 </div>
 
@@ -64,8 +67,16 @@
                     <div class="card-body">
                         <h5 class="card-title">Alternativa y Especial</h5>
                         <p class="card-text">La Educación Alternativa y Especial es intracultural, intercultural y plurilingüe. Comprende ambitos de Educación Alternativa y Educación Especial.</p>
-                        <a href="<?php echo base_url().'eduvit/alternativa';?>" class="btn btn-warning text-white">Biblioteca</a>
-                        <a href="#" class="btn btn-secondary text-white">Aula</a>
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-6"><a href="<?php echo base_url().'eduvit/alternativa';?>" class="btn btn-primary btn-block">Biblioteca</a></div>
+                            <div class="col-3"></div>
+                        </div>
+                        <div class="row pt-1 mt-1">
+                            <div class="col-6"><a href="http://alternativa.minedu.gob.bo" class="btn btn-warning text-white btn-block" target="_blank">Aula Alternativa</a></div>
+                            <div class="col-6"><a href="http://especial.minedu.gob.bo" class="btn btn-secondary text-white btn-block" target="_blank">Aula Especial</a></div>
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -78,9 +89,12 @@
                     
                     <div class="card-body">
                         <h5 class="card-title">Superior</h5>
-                        <p class="card-text">Forma profesionales con compromiso social y conciencia crítica al servicio del pueblo, que sean capaces de resolver problemas y transformar la realidad.</p>
-                        <a href="<?php echo base_url().'eduvit/superior';?>" class="btn btn-success">Biblioteca</a>
-                        <a href="#" class="btn btn-primary">Aula</a>
+                        <p class="card-text">Formación de Maestros, Institutos Técnico Tecnológicos, Universidades Indígenas, Especiales y Privadas; 
+                        forman profesionales de alta competitividad, con compromiso social y conciencia crítica al servicio del pueblo, para el desarrollo del país. </p>
+                        <div class="row">
+                            <div class="col-6"><a href="<?php echo base_url().'eduvit/superior';?>" class="btn btn-success btn-block">Biblioteca</a></div>
+                            <div class="col-6"><a href="#" class="btn btn-info btn-block">Aula Superior</a></div>
+                        </div>
                     </div>
                 </div>
                 
