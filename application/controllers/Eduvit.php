@@ -55,5 +55,10 @@ class Eduvit extends CI_Controller{
         $this->load->view('vistas/isuper', $data);
         $this->load->view('template/footer');
     }
+    public function videos(){
+        $this->load->view('template/header');
+        $this->load->view('vistas/videos');
+        $this->load->view('template/footer');
+    }
 }
 ?>
