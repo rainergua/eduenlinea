@@ -28,7 +28,9 @@
   footer{
     font-size: small;
   }
-  
+  header{
+    background-color: white;
+  }
   
   .brand-logo{
     background: transparent url(../img/logo.png);
@@ -41,6 +43,8 @@
     width: 190px;
     margin: none;
   }
+
+
   .contenido{
     flex: 1;
     background: url("../img/fondo.png") no-repeat center center fixed #ededed !important;

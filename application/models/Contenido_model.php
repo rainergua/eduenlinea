@@ -56,9 +56,13 @@ class Contenido_Model extends CI_Model {
     }
 
     public function getareas($grado, $campo){
-        $this->db->where('cod_gra', $grado);
-        $this->db->where('cod_cam', $campo);
-        $this->db->where('hab', 1);
+        $this->db->select('a.cod_area, a.corto_area, a.img_area, a.cod_gra, a.cod_niv, a.des_area, m.arch_mat, m.des_mat');
+        $this->db->distinct();
+        $this->db->from('area a');
+        $this->db->join('material_area m', 'a.cod_area=m.cod_area', 'inner');
+        $this->db->where('a.cod_gra', $grado);
+        $this->db->where('a.cod_cam', $campo);
+        $this->db->where('a.hab', 1);
         return $this->db->get('area')->result();
     }
     public function getareasini($grado){

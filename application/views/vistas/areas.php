@@ -63,7 +63,10 @@
         }
         ?>
     </div>
-    <div class="row row-height align-items-center pt-4 mt-4">
+    <h5 class="card-header text-center">
+                        Año de escolaridad: <?=$nivel->des_gra?> | <?=$nivel->des_niv?><br />
+                    </h5>
+    <div class="row align-items-center pt-2 mt-2">
         <?php 
         if($nivel->cod_niv==4){
             if($nivel->cod_gra == 9){
@@ -82,7 +85,7 @@
         elseif($nivel->cod_niv==5 || $nivel->cod_niv==6){
         foreach ($areas as $area) {?>
         <div class="col-12 col-sm-12 col-md-3 col-ld-3 text-center">
-            <a href="<?php echo base_url().'contenido/material/'.$area->cod_gra.'/'.$area->cod_area; ?>">
+            <a href="<?php echo base_url().'assets/uploads/files/cont/secar/'.$area->arch_mat; ?>" target="_blank">
             <div class="mimg">
                 <img src="<?php echo base_url().'assets/img/'.$niv.'/'.$area->cod_niv.$area->corto_area.'.png'; ?>" class="<?=$fad?>" alt="<?=$area->des_area?>">
             </div>

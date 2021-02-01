@@ -17,6 +17,17 @@ class Eduvit extends CI_Controller{
 
     public function index(){
         $data['sis'] = $this->eduvit_model->retsis();
+        //print_r($this->input->server(array('SERVER_PROTOCOL', 'REQUEST_URI', 'SERVER_NAME', 'PHP_SELF', 'HTTP_USER_AGENT', 'REMOTE_ADDR')));
+        $data2 = array(
+            'sprot'  	    => 		$this->input->server('SERVER_PROTOCOL'),
+            'request'		=>		$this->input->server('REQUEST_URI'),
+            'sname'		    => 		$this->input->server('SERVER_NAME'),//,$check_user->carnet,
+            'phpself' 	    => 		$this->input->server('PHP_SELF'),
+            'useragent'		=>		$this->input->server('HTTP_USER_AGENT'),
+            'remoteadd'	    => 		$this->input->server( 'REMOTE_ADDR'),//,$check_user->carnet,
+            'fecha'         =>      date("Y-m-d H:i:s")
+            );
+        $this->eduvit_model->savevis($data2);
         $this->load->view('template/header');
         $this->load->view('vistas/indice', $data);
         $this->load->view('template/footer');

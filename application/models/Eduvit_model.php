@@ -22,6 +22,11 @@ class Eduvit_Model extends CI_Model {
             $this->db->order_by('txt_niv');
         return $this->db->get('nivel')->result();
     }
+    public function savevis($data){
+        
+        $this->db->insert('visitas', $data);
+        
+    }
 }
 
 /* End of file Eduvit_Model.php */
