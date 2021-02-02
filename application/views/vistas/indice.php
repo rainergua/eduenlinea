@@ -110,7 +110,7 @@
                     <div class="col-sm-12 col-md-8 col-ld-8 text-center">
                         <div class="card-block">
                             <h6 class="card-title">Videos Guía de uso educa.minedu.gob.bo</h6>
-                            <a href="<?php echo base_url().'/eduvit/videos';?>" class="btn btn-primary">Ver Videos</a>
+                            <a href="<?php echo base_url().'tutoriales';?>" class="btn btn-primary">Ver Videos</a>
                         </div>
                     </div>
                 </div>
