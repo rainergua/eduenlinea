@@ -5,19 +5,25 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/0.jpg';?>" alt="First slide">
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/0.jpg';?>" alt="Primer slide">
             </div>
             <div class="carousel-item">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/1.jpg';?>" alt="Second slide">
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/1.jpg';?>" alt="Segundo slide">
             </div>
             <div class="carousel-item">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/2.jpg';?>" alt="Third slide">
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/2.jpg';?>" alt="Tercero slide">
             </div>
             <div class="carousel-item">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/3.jpg';?>" alt="Third slide">
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/3.jpg';?>" alt="Cuarto slide">
+            </div>
+            <div class="carousel-item">
+            <a href="<?php echo base_url().'tutoriales';?>" class="btn btn-primary">
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/4.png';?>" alt="Quinto slide">
+            </a>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -29,9 +35,6 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-
-
-
 
     <div class="container-fluid  mt-4 pt-4">
         <div class="row">
@@ -109,7 +112,7 @@
                     </div>
                     <div class="col-sm-12 col-md-8 col-ld-8 text-center">
                         <div class="card-block">
-                            <h6 class="card-title">Videos Guía de uso educa.minedu.gob.bo</h6>
+                            <h6 class="card-title">Tutoriales para el uso de educa.minedu.gob.bo</h6>
                             <a href="<?php echo base_url().'tutoriales';?>" class="btn btn-primary">Ver Videos</a>
                         </div>
                     </div>
