@@ -9,7 +9,9 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/0.jpg';?>" alt="Primer slide">
+            <a href="<?php echo base_url().'tutoriales';?>" class="btn btn-primary">
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/0.png';?>" alt="Primer slide">
+            </a>
             </div>
             <div class="carousel-item">
             <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/1.jpg';?>" alt="Segundo slide">
@@ -21,9 +23,9 @@
             <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/3.jpg';?>" alt="Cuarto slide">
             </div>
             <div class="carousel-item">
-            <a href="<?php echo base_url().'tutoriales';?>" class="btn btn-primary">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/4.png';?>" alt="Quinto slide">
-            </a>
+           
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/4.jpg';?>" alt="Quinto slide">
+            
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

@@ -56,7 +56,7 @@ class Contenido_Model extends CI_Model {
     }
 
     public function getareas($grado, $campo){
-        $this->db->select('a.cod_area, a.corto_area, a.img_area, a.cod_gra, a.cod_niv, a.des_area, m.arch_mat, m.des_mat');
+        $this->db->select('a.cod_area, a.corto_area, a.img_area, a.cod_gra, a.cod_niv, a.des_area');
         $this->db->distinct();
         $this->db->from('area a');
         $this->db->join('material_area m', 'a.cod_area=m.cod_area', 'inner');
@@ -71,9 +71,14 @@ class Contenido_Model extends CI_Model {
         return $this->db->get('area')->result();
     }
     public function getcontenidos($grado, $area){
-        $this->db->where('cod_area', $area);
-        $this->db->where('cod_gra', $grado);
-        $this->db->order_by('txt_mat');
+        $this->db->select('m.arch_mat, m.des_mat, t.cod_tipo, t.tipo_cont');
+        $this->db->distinct();
+        $this->db->from('material_area m');
+        $this->db->join('tipo_contenido t', 'm.cod_tipo=t.cod_tipo', 'inner');
+        $this->db->where('m.cod_area', $area);
+        $this->db->where('m.cod_gra', $grado);
+        //$this->db->where('cod_tipo', 2);
+        $this->db->order_by('cod_tipo');
         return $this->db->get('material_area')->result();
     }
     public function gettipocont($grado, $area){

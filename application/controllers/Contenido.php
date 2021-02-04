@@ -68,22 +68,20 @@ class Contenido extends CI_Controller{
         $this->load->view('vistas/content', $data);
         $this->load->view('template/footer');
     }
-
-
-
-    //Pantalla con 5 redondos (Curriculo, texto excolar, Recursos Educativos, Fichas Educativas, Otros)
-    /*public function contarea($grado=11, $area=1){
+    
+    public function contenidoarea($grado=11, $area=1){
         $data['nivel'] = $this->contenido_model->getsisnivgrarea($grado, $area);
         $data['contenidos'] = $this->contenido_model->getcontenidos($grado, $area);
-        $data['periodos'] = $this->contenido_model->getperiodo();
-        $data['enlace'] = $this->contenido_model->getlink($grado, $area);
+        //$data['periodos'] = $this->contenido_model->getperiodo();
+        //$data['enlace'] = $this->contenido_model->getlink($grado, $area);
         $this->load->view('template/header');
         $this->load->view('vistas/contenido', $data);
         $this->load->view('template/footer');
     }
 
 
-
+    //Pantalla con 5 redondos (Curriculo, texto excolar, Recursos Educativos, Fichas Educativas, Otros)
+    /*
     public function vermaterial($area=5, $tema=6){
         $data['nivel'] = $this->contenido_model->getsisnivgrareatema($area, $tema);
         $data['tipo'] = $this->contenido_model->gettipo($tema);

@@ -85,7 +85,7 @@
         elseif($nivel->cod_niv==5 || $nivel->cod_niv==6){
         foreach ($areas as $area) {?>
         <div class="col-12 col-sm-12 col-md-3 col-ld-3 text-center">
-            <a href="<?php echo base_url().'assets/uploads/files/cont/secar/'.$area->arch_mat; ?>" target="_blank">
+            <a href="<?php echo base_url().'contenido/contenidoarea/'.$area->cod_gra.'/'.$area->cod_area?>">
             <div class="mimg">
                 <img src="<?php echo base_url().'assets/img/'.$niv.'/'.$area->cod_niv.$area->corto_area.'.png'; ?>" class="<?=$fad?>" alt="<?=$area->des_area?>">
             </div>
