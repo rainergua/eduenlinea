@@ -58,9 +58,9 @@
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
             <div class="card-block">
                 <h5 class="card-title">Programas de estudio dosificados</h5>
-                <p class="card-text text-justify">El documento de Programas de estudio de Educación Secundaria Comunitaria Prodictiva con contenidos dosificados, excepcionalmente está dirigido
-                y orientado para la presente gestión con carácter de emergencia sanitaria. En la presente gestión, el primer trimestre se considera de nivelación
-                académica 2020; el segundo y tercero de desarrollo curricular 2021.
+                <p class="card-text text-justify">El documento de Programas de estudio de Educación Secundaria Comunitaria Productiva con contenidos dosificados, excepcionalmente está dirigido
+                y orientado para la presente gestión con carácter de emergencia sanitaria. En la presente gestión el primer trimestre se considera de nivelación
+                académica 2020, el segundo y tercero de desarrollo curricular 2021.
                 </p>
             </div>
         </div>
@@ -76,12 +76,13 @@
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
             <div class="card-block">
                 <h5 class="card-title">Transmisiones Televisivas</h5>
-                <p class="card-text text-justify">Las transmisiones televisivas estarán disponibles en diferentes horarios y frecuencias de canales televisivos.  
-                    Además, si te perdiste algunos de los temas puedes encontrarlos en tu curso y respectivos recursos, por favor te pedimos que puedas visitar tu área correspondiente
-                    y estés atento a los siguientes horarios en las siguientes cadenas televisivas: <br />
-                    TVB: Horario para Secundaria<br />
-                    AbyAyala TV: Horario para Secundaria<br />
-                    TV Culturas: Horario para Secundaria<br />
+                <p class="card-text text-justify">Las transmisiones televisivas tienen la finalidad de apoyar los contenidos curriculares dosificados 
+                        que se encuentran en los textos educativos de cada año de escolaridad.  <br />
+                    Horario de clases "EDUCA BOLIVIA" BTV: .<br />
+                    Mañana: 09:00 a 10:00 Inicial y Primaria<br />
+                    Mañana: 11:30 a 12:00 Primaria<br />
+                    Tarde: 15:00 a 16:00 Secundaria<br />
+                    Tarde: 18:00 a 18:30 Secundaria<br />
                 </p>
             </div>
         </div>
@@ -95,12 +96,12 @@
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
             <div class="card-block">
                 <h5 class="card-title">Transmisiones Radiales</h5>
-                <p class="card-text text-justify">Las transmisiones radiales estaran disponibles en diferentes horarios y frecuencias radiales.  
-                    Además si te perdiste algunos de los temas puedes encontrarlos en tu curso y respectivo recursos, por favor te pedimos que puedas visitar tu área correspondiente
-                    y estés atento a los siguientes horarios en las siguientes cadenas radiales: <br />
-                    Radio 1: Horario para Secundaria<br />
-                    Radio 2: Horario para Secundaria<br />
-                    Radio 3: Horario para Secundaria<br />
+                <p class="card-text text-justify">Las transmisiones radiales estarán disponibles en diferentes horarios y frecuencias. 
+                Cada programa responde al currículo dosificado y al cuaderno de fortalecimiento del proceso educativo.<br />
+                    Si te perdiste algunos de los temas puedes encontrarlos en tu año de escolaridad y el área de conocimiento correspondiente. 
+                    Te pedimos que puedas visitar tu año de escolaridad y estés atento a los  horarios de difusión en las siguientes cadenas radiales, Patria Nueva y SNRPO.<br />
+                    Mañana: 08:00 a 09:30 Inicial y Primaria<br />
+                    Tarde: 13:30 a 15:00 Secundaria<br />
                 </p>
             </div>
         </div>
@@ -114,12 +115,8 @@
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
             <div class="card-block">
                 <h5 class="card-title">Transmisiones Satelitales</h5>
-                <p class="card-text text-justify">Si cuentas con tu antena satelital, el Ministerio de Educación en coordinación con la Agencia Bolivia Espacial, ponen al servicio de 
-                    la comunidad educativa las transmisiones por medio de radio y televisión satelital, para tener una cobertura en todo el territorio del Estado Plurinacional de Bolivia.  
-                    Los canales de radio y televisión asignados para la atención en modalidad a distancias son: <br />
-                    Canal Satelital 1: Horario para Secundaria<br />
-                    Radio Satelital 1: Horario para Secundaria<br />
-                    Radio Satelital 2: Horario para Secundaria<br />
+                <p class="card-text text-justify">El Ministerio de Educación en coordinación con la Agencia Bolivia Espacial (ABE), ponen al servicio de 
+                    la comunidad educativa las transmisiones por medio de radio y televisión satelital, para tener una cobertura en todo el territorio del Estado Plurinacional de Bolivia. 
                 </p>
             </div>
         </div>

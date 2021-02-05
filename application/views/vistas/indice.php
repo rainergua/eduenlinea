@@ -54,10 +54,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Regular</h5>
                         <p class="card-text">Educación Inicial en Familia Comunitaria, Educación Primaria Comunitaria Vocacional y Educación Secundaria Comunitaria Productiva. 
-                            Tu biblioteca en linea, para que puedas desfrutar del contenido elaborado para tí.</p>
+                            Es una biblioteca en línea para que puedas disfrutar del contenido elaborado para los estudiantes.</p>
                             <div class="row">
                             <div class="col-6"><a href="<?php echo base_url().'eduvit/regular';?>" class="btn btn-danger btn-block">Biblioteca</a></div>
-                            <div class="col-6"><a href="http://regular.minedu.gob.bo" class="btn btn-info btn-block" target="_blank">Aula Regular</a></div>
+                            <div class="col-6"><a href="http://aula.minedu.gob.bo/regular" class="btn btn-info btn-block" target="_blank">Aula Regular</a></div>
                             </div>
                     </div>
                 </div>
@@ -71,15 +71,15 @@
                     
                     <div class="card-body">
                         <h5 class="card-title">Alternativa y Especial</h5>
-                        <p class="card-text">La Educación Alternativa y Especial es intracultural, intercultural y plurilingüe. Comprende ambitos de Educación Alternativa y Educación Especial.</p>
+                        <p class="card-text">La Educación Alternativa y Especial es intracultural, intercultural y plurilingüe. Comprende ámbitos de Educación Alternativa y Educación Especial.</p>
                         <div class="row">
                             <div class="col-3"></div>
                             <div class="col-6"><a href="<?php echo base_url().'eduvit/alternativa';?>" class="btn btn-primary btn-block">Biblioteca</a></div>
                             <div class="col-3"></div>
                         </div>
                         <div class="row pt-1 mt-1">
-                            <div class="col-6"><a href="http://alternativa.minedu.gob.bo" class="btn btn-warning text-white btn-block" target="_blank">Aula Alternativa</a></div>
-                            <div class="col-6"><a href="http://especial.minedu.gob.bo" class="btn btn-secondary text-white btn-block" target="_blank">Aula Especial</a></div>
+                            <div class="col-6"><a href="http://aula.minedu.gob.bo/alternativa" class="btn btn-warning text-white btn-block" target="_blank">Aula Alternativa</a></div>
+                            <div class="col-6"><a href="http://aula.minedu.gob.bo/especial" class="btn btn-secondary text-white btn-block" target="_blank">Aula Especial</a></div>
                         </div>
                         
                     </div>
@@ -94,8 +94,8 @@
                     
                     <div class="card-body">
                         <h5 class="card-title">Superior</h5>
-                        <p class="card-text">Formación de Maestros, Institutos Técnico Tecnológicos, Universidades Indígenas, Especiales y Privadas; 
-                        forman profesionales de alta competitividad, con compromiso social y conciencia crítica al servicio del pueblo, para el desarrollo del país. </p>
+                        <p class="card-text">Formación de Maestros Institutos Técnico Tecnológicos Universidades Indígenas Especiales y Privadas; 
+                        forman profesionales de alta competitividad con compromiso social y conciencia crítica al servicio del pueblo para el desarrollo del país. </p>
                         <div class="row">
                             <div class="col-6"><a href="<?php echo base_url().'eduvit/superior';?>" class="btn btn-success btn-block">Biblioteca</a></div>
                             <div class="col-6"><a href="#" class="btn btn-info btn-block">Aula Superior</a></div>

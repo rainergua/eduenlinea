@@ -53,7 +53,7 @@
             <div class="col-sm-12 col-md-9 col-ld-9 text-center">
                 <div class="card-block">
                     <h5 class="card-title">Educación Secundaria Comunitaria Productiva</h5>
-                    <p class="card-text text-justify">Educación Secundaria Comunitaria Productiva. Fortalece la formación recibida 
+                    <p class="card-text text-justify">Educación Secundaria Comunitaria Productiva fortalece la formación recibida 
                     en la educación primaria comunitaria vocacional, por ser integral, científica, humanística, técnica-tecnológica, 
                     espiritual, ética, moral, artística y deportiva. Articula la educación humanística y la educación técnica-tecnológica 
                     a partir de la producción, valorando, desarrollando y profundizando los saberes, conocimientos, y tecnologías 
