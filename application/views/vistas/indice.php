@@ -6,15 +6,22 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <a href="<?php echo base_url().'tutoriales';?>" class="btn btn-primary">
+            <a href="https://dgtic.minedu.gob.bo/inscripcion/" class="btn btn-primary" target="_blank">
             <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/0.png';?>" alt="Primer slide">
+            <div class="carousel-caption">
+                <h2>PARA MAESTROS</h2>
+                <p>Obten tu certificado respondiendo preguntas sencillas.</p>
+            </div>
             </a>
             </div>
             <div class="carousel-item">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/1.jpg';?>" alt="Segundo slide">
+            <a href="<?php echo base_url().'tutoriales';?>" class="btn btn-primary">
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/1.png';?>" alt="Segundo slide">
+            </a>
             </div>
             <div class="carousel-item">
             <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/2.jpg';?>" alt="Tercero slide">
@@ -23,9 +30,10 @@
             <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/3.jpg';?>" alt="Cuarto slide">
             </div>
             <div class="carousel-item">
-           
             <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/4.jpg';?>" alt="Quinto slide">
-            
+            </div>
+            <div class="carousel-item">
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/5.jpg';?>" alt="Quinto slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -114,8 +122,9 @@
                     </div>
                     <div class="col-sm-12 col-md-8 col-ld-8 text-center">
                         <div class="card-block">
-                            <h6 class="card-title">Tutoriales para el uso de educa.minedu.gob.bo</h6>
-                            <a href="<?php echo base_url().'tutoriales';?>" class="btn btn-primary">Ver Videos</a>
+                            <h6 class="card-title">Tutoriales</h6>
+                            <a href="<?php echo base_url().'tutoriales';?>" class="btn btn-primary btn-block">Estudiantes</a>
+                            <a href="https://dgtic.minedu.gob.bo/inscripcion/" class="btn btn-success btn-block" target="_blank">Maestros</a>
                         </div>
                     </div>
                 </div>
