@@ -59,6 +59,9 @@
         }
         ?>
     </div>
+    <h5 class="card-header text-center">
+        Año de escolaridad: <?=$nivel->des_gra?> | <?=$nivel->des_niv?><br />
+    </h5>
     <div class="row pt-4 mt-4">
         <?php 
         foreach ($campos as $campo) {?>
@@ -68,7 +71,8 @@
             <?php
             if($nivel->cod_niv==5){
             ?>
-                <a href="<?php echo base_url().'assets/uploads/files/cont/pri2/'.$campo->arch_concam; ?>" target="_blank">
+                <a href="<?php echo base_url().'contenido/contenidocampo/'.$nivel->cod_gra.'/'.$campo->cod_cam?>">
+                <!--a href="<php echo base_url().'assets/uploads/files/cont/pri2/'.$campo->arch_concam; ?>" target="_blank"-->
                 <img src="<?php echo base_url().'assets/img/campos/'.$campo->img_cam.$niv.'.png'; ?>" class="<?=$fad?>">
                 </a>
             <?php

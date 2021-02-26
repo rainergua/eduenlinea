@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-02-2021 a las 05:30:27
+-- Tiempo de generación: 22-02-2021 a las 04:56:13
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.9
 
@@ -182,7 +182,51 @@ INSERT INTO `material_area` (`cod_mat`, `des_mat`, `img_mat`, `arch_mat`, `txt_m
 (197, '6TO COMUNICACIÓN Y LENGUAJES', '', 'sec98-bdd4.pdf', '6TO COMUNICACIÓN Y LENGUAJES', '', '', 3, 1, 6, 22, 98),
 (198, '6TO LENGUA EXTRANJERA', '', 'sec315-nuvq.pdf', '6TO LENGUA EXTRANJERA', '', '', 3, 1, 6, 22, 315),
 (199, '14. Mate Sexto De Secundaria 20', '', 'sec95-q8ou.mp4', '14. Mate Sexto De Secundaria 20', '', '', 8, 1, 6, 22, 95),
-(200, '6TO-EDUCACIÓN MUSICAL', '', 'sec260-ur3x.pdf', '6TO-EDUCACIÓN MUSICAL', '', '', 3, 1, 6, 22, 260);
+(200, '6TO-EDUCACIÓN MUSICAL', '', 'sec260-ur3x.pdf', '6TO-EDUCACIÓN MUSICAL', '', '', 3, 1, 6, 22, 260),
+(201, '3RO FÍSICA', '', 'sec72-aaaa.pdf', '3RO FÍSICA', '', '', 2, 1, 6, 19, 72),
+(202, '1Ro De Secundaria Ciencias Naturales Prof Mariluz Limachi-21', '', 'sec9-jmlw.mp4', '1Ro De Secundaria Ciencias Naturales Prof Mariluz Limachi-21', '', '', 8, 1, 6, 17, 9),
+(203, '1Ro De Secundaria Ciencias Naturales Prof Maryluz Limachi-18', '', 'sec9-wf5g.mp4', '1Ro De Secundaria Ciencias Naturales Prof Maryluz Limachi-18', '', '', 8, 1, 6, 17, 9),
+(204, '1Ro De Secundaria Ciencias Sociales Prof-22', '', 'sec10-kfvx.mp4', '1Ro De Secundaria Ciencias Sociales Prof-22', '', '', 8, 1, 6, 17, 10),
+(205, '1Ro De Secundaria  Lenguaje 9 Febrero-20', '', 'sec8-ozjc.mp4', '1Ro De Secundaria  Lenguaje 9 Febrero-20', '', '', 8, 1, 6, 17, 8),
+(206, '1Ro De Secundaria Matemática Profesor Oscar Huarin-19', '', 'sec5-ckb9.mp4', '1Ro De Secundaria Matemática Profesor Oscar Huarin-19', '', '', 8, 1, 6, 17, 5),
+(207, '2 Do De Secundaria Ciencias Naturales Prof Liliana Chura-23', '', 'sec68-p6cx.mp4', '2 Do De Secundaria Ciencias Naturales Prof Liliana Chura-23', '', '', 8, 1, 6, 18, 68),
+(208, '2Do De Secundaria Prof Liliana Ciencias Naturales-30', '', 'sec68-j2jq.mp4', '2Do De Secundaria Prof Liliana Ciencias Naturales-30', '', '', 8, 1, 6, 18, 68),
+(209, '2Do De Secundaria Ciencias Sociales Prof Litzy-33', '', 'sec69-j8l0.mp4', '2Do De Secundaria Ciencias Sociales Prof Litzy-33', '', '', 8, 1, 6, 18, 69),
+(210, '2Do De Secundaria Comunicacion Y Lenguajes Prof Ingrid Usquiano-31', '', 'sec67-bnvb.mp4', '2Do De Secundaria Comunicacion Y Lenguajes Prof Ingrid Usquiano-31', '', '', 8, 1, 6, 18, 67),
+(211, '2Do De Secundaria Matemàticas Prof Fernando Agreda-32', '', 'sec64-hjjf.mp4', '2Do De Secundaria Matemàticas Prof Fernando Agreda-32', '', '', 8, 1, 6, 18, 64),
+(212, '3. 3Ro De Secundaria Biologia Prof Ruth Catacora-37', '', 'sec75-0g3n.mp4', '3. 3Ro De Secundaria Biologia Prof Ruth Catacora-37', '', '', 8, 1, 6, 19, 75),
+(213, '3Ro De Secundaria Biologia Y Geografia Prof Alcira Catacora-43', '', 'sec75-p2v7.mp4', '3Ro De Secundaria Biologia Y Geografia Prof Alcira Catacora-43', '', '', 8, 1, 6, 19, 75),
+(214, '3 Ro De  Secundarai  Ciencias Sociales Prof Dalia Alaro-36', '', 'sec76-kxu1.mp4', '3 Ro De  Secundarai  Ciencias Sociales Prof Dalia Alaro-36', '', '', 8, 1, 6, 19, 76),
+(215, '3. Secundaria Tercero Física 11 De Febrero-40', '', 'sec72-0jm5.mp4', '3. Secundaria Tercero Física 11 De Febrero-40', '', '', 8, 1, 6, 19, 72),
+(216, 'Secundaria Tercero Física 18 De Febrero Corregido-102', '', 'sec72-aoo5.mp4', 'Secundaria Tercero Física 18 De Febrero Corregido-102', '', '', 8, 1, 6, 19, 72),
+(217, '3Ero De Scundaria Lenguaje Prof Marcela Chipana-44', '', 'sec74-8rpj.mp4', '3Ero De Scundaria Lenguaje Prof Marcela Chipana-44', '', '', 8, 1, 6, 19, 74),
+(218, '3 Ro De Secundaria Matematica Prof Candy Coronel-35', '', 'sec71-6crf.mp4', '3 Ro De Secundaria Matematica Prof Candy Coronel-35', '', '', 8, 1, 6, 19, 71),
+(219, '3. Secundaria Tercero Química 10 De Febrero-41', '', 'sec73-wx8v.mp4', '3. Secundaria Tercero Química 10 De Febrero-41', '', '', 8, 1, 6, 19, 73),
+(220, 'Secundaria Tercero Química Combinaciones Binarias Oxigenadas 18 De Febrero Corregido-103', '', 'sec73-gjdl.mp4', 'Secundaria Tercero Química Combinaciones Binarias Oxigenadas 18 De Febrero Corregido-103', '', '', 8, 1, 6, 19, 73),
+(221, '4To De Secundaria Biologia Prof Jhenny Huanca-48', '', 'sec81-f7n3.mp4', '4To De Secundaria Biologia Prof Jhenny Huanca-48', '', '', 8, 1, 6, 20, 81),
+(222, '4To De Secundaria Biologia Y Geografia Prof Jhenny Quispe-52', '', 'sec81-gjxo.mp4', '4To De Secundaria Biologia Y Geografia Prof Jhenny Quispe-52', '', '', 8, 1, 6, 20, 81),
+(223, '4To De Secundaria Ciencias Socialoe Prof Oscar Aruquipa-49', '', 'sec82-thtj.mp4', '4To De Secundaria Ciencias Socialoe Prof Oscar Aruquipa-49', '', '', 8, 1, 6, 20, 82),
+(224, '4To De Secundaria Física Prof Nelson Monzon-50', '', 'sec78-amo3.mp4', '4To De Secundaria Física Prof Nelson Monzon-50', '', '', 8, 1, 6, 20, 78),
+(225, '1. 4To De Secundaria C . Comnicacion Y Lenguaje Prof Ulises Valencia Okmp4-11', '', 'sec80-5srw.mp4', '1. 4To De Secundaria C . Comnicacion Y Lenguaje Prof Ulises Valencia Okmp4-11', '', '', 8, 1, 6, 20, 80),
+(226, 'A. 4 To Secundaria Comunicacion Y Lenguaje Profesor Ulises Valencia-75', '', 'sec80-i9ou.mp4', 'A. 4 To Secundaria Comunicacion Y Lenguaje Profesor Ulises Valencia-75', '', '', 8, 1, 6, 20, 80),
+(227, '4To De Secundaria Matemática Prof Wilson Patty-51', '', 'sec77-racb.mp4', '4To De Secundaria Matemática Prof Wilson Patty-51', '', '', 8, 1, 6, 20, 77),
+(228, '5. Secundaria Cuarto Química La Oxidación 10 De Febrero-54', '', 'sec79-llnl.mp4', '5. Secundaria Cuarto Química La Oxidación 10 De Febrero-54', '', '', 8, 1, 6, 20, 79),
+(229, 'D. Secundaria Química Cuarto Uso De Sustancias Químicas 17 De Febrero Corregido-84', '', 'sec79-e660.mp4', 'D. Secundaria Química Cuarto Uso De Sustancias Químicas 17 De Febrero Corregido-84', '', '', 8, 1, 6, 20, 79),
+(230, '5To De Secundaria - Microbiología-56', '', 'sec93-zbqn.mp4', '5To De Secundaria - Microbiología-56', '', '', 8, 1, 6, 21, 93),
+(231, '5To De Secundaria Física Prof Elizabeth Chirinos-57', '', 'sec90-fxmv.mp4', '5To De Secundaria Física Prof Elizabeth Chirinos-57', '', '', 8, 1, 6, 21, 90),
+(232, '2. 5To De Secundaria Comunicacion Y Lenguajes Prof Ulises Valencia-24', '', 'sec92-ly2u.mp4', '2. 5To De Secundaria Comunicacion Y Lenguajes Prof Ulises Valencia-24', '', '', 8, 1, 6, 21, 92),
+(233, 'B. 5To Corregido Secundaria Lenguaje Prof Ulises-77', '', 'sec92-fstu.mp4', 'B. 5To Corregido Secundaria Lenguaje Prof Ulises-77', '', '', 8, 1, 6, 21, 92),
+(234, '5To De Secundaria Matemática Prof Sergio Huanca-58', '', 'sec89-aqrd.mp4', '5To De Secundaria Matemática Prof Sergio Huanca-58', '', '', 8, 1, 6, 21, 89),
+(236, '6. 5To De Secundaria Quimica Prof Boris -61', '', 'sec91-wo4r.mp4', '6. 5To De Secundaria Quimica Prof Boris -61', '', '', 8, 1, 6, 21, 91),
+(237, 'E. Secundaria Quinto Química Estequiometría 17 De Febrero Corregido-87', '', 'sec91-ifza.mp4', 'E. Secundaria Quinto Química Estequiometría 17 De Febrero Corregido-87', '', '', 8, 1, 6, 21, 91),
+(238, '6To De Secundario Biología Y Geografía Prof Ximena-68', '', 'sec99-zt4u.mp4', '6To De Secundario Biología Y Geografía Prof Ximena-68', '', '', 8, 1, 6, 22, 99),
+(239, '6To De Secundaria Física Prof Elizabeth Chirinos-1', '', 'sec96-fged.mp4', '6To De Secundaria Física Prof Elizabeth Chirinos-1', '', '', 8, 1, 6, 22, 96),
+(240, '3. Secundaria Lenguaje Sexto 10 De Febrero Corregido 1-39', '', 'sec98-3ipl.mp4', '3. Secundaria Lenguaje Sexto 10 De Febrero Corregido 1-39', '', '', 8, 1, 6, 22, 98),
+(241, 'C. 6To De Secundaria Corregido Lenguaje Prof Marcela-81', '', 'sec98-rmah.mp4', 'C. 6To De Secundaria Corregido Lenguaje Prof Marcela-81', '', '', 8, 1, 6, 22, 98),
+(242, '6To De Secundaria Matemática Prof Fernando Agreda-67', '', 'sec95-a246.mp4', '6To De Secundaria Matemática Prof Fernando Agreda-67', '', '', 8, 1, 6, 22, 95),
+(243, '6To-Secundaria 69', '', 'sec95-rgxd.mp4', '6To-Secundaria 69', '', '', 8, 1, 6, 22, 95),
+(244, '6 To De Secundaria Qmc-60', '', 'sec97-iong.mp4', '6 To De Secundaria Qmc-60', '', '', 8, 1, 6, 22, 97),
+(245, 'F. Secundaria Sexto Química Gases 17 De Febrero-90', '', 'sec97-o1ms.mp4', 'F. Secundaria Sexto Química Gases 17 De Febrero-90', '', '', 8, 1, 6, 22, 97);
 
 --
 -- Índices para tablas volcadas
@@ -203,7 +247,7 @@ ALTER TABLE `material_area`
 -- AUTO_INCREMENT de la tabla `material_area`
 --
 ALTER TABLE `material_area`
-  MODIFY `cod_mat` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=201;
+  MODIFY `cod_mat` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=246;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

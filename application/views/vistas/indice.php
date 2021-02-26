@@ -65,7 +65,7 @@
                             Es una biblioteca en línea para que puedas disfrutar del contenido elaborado para los estudiantes.</p>
                             <div class="row">
                             <div class="col-6"><a href="<?php echo base_url().'eduvit/regular';?>" class="btn btn-danger btn-block">Biblioteca</a></div>
-                            <div class="col-6"><a href="http://aula.minedu.gob.bo/regular" class="btn btn-info btn-block" target="_blank">Aula Regular</a></div>
+                            <div class="col-6"><a href="http://aula.minedu.gob.bo/regular" class="btn btn-info btn-block" target="_blank">Aula (Regular)</a></div>
                             </div>
                     </div>
                 </div>
@@ -86,8 +86,8 @@
                             <div class="col-3"></div>
                         </div>
                         <div class="row pt-1 mt-1">
-                            <div class="col-6"><a href="http://aula.minedu.gob.bo/alternativa" class="btn btn-warning text-white btn-block" target="_blank">Aula Alternativa</a></div>
-                            <div class="col-6"><a href="http://aula.minedu.gob.bo/especial" class="btn btn-secondary text-white btn-block" target="_blank">Aula Especial</a></div>
+                            <div class="col-6"><a href="http://aula.minedu.gob.bo/alternativa" class="btn btn-warning text-white btn-block" target="_blank">Aula (Alternativa)</a></div>
+                            <div class="col-6"><a href="http://aula.minedu.gob.bo/especial" class="btn btn-secondary text-white btn-block" target="_blank">Aula (Especial)</a></div>
                         </div>
                         
                     </div>

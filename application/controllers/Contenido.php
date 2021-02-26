@@ -36,11 +36,12 @@ class Contenido extends CI_Controller{
 
     public function campos($curso=11){
         $data['curso'] = $curso;
-        if($curso >10 && $curso<17){
+        /*if($curso >10 && $curso<17){
+            //$data['campos'] = $this->contenido_model->getmatcampos($curso);
             $data['campos'] = $this->contenido_model->getmatcampos($curso);
-        }else{
-            $data['campos'] = $this->contenido_model->getcampos();
-        }
+        }else{*/
+        $data['campos'] = $this->contenido_model->getcampos();
+        //}
         $data['nivel'] = $this->contenido_model->getsisnivgra($curso);
         $this->load->view('template/header');
         $this->load->view('vistas/campos', $data);
@@ -76,6 +77,16 @@ class Contenido extends CI_Controller{
         //$data['enlace'] = $this->contenido_model->getlink($grado, $area);
         $this->load->view('template/header');
         $this->load->view('vistas/contenido', $data);
+        $this->load->view('template/footer');
+    }
+    public function contenidocampo($grado=11, $campo=1){
+        //$data['nivel'] = $this->contenido_model->getsisnivgracam($grado, $campo);
+        $data['nivel'] = $this->contenido_model->getsisnivgra($grado);
+        $data['contenidos'] = $this->contenido_model->getmatcampos($grado, $campo);
+        //$data['periodos'] = $this->contenido_model->getperiodo();
+        //$data['enlace'] = $this->contenido_model->getlink($grado, $area);
+        $this->load->view('template/header');
+        $this->load->view('vistas/contcam', $data);
         $this->load->view('template/footer');
     }
 

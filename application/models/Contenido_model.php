@@ -13,19 +13,16 @@ class Contenido_Model extends CI_Model {
     public function getcampos(){
         return $this->db->get('campo')->result();
     }
-    public function getmatcampos($grado){
+    public function getmatcampos($grado, $cod_cam){
 
         $this->db->distinct();
         $this->db->from('mat_campo m');
         $this->db->join('campo c', 'm.cod_cam=c.cod_cam', 'inner');
+        $this->db->join('tipo_contenido t', 'm.cod_tipo=t.cod_tipo', 'inner');
         $this->db->where('cod_gra', $grado);
-        $this->db->order_by('des_concam');
+        $this->db->where('c.cod_cam', $cod_cam);
+        $this->db->order_by('cod_codcam');
         return $this->db->get()->result();
-
-
-        
-        
-
     }
     public function getsisniv($nivel){
         $this->db->select('desc_sis, des_niv, txt_niv, cod_niv, link_sis');
@@ -54,7 +51,17 @@ class Contenido_Model extends CI_Model {
         $this->db->where('a.cod_area', $area);
         return $this->db->get()->row(); 
     }
-
+    public function getsisnivgracam($grado, $campo){
+        $this->db->select('desc_sis, des_niv, des_gra, txt_cam, des_cam, cod_cam, c.cod_cam, g.cod_gra, n.cod_niv, c.desc_cam');
+        $this->db->from('campo c');
+        $this->db->join('grado g', 'a.cod_gra=g.cod_gra', 'inner');
+        $this->db->join('nivel n', 'g.cod_niv=n.cod_niv', 'inner');
+        $this->db->join('subsistema s', 'n.cod_sis=s.cod_sis', 'inner');
+        //$this->db->join('campo c', 'a.cod_cam=c.cod_cam', 'inner');
+        $this->db->where('g.cod_gra', $grado);
+        $this->db->where('a.cod_area', $area);
+        return $this->db->get()->row(); 
+    }
     public function getareas($grado, $campo){
         $this->db->select('a.cod_area, a.corto_area, a.img_area, a.cod_gra, a.cod_niv, a.des_area');
         $this->db->distinct();
