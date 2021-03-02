@@ -1,3 +1,9 @@
+.car-header1 {
+  background-color: rgba(220, 220, 220,0.8);
+}
+.car-header2 {
+  background-color: rgba(220, 220, 220,0.5);
+}
 .carousel-caption{
   color: #000000;
 }
@@ -18,7 +24,15 @@
       margin: 0px;
       padding: 0px;
     }
-
+    .mimgsup{
+      overflow: hidden;
+      position: relative;
+      /*height: 410px;*/
+      width: 450px;
+      display: block;
+      margin: auto;
+      padding: 0px;
+    }
     .mimgal{
       overflow: hidden;
       position: relative;
