@@ -16,10 +16,6 @@
         <div id="accordion">
          <?php
             foreach ($tipo as $tip) {
-                if($tip->cod_tipo == 3)
-                    $icon = 'fa-file-video';
-                else
-                    $icon = 'fa-file-pdf';
          ?>
                 <div class="card">
                     <div class="card-header acordion-header" id="heading<?=$tip->cod_tipo?>">
@@ -38,11 +34,27 @@
                     <div class="card-body">
                         <div class="row" id="row">
                         <?php foreach ($material as $mat) {
+                            if($tip->cod_tipo == 3)
+                                $icon = 'fa-file-video';
+                            else
+                                $icon = 'fa-file-pdf';
                             if($mat->cod_tipo==$tip->cod_tipo){
                          ?>
-                            <div class="col-12 col-sm-12 col-md-4 col-ld-4">
-                                <a href="<?php echo base_url().'/assets/uploads/files/cont/ales/'.$mat->arch_matanio;?>" target="_blank">
+                            <div class="col-12 col-sm-12 col-md-3 col-ld-3">
+                                <a href="<?php echo base_url().'assets/uploads/files/cont/ales/'.$mat->arch_matanio;?>" target="_blank">
+                                <?php
+                                if($mat->img_matanio==""){
+                                ?>
                                 <div class="caption text-center"><i class="fas <?=$icon?> px-1"></i><?=$mat->des_matanio?></div>
+                                <?php
+                                }else{?>
+                                    <figure class="figure">
+                                    <img src="<?php echo base_url().'assets/uploads/files/cont/ales/img/'.$mat->img_matanio;?>" class="figure-img img-fluid">
+                                    <figcaption class="figure-caption text-center"><h6>
+                                    <?php print($mat->des_matanio);?></h6></figcaption>
+                                    </figure>
+                                <?php
+                                }?>
                             </a>
                             </div>
                         <?php }

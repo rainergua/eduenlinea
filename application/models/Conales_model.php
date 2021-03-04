@@ -12,10 +12,11 @@ class Conales_Model extends CI_Model {
     }
 
     public function getcontenidos($cod_disc){
-        $this->db->select('cod_matanio, des_matanio, arch_matanio, t.tipo_cont, t.cod_tipo, genes');
+        $this->db->select('cod_matanio, des_matanio, arch_matanio, img_matanio, t.tipo_cont, t.cod_tipo, genes');
         $this->db->from('matanio m');
         $this->db->join('tipo_contenido t', 'm.tipo_cont=t.cod_tipo', 'inner');
         $this->db->where('m.cod_dis', $cod_disc);
+        $this->db->where('m.vis_matanio', 1);
         $this->db->order_by('genes, t.cod_tipo, des_matanio');
         return $this->db->get()->result(); 
     }
@@ -25,6 +26,7 @@ class Conales_Model extends CI_Model {
         $this->db->from('matanio m');
         $this->db->join('tipo_contenido t', 'm.tipo_cont=t.cod_tipo', 'inner');
         $this->db->where('m.cod_dis', $cod_disc);
+        $this->db->where('m.vis_matanio', 1);
         $this->db->order_by('t.cod_tipo');
         return $this->db->get()->result(); 
     }
