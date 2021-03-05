@@ -7,17 +7,11 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <a href="http://olimpiada.minedu.gob.bo/" target="_blank">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/0.png';?>" alt="Pimer slide">
-            </a>
-            </div>
-            <div class="carousel-item">
-            <a href="https://dgtic.minedu.gob.bo/inscripcion/" target="_blank">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/1.png';?>" alt="Segundo slide">
+            <a href="https://dgtic.minedu.gob.bo/inscripcion/" class="btn btn-primary" target="_blank">
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/0.png';?>" alt="Primer slide">
             <div class="carousel-caption">
                 <h2>PARA MAESTROS</h2>
                 <p>Obten tu certificado respondiendo preguntas sencillas.</p>
@@ -25,9 +19,7 @@
             </a>
             </div>
             <div class="carousel-item">
-            <a href="<?php echo base_url().'tutoriales';?>" class="btn btn-primary">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/2.png';?>" alt="Tercer slide">
-            </a>
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/2.jpg';?>" alt="Tercero slide">
             </div>
             <div class="carousel-item">
             <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/3.jpg';?>" alt="Cuarto slide">
@@ -36,10 +28,7 @@
             <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/4.jpg';?>" alt="Quinto slide">
             </div>
             <div class="carousel-item">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/5.jpg';?>" alt="Sexto slide">
-            </div>
-            <div class="carousel-item">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/6.jpg';?>" alt="Septimo slide">
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/5.jpg';?>" alt="Quinto slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
