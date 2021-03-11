@@ -3,18 +3,24 @@
     if($nivel->cod_niv==4){
         $cla = "contini";
         $fad = "img-fluid boton-sec";
-        $niv = "prim";
+        $niv = "ini";
+        $upniv = "ini";
         $bread = 'Inicial';
+        $etq = 'Campo'; 
     }elseif($nivel->cod_niv==5){
         $cla = "contpri";
         $fad = "fader";
         $niv = "prim";
+        $upniv = "pri2";
         $bread = 'Primaria';
+        $etq = 'Campo'; 
     }elseif($nivel->cod_niv==6){
         $cla = "contpri";
         $fad = "fader";
         $niv = "sec";
+        $upniv = "secar";
         $bread = 'Secundaria';
+        $etq = 'Área'; 
         $texto = "Este material tiene la finalidad de fortalecer capacidades, potencialidades, habilidades y cualidades productivas a partir de contenidos dosificados planteados en el currículo para el primer trimestre. Asimismo, permitirá coadyuvar la nivelación de aprendizajes para encarar esta gestión escolar.  ";
     }
 ?>
@@ -65,7 +71,7 @@
     </div>
     <h5 class="card-header text-center">
         <?=$nivel->des_niv?> | Año de escolaridad: <?=$nivel->des_gra?><br />
-        Área de cononcimiento: <?=$nivel->des_area?> 
+        <?=$etq?> de cononcimiento: <?=$nivel->des_area?> 
     </h5>
     <div class="row align-items-center pt-4 mt-2">
         <?php 
@@ -77,7 +83,7 @@
             }
             ?>
             <div class="col-sm-6 col-md-2 col-ld-2 text-center">
-                <a href="<?php echo base_url().'assets/uploads/files/cont/secar/'.$cont->arch_mat; ?>" target="_blank" rel="noopener noreferrer">
+                <a href="<?php echo base_url().'assets/uploads/files/cont/'.$upniv.'/'.$cont->arch_mat; ?>" target="_blank" rel="noopener noreferrer">
                 <figure class="figure">
                     <img src="<?php echo base_url().'assets/img/'.$icono;?>" class="figure-img img-fluid rounded">
                     <figcaption class="figure-caption text-center"><h6>

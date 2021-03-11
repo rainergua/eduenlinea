@@ -14,7 +14,7 @@
             <div class="col-sm-12 col-md-4 col-ld-4 mt-4 pt-4 text-center">
                 <a href="<?php echo base_url().'consup/carreras';?>">
                     <div class="mimgsup">
-                        <img src="<?php echo base_url().'/assets/img/super/esfm.png';?>" class="fader mt-4 pt-4">
+                        <img src="<?php echo base_url().'/assets/img/super/esfm.png';?>" class="fader mt-4 pt-4" alt="Enlace a Escuelas de Formación de Maestros">
                     </div>
                 </a>
             </div>

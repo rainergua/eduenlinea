@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-02-2021 a las 04:56:13
+-- Tiempo de generación: 09-03-2021 a las 03:37:50
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.9
 
@@ -226,7 +226,67 @@ INSERT INTO `material_area` (`cod_mat`, `des_mat`, `img_mat`, `arch_mat`, `txt_m
 (242, '6To De Secundaria Matemática Prof Fernando Agreda-67', '', 'sec95-a246.mp4', '6To De Secundaria Matemática Prof Fernando Agreda-67', '', '', 8, 1, 6, 22, 95),
 (243, '6To-Secundaria 69', '', 'sec95-rgxd.mp4', '6To-Secundaria 69', '', '', 8, 1, 6, 22, 95),
 (244, '6 To De Secundaria Qmc-60', '', 'sec97-iong.mp4', '6 To De Secundaria Qmc-60', '', '', 8, 1, 6, 22, 97),
-(245, 'F. Secundaria Sexto Química Gases 17 De Febrero-90', '', 'sec97-o1ms.mp4', 'F. Secundaria Sexto Química Gases 17 De Febrero-90', '', '', 8, 1, 6, 22, 97);
+(245, 'F. Secundaria Sexto Química Gases 17 De Febrero-90', '', 'sec97-o1ms.mp4', 'F. Secundaria Sexto Química Gases 17 De Febrero-90', '', '', 8, 1, 6, 22, 97),
+(246, '19-02-21- 1 Secundaria', '', 'sec10-63m0.mp4', '19-02-21- 1 Secundaria', '', '', 8, 1, 6, 17, 10),
+(247, '23-02-21- 1-Secundaria Leng 4', '', 'sec8-n4h9.mp4', '23-02-21- 1-Secundaria Leng 4', '', '', 8, 1, 6, 17, 8),
+(248, '22-02-21- 1 Secundaria', '', 'sec5-nb5r.mp4', '22-02-21- 1 Secundaria', '', '', 8, 1, 6, 17, 5),
+(249, '19-02-21- 2 Secundaria', '', 'sec69-y1fk.mp4', '19-02-21- 2 Secundaria', '', '', 8, 1, 6, 18, 69),
+(250, '23-02-21- 2 Secundaria-7', '', 'sec67-3vwe.mp4', '23-02-21- 2 Secundaria-7', '', '', 8, 1, 6, 18, 67),
+(251, '22-02-21- 2 Secundaria', '', 'sec64-8qn9.mp4', '22-02-21- 2 Secundaria', '', '', 8, 1, 6, 18, 64),
+(252, '19-02-21- 3 Secundaria', '', 'sec76-7lra.mp4', '19-02-21- 3 Secundaria', '', '', 8, 1, 6, 19, 76),
+(253, '23-02-21- 3 Secundaria-9', '', 'sec74-ieti.mp4', '23-02-21- 3 Secundaria-9', '', '', 8, 1, 6, 19, 74),
+(254, '22-02-21- 3 Secundaria', '', 'sec71-m1pd.mp4', '22-02-21- 3 Secundaria', '', '', 8, 1, 6, 19, 71),
+(255, '19-02-21- 4 Secundaria', '', 'sec82-5pxe.mp4', '19-02-21- 4 Secundaria', '', '', 8, 1, 6, 20, 82),
+(256, '23-02-21- 4 Secundaria-11', '', 'sec78-cp1u.mp4', '23-02-21- 4 Secundaria-11', '', '', 8, 1, 6, 20, 78),
+(257, '24-02-21- 4 Secundaria-23', '', 'sec80-xfol.mp4', '24-02-21- 4 Secundaria-23', '', '', 8, 1, 6, 20, 80),
+(258, '22-02-21- 4 Secundaria', '', 'sec77-ot2u.mp4', '22-02-21- 4 Secundaria', '', '', 8, 1, 6, 20, 77),
+(259, '24-02-21- 4 Secundaria – Q-22', '', 'sec79-lkwl.mp4', '24-02-21- 4 Secundaria – Q-22', '', '', 8, 1, 6, 20, 79),
+(260, '19-02-21- 5 Secundaria', '', 'sec93-ueoj.mp4', '19-02-21- 5 Secundaria', '', '', 8, 1, 6, 21, 93),
+(261, '23-02-21- 5 Secundaria-13', '', 'sec90-ffld.mp4', '23-02-21- 5 Secundaria-13', '', '', 8, 1, 6, 21, 90),
+(262, '24-02-21- 5 Secundaria-26', '', 'sec92-glsz.mp4', '24-02-21- 5 Secundaria-26', '', '', 8, 1, 6, 21, 92),
+(263, '22-02-21- 5 Secundaria', '', 'sec89-c7qv.mp4', '22-02-21- 5 Secundaria', '', '', 8, 1, 6, 21, 89),
+(264, '24-02-21- 5 Secundaria – Q-25', '', 'sec91-vct8.mp4', '24-02-21- 5 Secundaria – Q-25', '', '', 8, 1, 6, 21, 91),
+(265, '19-02-21- 6 Secundaria', '', 'sec99-w5wy.mp4', '19-02-21- 6 Secundaria', '', '', 8, 1, 6, 22, 99),
+(266, '23-02-21- 6 Secundaria-15', '', 'sec96-t53y.mp4', '23-02-21- 6 Secundaria-15', '', '', 8, 1, 6, 22, 96),
+(267, '24-02-21- 6 Secundaria-Leng 29', '', 'sec98-8ev6.mp4', '24-02-21- 6 Secundaria-Leng 29', '', '', 8, 1, 6, 22, 98),
+(268, '22-02-21- 6 Secundaria-1-1', '', 'sec95-8tai.mp4', '22-02-21- 6 Secundaria-1-1', '', '', 8, 1, 6, 22, 95),
+(269, '24-02-21- 6 Secundaria – Qmc-28', '', 'sec97-8qvy.mp4', '24-02-21- 6 Secundaria – Qmc-28', '', '', 8, 1, 6, 22, 97),
+(270, '0 2do Ciencia Tecnologia Produccion', '', 'sec213-zpx0.pdf', '0 2do Ciencia Tecnologia Produccion', '', '', 2, 1, 4, 10, 213),
+(271, '0 Segundo De Inicial Figuras Geométricas 11 De Febrero 1-104', '', 'sec213-zcif.mp4', '0 Segundo De Inicial Figuras Geométricas 11 De Febrero 1-104', '', '', 8, 1, 4, 10, 213),
+(272, '2. Inicial Segundo Tipos De Líneas 17 De Febrero-25', '', 'sec213-a2zq.mp4', '2. Inicial Segundo Tipos De Líneas 17 De Febrero-25', '', '', 8, 1, 4, 10, 213),
+(273, '2. Segundo De Inicial Colores Primarios 10 De Febrero-27', '', 'sec213-lfiy.mp4', '2. Segundo De Inicial Colores Primarios 10 De Febrero-27', '', '', 8, 1, 4, 10, 213),
+(274, '0 2do Cosmos y Pensamiento', '', 'sec212-uxss.pdf', '0 2do Cosmos y Pensamiento', '', '', 2, 1, 4, 10, 212),
+(275, '0 Ini 2do Prof Leonor Normas De Convivencia-21', '', 'sec212-amxm.mp4', '0 Ini 2do Prof Leonor Normas De Convivencia-21', '', '', 8, 1, 4, 10, 212),
+(276, '22-02-21- 2 Inicial', '', 'sec212-5tu7.mp4', '22-02-21- 2 Inicial', '', '', 8, 1, 4, 10, 212),
+(277, '0 2do comunidad y sociedad', '', 'sec210-boml.pdf', '0 2do comunidad y sociedad', '', '', 2, 1, 4, 10, 210),
+(278, '0 Inicial - 2Do Año - Leonor - Mis Emociones - Master - Miercoles 3 Feb-18', '', 'sec210-9lhz.mp4', '0 Inicial - 2Do Año - Leonor - Mis Emociones - Master - Miercoles 3 Feb-18', '', '', 8, 1, 4, 10, 210),
+(279, '0 Inicial 2 - Juntos Nos Cuidamos - Juev 18-3', '', 'sec210-8j5f.mp4', '0 Inicial 2 - Juntos Nos Cuidamos - Juev 18-3', '', '', 8, 1, 4, 10, 210),
+(280, '0 Segundo Inicial Aprendemos Rimas 8 De Febrero-105', '', 'sec210-zeu5.mp4', '0 Segundo Inicial Aprendemos Rimas 8 De Febrero-105', '', '', 8, 1, 4, 10, 210),
+(281, '19-02-21- 2 Inicial', '', 'sec210-rvny.mp4', '19-02-21- 2 Inicial', '', '', 8, 1, 4, 10, 210),
+(282, '2. Segundo Año De Inicial - Educación Física Equilibrio Y Coordinación Segundo-26', '', 'sec210-65js.mp4', '2. Segundo Año De Inicial - Educación Física Equilibrio Y Coordinación Segundo-26', '', '', 8, 1, 4, 10, 210),
+(283, '2. Segundo De Inicial Discriminación Visual 9 De Febrero -28', '', 'sec210-e2ta.mp4', '2. Segundo De Inicial Discriminación Visual 9 De Febrero -28', '', '', 8, 1, 4, 10, 210),
+(284, '23-02-21- 2 Inicial-5', '', 'sec210-ztai.mp4', '23-02-21- 2 Inicial-5', '', '', 8, 1, 4, 10, 210),
+(285, '2Do Inicial Psicomotricidad Gruesa-29', '', 'sec210-ltgf.mp4', '2Do Inicial Psicomotricidad Gruesa-29', '', '', 8, 1, 4, 10, 210),
+(286, '24-02-21- 2 Inicial-18', '', 'sec211-52lt.mp4', '24-02-21- 2 Inicial-18', '', '', 8, 1, 4, 10, 211),
+(287, '2do Vida Tierra Territorio', '', 'sec211-6bxw.pdf', '2do Vida Tierra Territorio', '', '', 2, 1, 4, 10, 211),
+(288, '1ro Ciencia tecnologia y  Produccion', '', 'sec209-3egt.pdf', '1ro Ciencia tecnologia y  Produccion', '', '', 2, 1, 4, 9, 209),
+(289, 'Inic 1 - Nociones Espaciales - Juev 18-2', '', 'sec209-4xip.mp4', 'Inic 1 - Nociones Espaciales - Juev 18-2', '', '', 8, 1, 4, 9, 209),
+(290, 'Primero Inicial Nociones Espaciales 11 De Febrero-100', '', 'sec209-punw.mp4', 'Primero Inicial Nociones Espaciales 11 De Febrero-100', '', '', 8, 1, 4, 9, 209),
+(291, '0 1ro Cosmos y Pensamiento', '', 'sec208-v898.pdf', '0 1ro Cosmos y Pensamiento', '', '', 2, 1, 4, 9, 208),
+(292, '0 Primero Inicial Practica De Normas De Convivencia 8 De Febrero-101', '', 'sec208-ix80.mp4', '0 Primero Inicial Practica De Normas De Convivencia 8 De Febrero-101', '', '', 8, 1, 4, 9, 208),
+(293, '1. Inicial Primero Mis Emociones 17 De Febrero-12', '', 'sec208-xzr6.mp4', '1. Inicial Primero Mis Emociones 17 De Febrero-12', '', '', 8, 1, 4, 9, 208),
+(294, '22-02-21- 1 Inicial', '', 'sec208-uunu.mp4', '22-02-21- 1 Inicial', '', '', 8, 1, 4, 9, 208),
+(295, '0 1ro Comunidad y sociedad', '', 'sec206-h4vi.pdf', '0 1ro Comunidad y sociedad', '', '', 2, 1, 4, 9, 206),
+(296, '0 Prof. Claudia Illatarco 1Er Año Nivel  Inicial Conocemos El Coronavirus-15', '', 'sec206-iets.mp4', '0 Prof. Claudia Illatarco 1Er Año Nivel  Inicial Conocemos El Coronavirus-15', '', '', 8, 1, 4, 9, 206),
+(297, '1. Primero De Inicial - Actividad Física-14', '', 'sec206-tkwz.mp4', '1. Primero De Inicial - Actividad Física-14', '', '', 8, 1, 4, 9, 206),
+(298, '1. Primero Inicial Gestión De Emociones 9 De Febrero-15', '', 'sec206-dcax.mp4', '1. Primero Inicial Gestión De Emociones 9 De Febrero-15', '', '', 8, 1, 4, 9, 206),
+(299, '19-02-21- 1 Inicial', '', 'sec206-oha1.mp4', '19-02-21- 1 Inicial', '', '', 8, 1, 4, 9, 206),
+(300, '1Ro Inicial Educación Fisica En Casa-17', '', 'sec206-rbqh.mp4', '1Ro Inicial Educación Fisica En Casa-17', '', '', 8, 1, 4, 9, 206),
+(301, '23-02-21- 1 Inicial-2', '', 'sec206-1p0d.mp4', '23-02-21- 1 Inicial-2', '', '', 8, 1, 4, 9, 206),
+(302, '0 1ro Vida Tierra Territorio', '', 'sec207-3h1b.pdf', '0 1ro Vida Tierra Territorio', '', '', 2, 1, 4, 9, 207),
+(303, '0 Prof. Claudia Illatarco 1Er Año Nivel  Inicial Cuidemos Nuestra Salud - Martes 2 Feb-12', '', 'sec207-ava4.mp4', '0 Prof. Claudia Illatarco 1Er Año Nivel  Inicial Cuidemos Nuestra Salud - Martes 2 Feb-12', '', '', 8, 1, 4, 9, 207),
+(304, '1. Primero Inicial Importancia De Tomar Agua 10 De Febrero-16', '', 'sec207-haq9.mp4', '1. Primero Inicial Importancia De Tomar Agua 10 De Febrero-16', '', '', 8, 1, 4, 9, 207),
+(305, '24-02-21- 1 Inicial-16', '', 'sec207-6ek3.mp4', '24-02-21- 1 Inicial-16', '', '', 8, 1, 4, 9, 207);
 
 --
 -- Índices para tablas volcadas
@@ -247,7 +307,7 @@ ALTER TABLE `material_area`
 -- AUTO_INCREMENT de la tabla `material_area`
 --
 ALTER TABLE `material_area`
-  MODIFY `cod_mat` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=246;
+  MODIFY `cod_mat` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=306;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

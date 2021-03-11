@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<title>educa.minedu.gob.bo - Ministerio de Educación</title>
 	<meta charset="utf-8">

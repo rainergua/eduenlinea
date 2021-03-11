@@ -49,10 +49,10 @@
     </div>
 
 
-    <div class="row mt-2 pt-2"> 
+    <!--div class="row mt-2 pt-2"> 
         <div class="col-sm-12 col-md-3 col-ld-3 text-center">
-            <a href="<?php echo base_url().'assets/img/recursos/progsec.pdf';?>" target="_blank">
-            <img src="<?php echo base_url().'/assets/img/recursos/plansec.png';?>" class="img-fluid boton-sec mt-1 pt-1">
+            <a href="<php echo base_url().'assets/img/recursos/progsec.pdf';?>" target="_blank">
+            <img src="<php echo base_url().'/assets/img/recursos/plansec.png';?>" class="img-fluid boton-sec mt-1 pt-1">
             </a>
         </div>
         <div class="col-sm-12 col-md-9 col-ld-9 text-center">
@@ -64,7 +64,7 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div-->
 
 
     <div class="row mt-2 pt-2"> 

@@ -12,7 +12,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
             <a href="http://olimpiada.minedu.gob.bo/" target="_blank">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/0.png';?>" alt="Pimer slide">
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/0.png';?>" alt="Primer slide">
             </a>
             </div>
             <div class="carousel-item">
@@ -64,7 +64,7 @@
 
                 <div class="card">
                     <!--a href="<php echo base_url().'eduvit/regular';?>"></a-->
-                    <img src="<?php echo base_url().'/assets/img/btnreg.png';?>" class="card-img-top boton-sec" alt="Primaria">
+                    <img src="<?php echo base_url().'/assets/img/btnreg.png';?>" class="card-img-top boton-sec" alt="Subsistema de Educación Regular">
                     <div class="card-body">
                         <h5 class="card-title">Regular</h5>
                         <p class="card-text">Educación Inicial en Familia Comunitaria, Educación Primaria Comunitaria Vocacional y Educación Secundaria Comunitaria Productiva. 
@@ -81,7 +81,7 @@
                 
                 <div class="card">
                     <!--a href="<php echo base_url().'eduvit/alternativa';?>"></a-->
-                    <img src="<?php echo base_url().'/assets/img/btnalt.png';?>" class="card-img-top boton-sec" alt="Primaria">
+                    <img src="<?php echo base_url().'/assets/img/btnalt.png';?>" class="card-img-top boton-sec" alt="Subsistema de Educación Alternativa y Especial">
                     
                     <div class="card-body">
                         <h5 class="card-title">Alternativa y Especial</h5>
@@ -104,7 +104,7 @@
                 
                 <div class="card">
                     <!--a href="<php echo base_url().'eduvit/superior';?>"></a-->
-                    <img src="<?php echo base_url().'/assets/img/btnsup.png';?>" class="card-img-top boton-sec" alt="Primaria">
+                    <img src="<?php echo base_url().'/assets/img/btnsup.png';?>" class="card-img-top boton-sec" alt="Subsistema de Educación Superior y Formación Profesional">
                     
                     <div class="card-body">
                         <h5 class="card-title">Superior</h5>
@@ -124,7 +124,7 @@
             <div class="col-sm-12 col-md-3 col-ld-3 text-center">
                 <div class="row my-1 py-1">
                     <div class="col-sm-12 col-md-4 col-ld-4 text-center">
-                        <img src="<?php echo base_url().'/assets/img/recursos/video.png';?>" class="img-fluid">
+                        <img src="<?php echo base_url().'/assets/img/recursos/video.png';?>" class="img-fluid" alt="Tutoriales para maestros y estudiantes">
                     </div>
                     <div class="col-sm-12 col-md-8 col-ld-8 text-center">
                         <div class="card-block">

@@ -41,7 +41,7 @@
             </div>
         </div>
         <?php
-        if($nivel->cod_niv==4 || $nivel->cod_niv==5){
+        if($nivel->cod_niv==4){
         ?>
         <div class="col-sm-6 col-md-3 col-ld-3 text-center">
             <a href="<?php echo base_url().'assets/img/'.$niv.'/cont/'.$nivel->cod_niv.$nivel->cod_gra.'e.pdf';?>" target="_blank">

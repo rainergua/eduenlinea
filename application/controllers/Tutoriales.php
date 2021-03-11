@@ -5,6 +5,7 @@ class Tutoriales extends CI_Controller{
     public function __construct(){
         parent::__construct();
 		$this->load->library('form_validation');
+        $this->load->model('video_model');
 		$this->load->database('default');
     }
     public function valido(){
@@ -16,8 +17,21 @@ class Tutoriales extends CI_Controller{
 
     public function index(){
         $this->load->view('template/header');
-        $this->load->view('vistas/videos');
+        $data['videos']=$this->video_model->sacatutos();
+        $this->load->view('vistas/videos', $data);
         $this->load->view('template/footer');
     }
+
+    public function obtvideo(){
+        $cod_vid = $this->input->post('cod_vid');
+        $setvideo = $this->video_model->getVideo($cod_vid);
+        if($setvideo){
+            echo json_encode($setvideo);
+        }else{
+            echo json_encode('error');
+        }
+        //echo json_encode($cod_vid);
+    }
+
 }
 ?>

@@ -2,8 +2,8 @@
     $texto = "Este material tiene la finalidad de fortalecer capacidades, potencialidades y cualidades a partir de contenidos dosificados planteados en el currículo. Asimismo, permitirá coadyuvar la nivelación de aprendizajes para encarar esta gestión escolar.";
     if($nivel->cod_niv==4){
         $cla = "contini";
-        $fad = "img-fluid boton-sec";
-        $niv = "prim";
+        $fad = "img-fluid boton-sec px-4 py-4";
+        $niv = "ini";
         $bread = 'Inicial';
     }elseif($nivel->cod_niv==5){
         $cla = "contpri";
@@ -64,11 +64,11 @@
         ?>
     </div>
     <h5 class="card-header text-center">
-                        Año de escolaridad: <?=$nivel->des_gra?> | <?=$nivel->des_niv?><br />
-                    </h5>
-    <div class="row align-items-center pt-2 mt-2">
+        Año de escolaridad: <?=$nivel->des_gra?> | <?=$nivel->des_niv?><br />
+    </h5>
+    <div class="row align-items-center py-2 my-2">
         <?php 
-        if($nivel->cod_niv==4){
+        /*if($nivel->cod_niv==4){
             if($nivel->cod_gra == 9){
                 $arch = "1er";
             }else{
@@ -81,8 +81,8 @@
             </a>
         </div>
         <?php
-        }}
-        elseif($nivel->cod_niv==5 || $nivel->cod_niv==6){
+        }}*/
+        if($nivel->cod_niv==4 || $nivel->cod_niv==6){
         foreach ($areas as $area) {?>
         <div class="col-12 col-sm-12 col-md-3 col-ld-3 text-center">
             <a href="<?php echo base_url().'contenido/contenidoarea/'.$area->cod_gra.'/'.$area->cod_area?>">

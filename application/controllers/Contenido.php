@@ -25,6 +25,8 @@ class Contenido extends CI_Controller{
         $data['nivel'] = $this->contenido_model->getsisniv($nivel);
         $data['grados'] = $this->contenido_model->getgrado($nivel);
         if($nivel==4){
+            $this->load->model('video_model');
+            $data['videos']=$this->video_model->sacavidini();
             $this->load->view('vistas/inicial', $data);
         }elseif ($nivel==5) {
             $this->load->view('vistas/primaria', $data);
