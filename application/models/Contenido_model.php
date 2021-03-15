@@ -86,6 +86,7 @@ class Contenido_Model extends CI_Model {
         $this->db->where('m.cod_gra', $grado);
         //$this->db->where('cod_tipo', 2);
         $this->db->order_by('cod_tipo');
+        $this->db->order_by('m.cod_mat');
         return $this->db->get('material_area')->result();
     }
     public function gettipocont($grado, $area){

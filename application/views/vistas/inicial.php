@@ -22,7 +22,7 @@
         <div class="col-sm-12 col-md-2 col-ld-2 mt-4 pt-4 text-center">
         </div>
         <div class="col-sm-12 col-md-4 col-ld-3 mt-4 pt-3 text-center">
-            <a href="<?php echo base_url().'contenido/campos/10';?>">
+            <a href="<?php echo base_url().'contenido/areas/10';?>">
             <div class="mimg"> <img src="<?php echo base_url().'/assets/img/ini/seg.png';?>" class="fader"></div>
             </a>
         </div>
