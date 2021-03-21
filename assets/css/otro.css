@@ -1,0 +1,8 @@
+.error {
+    color: #ff0000;
+    font-weight: bold;
+    padding:1px 20px 1px 5px;
+}
+.custom-file-input ~ .custom-file-label::after {
+    content: "Elegir video";
+}

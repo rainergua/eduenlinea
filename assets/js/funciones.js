@@ -3,8 +3,9 @@ $(document).ready(inicio);
 function inicio(){
 	$("img").fadeIn("5000");
     $('#btnlogin').click(respLogin);
+    $('#confVideo').click(envVideo);
     $('[data-toggle="tooltip"]').tooltip();
-    $('#mymodal').modal('toggle');
+    //$('#mymodal').modal('toggle');
     $('#exampleModalCenterTitle').modal('toggle');
     $("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
         $(e.target)
@@ -14,7 +15,51 @@ function inicio(){
       });
     /***********
      * ********** */
-    
+     $.validator.addMethod('filesize', function (value, element, param) {
+        return this.optional(element) || (element.files[0].size <= param)
+    }, 'El archivo es demasiado grande, el tamaño no debe superar los 40 MB');
+
+     $("#video").validate({
+        ignore: false,
+        debug: true,
+        rules: {
+            'rude': {required: true, minlength: 12},
+            'nombre': {required: true},
+            'apellido': {required: true},
+            'fono': {required: true, min:60000000, max: 79999999},
+            'departamento': {required: true},
+            'municipio': {required: true},
+            'ue': {required: true},
+            'titulo': {required: true},
+            'userfile': {
+                required: true,
+                /*extension: "mp4,m4v",*/
+                filesize: 40000000
+            }
+        },
+        messages: {
+            'rude': {required: "Ingresar codigo RUDE", minlength: "Debes ingresar un RUDE válido"},
+            'nombre': {required: "Ingresar Nombres"},
+            'apellido': {required: "Ingresar Apellidos"},
+            'fono': {required: "El Teléfono es  obligatorio", min: "Teléfono Celular Inválido", max: "Teléfono Celular Inválido"},
+            'departamento': {required: "Ingresar Departamentos"},
+            'municipio': {required: "Ingresar Municipio"},
+            'ue': {required: "Ingresar Unidad Educativa"},
+            'titulo': {required: "Debes ingresar un título de tu video"},
+            'userfile': {required: "Debes elegir un video"}
+            
+        },
+        submitHandler: function(form){
+            //alert("Sus estan siendo enviados");
+            /*url = base_url()+"cuestionario/guardar";
+            $(location).attr("href", url);
+            form.submit();
+            return false;*/
+            $('#mymodal').modal('toggle');
+            return false;
+        }
+    });
+
     /***************
      ************ */
     $("#accordion").on("click",".nano",function(e){
@@ -59,7 +104,11 @@ function inicio(){
     /*************/ 
 
 }
-
+function envVideo(){
+    //console.log($('form')[0]);
+    $('form')[0].submit();
+    return false;
+}
 function respLogin(){
     var url = base_url() + "login/ingresar";
     $('.load').html('<img src="'+ base_url() + 'assets/img/load.gif">');
