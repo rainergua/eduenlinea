@@ -1,6 +1,6 @@
 <div class="container-fluid trans contenido">
 <div class="container  mt-4 pt-4">
-    <div class="row text-center pad-top">
+    <div class="row text-center pad-top pt-4 mt-4">
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
             <div class="div-square">
                 <a href="<?php echo base_url();?>administrar/subsistema" class="subtitulo">
@@ -89,7 +89,7 @@
             <div class="div-square">
                 <a href="<?php echo base_url();?>administrar/matcampo" class="subtitulo">
                 <i class="fas fa-book-open fa-3x"></i>
-                <p>Material de área (Primaria)</p>
+                <p>Material de Campo (Primaria)</p>
                 </a>
             </div>
         </div>
@@ -97,7 +97,7 @@
             <div class="div-square">
                 <a href="<?php echo base_url();?>administrar/material" class="subtitulo">
                 <i class="fas fa-book-open fa-3x"></i>
-                <p>Material de Campo (Secundaria)</p>
+                <p>Material de Área (Secundaria)</p>
                 </a>
             </div>
         </div>
