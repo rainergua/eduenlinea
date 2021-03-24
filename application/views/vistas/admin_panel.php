@@ -79,33 +79,33 @@
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
             <div class="div-square">
+                <a href="<?php echo base_url();?>administrar/inicial" class="subtitulo">
+                <i class="fas fa-book-reader fa-3x"></i>
+                <p>Material de área (Inicial)</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <div class="div-square">
+                <a href="<?php echo base_url();?>administrar/matcampo" class="subtitulo">
+                <i class="fas fa-book-open fa-3x"></i>
+                <p>Material de área (Primaria)</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <div class="div-square">
                 <a href="<?php echo base_url();?>administrar/material" class="subtitulo">
                 <i class="fas fa-book-open fa-3x"></i>
-                <p>Material de área</p>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-            <div class="div-square">
-                <a href="<?php echo base_url();?>adminuni/departamento" class="subtitulo">
-                <i class="fas fa-book-reader fa-3x"></i>
-                <p>U-Departamentos</p>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-            <div class="div-square">
-                <a href="<?php echo base_url();?>adminuni/universidad" class="subtitulo">
-                <i class="fas fa-book-open fa-3x"></i>
-                <p>U-Universidades</p>
+                <p>Material de Campo (Secundaria)</p>
                 </a>
             </div>
         </div>
     </div>
-    <div class="row text-center pad-top">
+    <!--div class="row text-center pad-top">
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
             <div class="div-square">
-                <a href="<?php echo base_url();?>adminuni/tipouni" class="subtitulo">
+                <a href="<php echo base_url();?>adminuni/tipouni" class="subtitulo">
                 <i class="fas fa-book fa-3x"></i>
                 <p>Tipo de Universidad</p>
                 </a>
@@ -113,7 +113,7 @@
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
             <div class="div-square">
-                <a href="<?php echo base_url();?>adminuni/carrera" class="subtitulo">
+                <a href="<php echo base_url();?>adminuni/carrera" class="subtitulo">
                 <i class="fas fa-book-open fa-3x"></i>
                 <p>U-Carrera</p>
                 </a>
@@ -121,7 +121,7 @@
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
             <div class="div-square">
-                <a href="<?php echo base_url();?>adminuni/materia" class="subtitulo">
+                <a href="<php echo base_url();?>adminuni/materia" class="subtitulo">
                 <i class="fas fa-book-reader fa-3x"></i>
                 <p>U-Materia</p>
                 </a>
@@ -129,13 +129,13 @@
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
             <div class="div-square">
-                <a href="<?php echo base_url();?>adminuni/contenido" class="subtitulo">
+                <a href="<php echo base_url();?>adminuni/contenido" class="subtitulo">
                 <i class="fas fa-book-open fa-3x"></i>
                 <p>U-Contenido</p>
                 </a>
             </div>
         </div>
-    </div>
+    </div-->
 
 </div>
 </div>

@@ -9,7 +9,9 @@
         </div>
         <div class="row py-2 my-2">
             <div class="col-sm-12 col-md-7 col-ld-7 py-2 my-2">
-                <img src="<?php echo base_url().'assets/img/otro/diamar.jpg';?>" class="img-fluid" alt="Concurso de conmemoración al día del mar">
+                <a href="<?php echo base_url().'assets/img/otro/convoca.pdf';?>" target="_blank"> 
+                <img src="<?php echo base_url().'assets/img/otro/diamar.png';?>" class="img-fluid" alt="Concurso de conmemoración al día del mar">
+                </a>
             </div>
             
             <div class="col-sm-12 col-md-5 col-ld-5 form-group">
@@ -22,8 +24,8 @@
                     <label for="error" class="error"><?=$error?></label>
                 </div>
                 <div class="form-group row">
-                    <label for="rude" class="col-4 col-form-label">Codigo RUDE:</label>
-                    <input type="text" class="form-control col-8" id="rude" name="rude" aria-describedby="rude" placeholder="Ingresa RUDE">
+                    <label for="rude" class="col-4 col-form-label">Código RUDE - Carnet:</label>
+                    <input type="text" class="form-control col-8" id="rude" name="rude" aria-describedby="rude" placeholder="Ingresa RUDE o Carnet">
                 </div>
                 <div class="form-group row">
                     <label for="nombre" class="col-4 col-form-label">Nombres:</label>
@@ -50,7 +52,7 @@
                     <input type="text" class="form-control col-8" id="municipio" name="municipio" aria-describedby="municipio" placeholder="Ingresa Municipio">
                 </div>
                 <div class="form-group row" class="col-4 col-form-label">
-                    <label for="ue" class="col-4 col-form-label">Unidad Educativa:</label>
+                    <label for="ue" class="col-4 col-form-label">Unidad Educativa - ESFM:</label>
                     <input type="text" class="form-control col-8" id="ue" name="ue" aria-describedby="unidad educativa" placeholder="Ingresa Unidad Educativa">
                 </div>
                 <div class="custom-file">

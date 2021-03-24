@@ -17,13 +17,13 @@ function inicio(){
      * ********** */
      $.validator.addMethod('filesize', function (value, element, param) {
         return this.optional(element) || (element.files[0].size <= param)
-    }, 'El archivo es demasiado grande, el tamaño no debe superar los 100 MB');
+    }, 'El archivo es demasiado grande, el tamaño no debe superar los 40 MB');
 
      $("#video").validate({
         ignore: false,
         debug: true,
         rules: {
-            'rude': {required: true, minlength: 5},
+            'rude': {required: true, minlength: 12},
             'nombre': {required: true},
             'apellido': {required: true},
             'fono': {required: true, min:60000000, max: 79999999},
@@ -34,12 +34,11 @@ function inicio(){
             'userfile': {
                 required: true,
                 /*extension: "mp4,m4v",*/
-                /*filesize: 40000000*/
-                filesize: 104857600
+                filesize: 40000000
             }
         },
         messages: {
-            'rude': {required: "Ingresar codigo RUDE", minlength: "Debes ingresar un RUDE o Carnet válido."},
+            'rude': {required: "Ingresar codigo RUDE", minlength: "Debes ingresar un RUDE válido"},
             'nombre': {required: "Ingresar Nombres"},
             'apellido': {required: "Ingresar Apellidos"},
             'fono': {required: "El Teléfono es  obligatorio", min: "Teléfono Celular Inválido", max: "Teléfono Celular Inválido"},

@@ -21,10 +21,10 @@ class Diadelmar extends CI_Controller{
     }
 
     //////////////************************* */
-   public function index(){
+   /*public function index(){
         redirect(base_url());
-   }
-   public function formulario(){
+   }*/
+   public function index(){
         $data['error'] = "";
         //$data['info'] = "";
         $this->load->view('template/header');

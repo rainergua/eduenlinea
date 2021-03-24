@@ -345,7 +345,7 @@ class Administrar extends CI_Controller {
         $crud->display_as('img_mat','Imagen del material');
         $crud->set_field_upload('img_mat', 'assets/uploads/files/img');
         $crud->display_as('arch_mat','Archivo de material');
-        $crud->set_field_upload('arch_mat', 'assets/uploads/files/cont');
+        $crud->set_field_upload('arch_mat', 'assets/uploads/files/cont/secar');
         $crud->display_as('txt_mat','Resumen');
         $crud->display_as('cod_tipo','Tipo contenido');
         $crud->set_relation('cod_tipo','tipo_contenido','{tipo_cont} - {tipo_arch}');
@@ -423,6 +423,182 @@ class Administrar extends CI_Controller {
         $this->_example_output($output);
     }
 
+    public function inicial()
+    {
+        $crud = new grocery_CRUD();
+        $crud->set_table('material_area');
+        $crud->set_subject('Material de área');
+        $crud->display_as('des_mat','Descripción o título');
+        $crud->display_as('img_mat','Imagen del material');
+        $crud->set_field_upload('img_mat', 'assets/uploads/files/img');
+        $crud->display_as('arch_mat','Archivo de material');
+        $crud->set_field_upload('arch_mat', 'assets/uploads/files/cont/ini');
+        $crud->display_as('txt_mat','Resumen');
+        $crud->display_as('cod_tipo','Tipo contenido');
+        $crud->set_relation('cod_tipo','tipo_contenido','{tipo_cont} - {tipo_arch}');
+        
+        $crud->display_as('cod_area','Área de conocimiento');
+        $crud->set_relation('cod_area','area','des_area');
+        $crud->display_as('cod_gra','Grado');
+        $crud->set_relation('cod_gra','grado','des_gra');
+        $crud->display_as('cod_niv','Nivel');
+        $crud->set_relation('cod_niv','nivel','des_niv');
+        
+        $crud->display_as('cod_sis','Subsistema');
+        $crud->set_relation('cod_sis','subsistema','desc_sis');
+
+
+        $this->load->library('gc_dependent_select');
+        // settings
+
+        $fields = array(
+
+        // first field:
+        'cod_sis' => array( // first dropdown name
+        'table_name' => 'subsistema', // table of country
+        'title' => 'desc_sis', // country title
+        'relate' => null, // the first dropdown hasn't a relation
+        'data-placeholder' => 'Selecione subsistema'
+        ),
+        // second field
+        'cod_niv' => array( // second dropdown name
+        'table_name' => 'nivel', // table of state
+        'title' => 'des_niv', // state title
+        'id_field' => 'cod_niv', // table of state: primary key
+        'relate' => 'cod_sis', // table of state:
+        'data-placeholder' => 'Selecione nivel' //dropdown's data-placeholder:
+
+        ),
+        // third field. same settings
+        'cod_gra' => array(
+        'table_name' => 'grado',
+        /*'where' =>"",  // string. It's an optional parameter.*/
+        'order_by'=>"cod_gra",  // string. It's an optional parameter.
+        'title' => '{des_gra}',  // now you can use this format )))
+        'id_field' => 'cod_gra',
+        'relate' => 'cod_niv',
+        'data-placeholder' => 'Seleccione grado'
+        ),
+        // third field. same settings
+        'cod_area' => array(
+            'table_name' => 'area',
+            /*'where' =>"",  // string. It's an optional parameter.*/
+            'order_by'=>"cod_area",  // string. It's an optional parameter.
+            'title' => '{des_area}',  // now you can use this format )))
+            'id_field' => 'cod_area',
+            'relate' => 'cod_gra',
+            'data-placeholder' => 'Seleccione Area'
+            ), 
+        );
+
+        $config = array(
+        'main_table' => 'material_area',
+        'main_table_primary' => 'cod_mat',
+        "url" => base_url() . __CLASS__ . '/' . __FUNCTION__ . '/', //path to method
+        'ajax_loader' => base_url() . 'assets/img/ajax-loader.gif', // path to ajax-loader image. It's an optional parameter
+        'segment_name' =>'Your_segment_name' // It's an optional parameter. by default "get_items"
+        );
+
+        $categories = new gc_dependent_select($crud, $fields, $config);
+
+        $js = $categories->get_js();
+
+        $crud->required_fields('des_mat', 'arch_mat', 'cod_tipo','txt_mat','cod_area','cod_gra','cod_niv','cod_sis');
+        $output = $crud->render();
+        $output->output.= $js;
+
+        $this->_example_output($output);
+    }
+
+    public function matcampo()
+    {
+        $crud = new grocery_CRUD();
+        $crud->set_table('mat_campo');
+        $crud->set_subject('Material de Campo');
+        $crud->display_as('des_concam','Descripción o título');
+        $crud->display_as('img_concam','Imagen del material');
+        $crud->set_field_upload('img_concam', 'assets/uploads/files/img');
+        $crud->display_as('arch_concam','Archivo de material');
+        $crud->set_field_upload('arch_concam', 'assets/uploads/files/cont/pri2');
+        $crud->display_as('txt_concam','Resumen');
+        //RELACIONES
+        $crud->display_as('cod_tipo','Tipo contenido');
+        $crud->set_relation('cod_tipo','tipo_contenido','{tipo_cont} - {tipo_arch}');
+        
+        $crud->display_as('cod_cam','Campo de conocimiento');
+        $crud->set_relation('cod_cam','campo','desc_cam');
+        
+        $crud->display_as('cod_gra','Grado');
+        $crud->set_relation('cod_gra','grado','des_gra');
+        
+        $crud->display_as('cod_niv','Nivel');
+        $crud->set_relation('cod_niv','nivel','des_niv');
+        
+        $crud->display_as('cod_sis','Subsistema');
+        $crud->set_relation('cod_sis','subsistema','desc_sis');
+
+
+        $this->load->library('gc_dependent_select');
+        // settings
+
+        $fields = array(
+
+        // first field:
+        'cod_sis' => array( // first dropdown name
+        'table_name' => 'subsistema', // table of country
+        'title' => 'desc_sis', // country title
+        'relate' => null, // the first dropdown hasn't a relation
+        'data-placeholder' => 'Selecione subsistema'
+        ),
+        // second field
+        'cod_niv' => array( // second dropdown name
+        'table_name' => 'nivel', // table of state
+        'title' => 'des_niv', // state title
+        'id_field' => 'cod_niv', // table of state: primary key
+        'relate' => 'cod_sis', // table of state:
+        'data-placeholder' => 'Selecione nivel' //dropdown's data-placeholder:
+
+        ),
+        // third field. same settings
+        'cod_gra' => array(
+        'table_name' => 'grado',
+        /*'where' =>"",  // string. It's an optional parameter.*/
+        'order_by'=>"cod_gra",  // string. It's an optional parameter.
+        'title' => '{des_gra}',  // now you can use this format )))
+        'id_field' => 'cod_gra',
+        'relate' => 'cod_niv',
+        'data-placeholder' => 'Seleccione grado'
+        ),
+        // third field. same settings
+        /*'cod_cam' => array(
+            'table_name' => 'campo',
+            /*'where' =>"",  // string. It's an optional parameter./
+            'order_by'=>"cod_cam",  // string. It's an optional parameter.
+            'title' => '{desc_cam}',  // now you can use this format )))
+            'id_field' => 'cod_cam',
+            'relate' => 'cod_gra',
+            'data-placeholder' => 'Seleccione Campo'
+            ), */
+        );
+
+        $config = array(
+        'main_table' => 'material_area',
+        'main_table_primary' => 'cod_mat',
+        "url" => base_url() . __CLASS__ . '/' . __FUNCTION__ . '/', //path to method
+        'ajax_loader' => base_url() . 'assets/img/ajax-loader.gif', // path to ajax-loader image. It's an optional parameter
+        'segment_name' =>'Your_segment_name' // It's an optional parameter. by default "get_items"
+        );
+
+        $categories = new gc_dependent_select($crud, $fields, $config);
+
+        $js = $categories->get_js();
+
+        $crud->required_fields('des_concam', 'arch_concam', 'cod_tipo','cod_cam','cod_gra','cod_niv','cod_sis');
+        $output = $crud->render();
+        $output->output.= $js;
+
+        $this->_example_output($output);
+    }
 }
 
 /* End of file Administrar.php */
