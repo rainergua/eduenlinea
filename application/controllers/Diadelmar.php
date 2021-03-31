@@ -20,18 +20,14 @@ class Diadelmar extends CI_Controller{
         }
     }
 
-    //////////////************************* */
-   /*public function index(){
-        redirect(base_url());
-   }*/
-   public function index(){
+    public function index(){
         $data['error'] = "";
         //$data['info'] = "";
         $this->load->view('template/header');
         $this->load->view('vistas/ovis/diadelmar', $data);
         $this->load->view('template/footer');
-   }
-   public function guardar(){
+    }
+    public function guardar(){
         $this->load->view('template/header');
         //$data['info'] = "";
         $config['upload_path'] = './assets/uploads/files/video/';
@@ -79,7 +75,25 @@ class Diadelmar extends CI_Controller{
             }
         }
         $this->load->view('template/footer');
-   }
+    }
+
+    public function vervideos(){
+        $data['res'] = $this->otros_model->sacavideo();
+        $this->load->view('template/header');
+        $this->load->view('vistas/ovis/vervideo', $data);
+        $this->load->view('template/footer');
+    }
+
+    public function obtvideo(){
+        $cod_vid = $this->input->post('cod_vid');
+        $setvideo = $this->otros_model->getVideo($cod_vid);
+        if($setvideo){
+            echo json_encode($setvideo);
+        }else{
+            echo json_encode('error');
+        }
+        //echo json_encode($cod_vid);
+    }
 
 }
 ?>

@@ -17,6 +17,14 @@ class Otros_Model extends CI_Model {
 			return FALSE;
 		}
     }
+    public function sacavideo(){
+        return $this->db->get('diadelmar')->result();
+    }
+
+    public function getVideo($cod_vid){
+        $this->db->where('cod_diamar', $cod_vid);
+        return $this->db->get('diadelmar')->row();
+    }
 
 }
 
