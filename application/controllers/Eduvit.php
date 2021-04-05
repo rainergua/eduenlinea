@@ -17,6 +17,22 @@ class Eduvit extends CI_Controller{
 
     public function index(){
         $data['sis'] = $this->eduvit_model->retsis();
+        if (getenv('HTTP_CLIENT_IP')) {
+            $ip = getenv('HTTP_CLIENT_IP');
+        } elseif (getenv('HTTP_X_FORWARDED_FOR')) {
+            $ip = getenv('HTTP_X_FORWARDED_FOR');
+        } elseif (getenv('HTTP_X_FORWARDED')) {
+            $ip = getenv('HTTP_X_FORWARDED');
+        } elseif (getenv('HTTP_FORWARDED_FOR')) {
+            $ip = getenv('HTTP_FORWARDED_FOR');
+        } elseif (getenv('HTTP_FORWARDED')) {
+            $ip = getenv('HTTP_FORWARDED');
+        } else {
+            // Método por defecto de obtener la IP del usuario
+            // Si se utiliza un proxy, esto nos daría la IP del proxy
+            // y no la IP real del usuario.
+            $ip = $_SERVER['REMOTE_ADDR'];
+        }
         //print_r($this->input->server(array('SERVER_PROTOCOL', 'REQUEST_URI', 'SERVER_NAME', 'PHP_SELF', 'HTTP_USER_AGENT', 'REMOTE_ADDR')));
         $data2 = array(
             'sprot'  	    => 		$this->input->server('SERVER_PROTOCOL'),
@@ -24,7 +40,8 @@ class Eduvit extends CI_Controller{
             'sname'		    => 		$this->input->server('SERVER_NAME'),//,$check_user->carnet,
             'phpself' 	    => 		$this->input->server('PHP_SELF'),
             'useragent'		=>		$this->input->server('HTTP_USER_AGENT'),
-            'remoteadd'	    => 		$this->input->server( 'REMOTE_ADDR'),//,$check_user->carnet,
+            'remoteadd'	    => 		$ip,//$this->input->server( 'REMOTE_ADDR'),//,$check_user->carnet,
+            //'ip_client'	    => 		$this->input->server( 'IP_CLIENT'),//,$check_user->carnet,
             'fecha'         =>      date("Y-m-d H:i:s")
             );
         $this->eduvit_model->savevis($data2);
@@ -59,6 +76,28 @@ class Eduvit extends CI_Controller{
         $this->load->view('template/header');
         $this->load->view('vistas/videos');
         $this->load->view('template/footer');
+    }
+
+    private function saber_ip(){
+        // Intentamos primero saber si se ha utilizado un proxy para acceder a la página,
+        // y si éste ha indicado en alguna cabecera la IP real del usuario.
+        if (getenv('HTTP_CLIENT_IP')) {
+            $ip = getenv('HTTP_CLIENT_IP');
+        } elseif (getenv('HTTP_X_FORWARDED_FOR')) {
+            $ip = getenv('HTTP_X_FORWARDED_FOR');
+        } elseif (getenv('HTTP_X_FORWARDED')) {
+            $ip = getenv('HTTP_X_FORWARDED');
+        } elseif (getenv('HTTP_FORWARDED_FOR')) {
+            $ip = getenv('HTTP_FORWARDED_FOR');
+        } elseif (getenv('HTTP_FORWARDED')) {
+            $ip = getenv('HTTP_FORWARDED');
+        } else {
+            // Método por defecto de obtener la IP del usuario
+            // Si se utiliza un proxy, esto nos daría la IP del proxy
+            // y no la IP real del usuario.
+            $ip = $_SERVER['REMOTE_ADDR'];
+        }
+        return $ip;
     }
 }
 ?>
