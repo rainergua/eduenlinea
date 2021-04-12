@@ -17,7 +17,7 @@ class Conales_Model extends CI_Model {
         $this->db->join('tipo_contenido t', 'm.tipo_cont=t.cod_tipo', 'inner');
         $this->db->where('m.cod_dis', $cod_disc);
         $this->db->where('m.vis_matanio', 1);
-        $this->db->order_by('genes, t.cod_tipo, des_matanio');
+        $this->db->order_by('genes, t.cod_tipo, cod_matanio, des_matanio');
         return $this->db->get()->result(); 
     }
     public function gettipocont($cod_disc){
