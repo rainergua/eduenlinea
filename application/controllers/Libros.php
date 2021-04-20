@@ -14,6 +14,12 @@ class Libros extends CI_Controller{
         $this->load->view('vistas/libros/libros');
         $this->load->view('template/footer');
     }
+
+    public function verlibro(){
+        $this->load->view('template/header');
+        $this->load->view('vistas/libros/verlibroult');
+        $this->load->view('template/footer');
+    }
     
 
 }
