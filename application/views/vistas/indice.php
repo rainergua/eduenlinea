@@ -44,15 +44,43 @@
             <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/6.jpg';?>" alt="2021 Año por la recuparación del derecho a la educación">
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <!--a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-        </a>
+        </a-->
     </div>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Educa Bolivia</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="<?php echo base_url().'libros';?>">Memoria del Mundo Bolivia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url().'educainnova';?>">Educa Innova</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://olimpiada.minedu.gob.bo/">10ma OCEPB</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url().'tutoriales';?>">Tutoriales para Maestros</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+
+
+
 
     <div class="container-fluid  mt-4 pt-4">
         <div class="row">
