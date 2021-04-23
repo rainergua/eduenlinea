@@ -3,7 +3,7 @@
 <head>
 	<title>educa.minedu.gob.bo - Ministerio de Educación</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<script src="<?php echo base_url().'assets/js/jquery-3.4.1.min.js'; ?>"></script>
 	<script src="<?php echo base_url().'assets/js/popper.min.js'; ?>"  crossorigin="anonymous"></script>
 	<script src="<?php echo base_url().'assets/js/bootstrap.min.js'; ?>"></script>

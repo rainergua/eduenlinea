@@ -16,9 +16,17 @@ class Libros extends CI_Controller{
     }
 
     public function verlibro(){
-        $this->load->view('template/header');
-        $this->load->view('vistas/libros/verlibroult');
-        $this->load->view('template/footer');
+        $this->load->library('user_agent');
+        if($this->agent->is_mobile()){
+            $data['link'] = base_url().'assets/files/actaInde.pdf';
+            $this->load->view('vistas/libros/verlibropdf', $data);
+            //redirect($data['link']);
+        }
+        else{
+            $this->load->view('template/header'); 
+            $this->load->view('vistas/libros/verlibro');
+            $this->load->view('template/footer');
+        }
     }
     
 

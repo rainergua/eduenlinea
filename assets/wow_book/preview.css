@@ -225,7 +225,7 @@ nav a {
   list-style: none;
 }
 #cover {
-  background: #ffffff url("../images/cover.jpg") no-repeat;
+  background: #ffffff url("../wow_book/images/cover.jpg") no-repeat;
   background-size: 100% 100%;
 }
 .feature {

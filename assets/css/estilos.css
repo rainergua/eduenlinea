@@ -1,3 +1,25 @@
+.port-lib{
+  position: relative;
+  margin-left: 5em;
+}
+.libro{
+  margin:10px auto;
+  border-radius:5px;
+  padding:13px;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  background:url("../img/libros/fondo.png");
+  background-size: cover;
+}
+.biblio{
+  margin:10px auto;
+  border-radius:5px;
+  padding:13px;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  background:url("../img/libros/estante.png");
+  background-size: cover;
+}
 .lividini {
   height: 47vh;
   overflow: scroll;
