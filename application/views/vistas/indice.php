@@ -1,7 +1,7 @@
 <div class="container-fluid contenido">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <!--li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li-->
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
@@ -10,14 +10,19 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
         </ol>
         <div class="carousel-inner">
-            <!--div class="carousel-item active">
-            <a href="<php echo base_url().'diadelmar';?>">
-            <img class="d-block w-100" src="<php echo base_url().'/assets/img/slide/0.png';?>" alt="Pimer slide">
-            </a>
-            </div-->
             <div class="carousel-item active">
+                <a href="<?php echo base_url().'libros';?>">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/0.png';?>" alt="Pimer slide">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="<?php echo base_url().'educainnova';?>">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/1.png';?>" alt="Pimer slide">
+                </a>
+            </div>
+            <div class="carousel-item">
             <a href="http://olimpiada.minedu.gob.bo/" target="_blank"><!--a href="https://dgtic.minedu.gob.bo/inscripcion/" target="_blank"-->
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/1.png';?>" alt="Ir a la Olimpiada">
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/2.png';?>" alt="Ir a la Olimpiada">
             <!--div class="carousel-caption">
                 <h2>PARA MAESTROS</h2>
                 <p>Obten tu certificado respondiendo preguntas sencillas.</p>
@@ -26,14 +31,11 @@
             </div>
             <div class="carousel-item">
             <a href="<?php echo base_url().'tutoriales';?>" class="btn btn-primary">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/2.png';?>" alt="Ir a tutoriales">
+            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/3.png';?>" alt="Ir a tutoriales">
             </a>
             </div>
             <div class="carousel-item">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/3.jpg';?>" alt="Educa televisión">
-            </div>
-            <div class="carousel-item">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/4.jpg';?>" alt="Educa radio">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/4.png';?>" alt="Educa televisión">
             </div>
             <div class="carousel-item">
             <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/5.jpg';?>" alt="Educa libros">
