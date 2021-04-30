@@ -15,6 +15,11 @@ class Libros extends CI_Controller{
         $this->load->view('template/footer');
     }
 
+    public function desclibro(){
+        $this->load->view('template/header');
+        $this->load->view('vistas/libros/desclibro');
+        $this->load->view('template/footer');
+    }
     public function verlibro(){
         $this->load->library('user_agent');
         if($this->agent->is_mobile()){

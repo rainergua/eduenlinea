@@ -5,7 +5,7 @@
                 <div class="col-sm-12 col-md-1 col-ld-1 pt-4"></div>
                 <div class="col-sm-12 col-md-3 col-ld-3 pt-4">
                     <figure class="figure pl-4 pt-4">
-                        <a href="<?php echo base_url().'libros/verlibro'?>" id="libro">
+                        <a href="<?php echo base_url().'libros/desclibro'?>" id="libro">
                         <img src="<?php echo base_url().'assets/pics/pag1.png'?>" class="figure-img img-fluid boton-sec">
                         </a>
                         <figcaption class="figure-caption text-center text-white"><h6>
