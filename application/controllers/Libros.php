@@ -25,11 +25,22 @@ class Libros extends CI_Controller{
         if($this->agent->is_mobile()){
             $data['link'] = base_url().'assets/files/actaInde.pdf';
             $this->load->view('vistas/libros/verlibropdf', $data);
-            //redirect($data['link']);
         }
         else{
             $this->load->view('template/header'); 
             $this->load->view('vistas/libros/verlibro');
+            $this->load->view('template/footer');
+        }
+    }
+    public function gesta(){
+        $this->load->library('user_agent');
+        if($this->agent->is_mobile()){
+            $data['link'] = base_url().'assets/files/gesta.pdf';
+            $this->load->view('vistas/libros/verlibropdf', $data);
+        }
+        else{
+            $this->load->view('template/header'); 
+            $this->load->view('vistas/libros/gesta');
             $this->load->view('template/footer');
         }
     }
