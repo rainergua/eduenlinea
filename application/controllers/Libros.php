@@ -44,7 +44,18 @@ class Libros extends CI_Controller{
             $this->load->view('template/footer');
         }
     }
-    
+    public function fisio(){
+        $this->load->library('user_agent');
+        if($this->agent->is_mobile()){
+            $data['link'] = base_url().'assets/files/fisio.pdf';
+            $this->load->view('vistas/libros/verlibropdf', $data);
+        }
+        else{
+            $this->load->view('template/header'); 
+            $this->load->view('vistas/libros/fisio');
+            $this->load->view('template/footer');
+        }
+    }
 
 }
 ?>

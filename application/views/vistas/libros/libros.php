@@ -23,6 +23,16 @@
                         </figcaption>
                     </figure>
                 </div>
+                <div class="col-sm-12 col-md-3 col-ld-3 pt-4">
+                    <figure class="figure pl-4 pt-4">
+                        <a href="<?php echo base_url().'libros/fisio'?>" id="libro">
+                        <img src="<?php echo base_url().'assets/pics/fisio.png'?>" class="figure-img img-fluid boton-sec">
+                        </a>
+                        <figcaption class="figure-caption text-center text-white"><h6>
+                        Lecciones de Fisiología</h6>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </div>
