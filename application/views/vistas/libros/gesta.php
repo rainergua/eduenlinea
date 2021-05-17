@@ -46,20 +46,11 @@
 	<div class="row">
 		<div class="col-sm-12 col-md-12 col-ld-12 text-center">
 			<div id="mybook">
-                <!--div id='cover'></div-->
                 <?php
                 for($i=0; $i<=30;$i++){?>
                     <div> <img src="<?php echo base_url().'assets/libros/gesta/pag'.$i.'.png'?>" class="img-fluid">  </div>
                 <?php
                 }?>
-				<!--div> <img src="<php echo base_url().'assets/libros/actindep/pag1.png'?>" class="img-fluid">  </div>
-				<div> <img src="<php echo base_url().'assets/libros/actindep/pag2.png'?>" class="img-fluid"> </div>
-				<div> <img src="<php echo base_url().'assets/libros/actindep/pag3.png'?>" class="img-fluid"> </div>
-				<div> <img src="<php echo base_url().'assets/libros/actindep/pag4.png'?>" class="img-fluid"> </div>
-				<div> <img src="<php echo base_url().'assets/libros/actindep/pag5.png'?>" class="img-fluid"> </div>
-				<div> <img src="<php echo base_url().'assets/libros/actindep/pag6.png'?>" class="img-fluid"> </div>
-				<div> <img src="<php echo base_url().'assets/libros/actindep/pag7.png'?>" class="img-fluid"> </div-->
-
 			</div>
 		</div>
 	</div>
