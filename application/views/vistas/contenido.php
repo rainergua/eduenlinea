@@ -78,6 +78,8 @@
         foreach($contenidos as $cont){
             if($cont->cod_tipo==8){
                 $icono = 'mp4.png';
+            }elseif($cont->cod_tipo==23){
+                $icono = 'mp3.png';
             }else{
                 $icono = 'pdf.png';
             }
