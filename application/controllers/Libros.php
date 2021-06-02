@@ -56,6 +56,17 @@ class Libros extends CI_Controller{
             $this->load->view('template/footer');
         }
     }
-
+    public function mineria(){
+        $this->load->library('user_agent');
+        if($this->agent->is_mobile()){
+            $data['link'] = base_url().'assets/files/mineria.pdf';
+            $this->load->view('vistas/libros/verlibropdf', $data);
+        }
+        else{
+            $this->load->view('template/header'); 
+            $this->load->view('vistas/libros/mineria');
+            $this->load->view('template/footer');
+        }
+    }
 }
 ?>
