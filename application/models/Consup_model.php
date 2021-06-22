@@ -29,7 +29,50 @@ class Consup_Model extends CI_Model {
         $resultado = $this->db->get('ematerial_esfm')->result();
         return $resultado;
     }
+    public function getdeptos(){
+        $resultado = $this->db->get('departamento')->result();
+        return $resultado;
+    }
 
+    public function getinst($depto){
+        $this->db->where('cod_dep', $depto);
+        $this->db->order_by('municipio');
+        $resultado = $this->db->get('itts')->result();
+        return $resultado;
+    }
+    public function getmuni($depto){
+        $this->db->select('municipio');
+        $this->db->distinct();
+        $this->db->where('cod_dep', $depto);
+        $this->db->order_by('municipio');
+        $resultado = $this->db->get('itts')->result();
+        return $resultado;
+    }
+    public function getinstmuni($muni, $depto){
+        $this->db->distinct();
+        $this->db->where('municipio', $muni);
+        $this->db->where('cod_dep', $depto);
+        $this->db->order_by('municipio');
+        $resultado = $this->db->get('itts')->result();
+        return $resultado;
+    }
+    public function getinstmunid($muni, $depto){
+        $this->db->select('instituto');
+        $this->db->distinct();
+        $this->db->where('municipio', $muni);
+        $this->db->where('cod_dep', $depto);
+        $this->db->order_by('municipio');
+        $resultado = $this->db->get('itts')->result();
+        return $resultado;
+    }
+    public function getinstituto($muni, $depto, $insti){
+        $this->db->where('municipio', $muni);
+        $this->db->where('cod_dep', $depto);
+        $this->db->where('instituto', $insti);
+        $this->db->order_by('carrera');
+        $resultado = $this->db->get('itts')->result();
+        return $resultado;
+    }
 }
 
 /* End of file Eduvit_Model.php */

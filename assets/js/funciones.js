@@ -2,6 +2,8 @@ $(document).ready(inicio);
 
 function inicio(){
 	$("img").fadeIn("5000");
+    $("#muni").change(envMuni);
+    $("#inst").change(envInsti);
     $('#btnlogin').click(respLogin);
     $('#confVideo').click(envVideo);
     $('[data-toggle="tooltip"]').tooltip();
@@ -140,6 +142,33 @@ function envVideo(){
     $('form')[0].submit();
     return false;
 }
+function envMuni() {
+    muni= $('#muni').val();
+    depto= $('#depto').val();
+    $.post(base_url()+"consup/llenaInst", {muni : muni, depto : depto},
+    function(data){
+        var datos = JSON.parse(data);
+        console.log(datos);
+        $("#inst").html(datos.sel);
+        $("#tab").html('');
+        $("#tab").html(datos.tabla);
+    });
+}
+
+function envInsti() {
+    muni = $('#muni').val();
+    depto = $('#depto').val();
+    insti = $('#inst').val();
+    console.log(muni + depto + insti)
+    $.post(base_url()+"consup/llenaCarr", {muni : muni, depto : depto, insti : insti},
+    function(data){
+        var datos = JSON.parse(data);
+        console.log(datos);
+        $("#tab").html('');
+        $("#tab").html(datos.tabla);
+    });
+}
+
 function respLogin(){
     var url = base_url() + "login/ingresar";
     $('.load').html('<img src="'+ base_url() + 'assets/img/load.gif">');
