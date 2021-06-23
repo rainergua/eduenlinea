@@ -33,6 +33,13 @@ class Consup_Model extends CI_Model {
         $resultado = $this->db->get('departamento')->result();
         return $resultado;
     }
+    public function getdepto($cod_dep){
+        $this->db->select('nom_dep');
+        $this->db->where('cod_dep', $cod_dep);
+        $resultado = $this->db->get('departamento')->row();
+        return $resultado;
+    }
+
 
     public function getinst($depto){
         $this->db->where('cod_dep', $depto);

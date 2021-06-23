@@ -4,22 +4,18 @@
         <div class="col-sm-12 col-md-12 col-ld-12 text-center">
             <h4>Subsistema de Educación Superior de Formación Profesional</h4>
             <h5><?php echo $titulo?></h5>
+            <label> Departamento de: <?php echo $departamento->nom_dep?></label-->
             <input type="hidden" name="depto" id="depto" value="<?php echo $depto?>">
         </div>
     </div>
+    <hr>
     <div class="row">
-        <div class="col-sm-12 col-md-2 col-ld-2">
-        </div>
-        <div class="col-sm-12 col-md-8 col-ld-8 text-left">
+        <div class="col-sm-12 col-md- col-ld-12 text-center">
             <h4>Busqueda por Municipio e Instituto</h4>
-        </div>
-        <div class="col-sm-12 col-md-2 col-ld-2">
         </div>
     </div>
     <div class="row my-2 py-2">
-        <div class="col-sm-12 col-md-2 col-ld-2">
-        </div>
-        <div class="col-sm-12 col-md-8 col-ld-8 text-left">
+        <div class="col-sm-12 col-md-12 col-ld-12 text-center">
             Municipio: <select name="muni" id="muni">
                 <option value="">Municipio</option>
                 <?php
@@ -33,9 +29,8 @@
             <option value="">Instituto</option>
             </select>
         </div>
-        <div class="col-sm-12 col-md-2 col-ld-2">
-        </div>
     </div>
+    <hr>
     <table class="table table-striped table-hover table-responsive">
     <thead>
     <tr>

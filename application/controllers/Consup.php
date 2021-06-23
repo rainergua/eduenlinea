@@ -53,6 +53,7 @@ class Consup extends CI_Controller{
     public function superior($i, $depto){
         $this->load->view('template/header');
         $data['depto'] = $depto;
+        $data['departamento'] = $this->consup_model->getdepto($depto);
         if($i == 1){
             $data['inst'] = $this->consup_model->getinst($depto);
             $data['munis'] = $this->consup_model->getmuni($depto);
