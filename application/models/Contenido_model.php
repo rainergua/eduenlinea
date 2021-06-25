@@ -7,6 +7,8 @@ class Contenido_Model extends CI_Model {
     	parent::__construct();
     }
     public function getperiodo(){
+        $this->db->where('cod_per', 2);
+        $this->db->or_where('cod_per', 3);
         $this->db->order_by('cod_per');
         return $this->db->get('periodo')->result();
     }
@@ -78,7 +80,7 @@ class Contenido_Model extends CI_Model {
         return $this->db->get('area')->result();
     }
     public function getcontenidos($grado, $area){
-        $this->db->select('m.arch_mat, m.des_mat, t.cod_tipo, t.tipo_cont');
+        $this->db->select('m.arch_mat, m.des_mat, t.cod_tipo, t.tipo_cont, m.cod_per');
         $this->db->distinct();
         $this->db->from('material_area m');
         $this->db->join('tipo_contenido t', 'm.cod_tipo=t.cod_tipo', 'inner');

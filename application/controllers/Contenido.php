@@ -19,7 +19,7 @@ class Contenido extends CI_Controller{
     public function index(){
         redirect(base_url());
     }
-    /********************************* */
+    /****************DESPLIEGA LA VISTA POR NIVEL INI-PRIM-SEC***************** */
     public function nivel($nivel=5){
         $this->load->view('template/header');
         $data['nivel'] = $this->contenido_model->getsisniv($nivel);
@@ -35,7 +35,7 @@ class Contenido extends CI_Controller{
         }
         $this->load->view('template/footer');
     }
-
+    //******************DESPLIEGA LA VISTA DE LOS CAMPOS*/
     public function campos($curso=11){
         $data['curso'] = $curso;
         /*if($curso >10 && $curso<17){
@@ -49,6 +49,7 @@ class Contenido extends CI_Controller{
         $this->load->view('vistas/campos', $data);
         $this->load->view('template/footer');
     }
+    /**************DESPLIEGA LAS VISTAS DE AERAS */
     public function areas($curso=11, $campo=1){
         $data['nivel'] = $this->contenido_model->getsisnivgra($curso);
         if($curso==9 || $curso ==10)
@@ -59,8 +60,10 @@ class Contenido extends CI_Controller{
         $this->load->view('vistas/areas', $data);
         $this->load->view('template/footer');
     }
-
+    /**************DESPLIEGUE DE MATERAL NO UTILIZADO************** */
     public function material($grado=11, $area=1){
+        $data['curso'] = $curso;
+        $data['campos'] = $this->contenido_model->getcampos();
         $data['nivel'] = $this->contenido_model->getsisnivgrarea($grado, $area);
         //$data['material'] = $this->contenido_model->getcontenidos($grado, $area);
         $data['material'] = $this->contenido_model->getcont($grado, $area);
@@ -71,21 +74,33 @@ class Contenido extends CI_Controller{
         $this->load->view('vistas/content', $data);
         $this->load->view('template/footer');
     }
-    
+    /***************DESPLIEGUE DE CONTENIDO POR ÁREA INICIAL Y SECUNDARIA************ */
     public function contenidoarea($grado=11, $area=1){
         $data['nivel'] = $this->contenido_model->getsisnivgrarea($grado, $area);
         $data['contenidos'] = $this->contenido_model->getcontenidos($grado, $area);
-        //$data['periodos'] = $this->contenido_model->getperiodo();
+        $data['periodos'] = $this->contenido_model->getperiodo();
         //$data['enlace'] = $this->contenido_model->getlink($grado, $area);
         $this->load->view('template/header');
         $this->load->view('vistas/contenido', $data);
         $this->load->view('template/footer');
     }
+
+    public function contenidoarea2t($grado=11, $area=1){
+        $data['nivel'] = $this->contenido_model->getsisnivgrarea($grado, $area);
+        $data['contenidos'] = $this->contenido_model->getcontenidos($grado, $area);
+        $data['periodos'] = $this->contenido_model->getperiodo();
+        //$data['enlace'] = $this->contenido_model->getlink($grado, $area);
+        $this->load->view('template/header');
+        $this->load->view('vistas/contenido', $data);
+        $this->load->view('template/footer');
+    }
+
+    /*************DESPLIEGUE DE CONTENIDO POR CAMPO PRIMARIA******* */
     public function contenidocampo($grado=11, $campo=1){
         //$data['nivel'] = $this->contenido_model->getsisnivgracam($grado, $campo);
         $data['nivel'] = $this->contenido_model->getsisnivgra($grado);
         $data['contenidos'] = $this->contenido_model->getmatcampos($grado, $campo);
-        //$data['periodos'] = $this->contenido_model->getperiodo();
+        $data['periodos'] = $this->contenido_model->getperiodo();
         //$data['enlace'] = $this->contenido_model->getlink($grado, $area);
         $this->load->view('template/header');
         $this->load->view('vistas/contcam', $data);

@@ -1,4 +1,5 @@
 <?php 
+    print_r($nivel);
     if($nivel->cod_niv==4){
         $cla = "contini";
         $fad = "img-fluid boton-sec";
@@ -41,13 +42,16 @@
                     <div class="card-body">
 
 
-                        <div id="accordion">
+        <div id="accordion">
          <?php
             foreach ($tipo as $tip) {
-                if($tip->cod_tema == 3)
-                    $icon = 'fa-file-video';
-                else
-                    $icon = 'fa-file-pdf';
+                if($cont->cod_tipo==8){
+                    $icono = 'mp4.png';
+                }elseif($cont->cod_tipo==23){
+                    $icono = 'mp3.png';
+                }else{
+                    $icono = 'pdf.png';
+                }
          ?>
                 <div class="card">
                     <div class="card-header acordion-header" id="heading<?=$tip->cod_tema?>">
@@ -61,7 +65,6 @@
                         </button>
                     </h5>
                     </div>
-
                     <div id="collapse<?=$tip->cod_tema?>" class="collapse" aria-labelledby="heading<?=$tip->cod_tema?>" data-parent="#accordion">
                     <div class="card-body">
                         <div class="row" id="row">
