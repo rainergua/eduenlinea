@@ -54,6 +54,7 @@ application/config/production/*
 !application/logs/.htaccess
 /vendor/
 /assets/uploads/*
+/assets/*
 
 ### CodeIgniter Patch ###
 
