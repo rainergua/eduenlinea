@@ -1,3 +1,4 @@
+<script src="<?php echo base_url().'assets/js/valid/jquery.validate.min.js'; ?>"></script>
 <div class="container-fluid trans">
     <div class="container">
         <div class="row">

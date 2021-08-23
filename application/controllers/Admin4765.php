@@ -360,6 +360,9 @@ class Admin4765 extends CI_Controller {
         $crud->display_as('cod_sis','Subsistema');
         $crud->set_relation('cod_sis','subsistema','desc_sis');
 
+        $crud->display_as('cod_per','Trimestre');
+        $crud->set_relation('cod_per','periodo','des_per');
+
 
         $this->load->library('gc_dependent_select');
         // settings
@@ -416,7 +419,7 @@ class Admin4765 extends CI_Controller {
 
         $js = $categories->get_js();
 
-        $crud->required_fields('des_mat','img_mat', 'arch_mat', 'cod_tipo','txt_mat','cod_area','cod_gra','cod_niv','cod_sis');
+        $crud->required_fields('des_mat', 'arch_mat', 'cod_tipo','txt_mat','cod_area','cod_gra','cod_niv','cod_sis');
         $output = $crud->render();
         $output->output.= $js;
 
@@ -446,7 +449,8 @@ class Admin4765 extends CI_Controller {
         
         $crud->display_as('cod_sis','Subsistema');
         $crud->set_relation('cod_sis','subsistema','desc_sis');
-
+        $crud->display_as('cod_per','Trimestre');
+        $crud->set_relation('cod_per','periodo','des_per');
 
         $this->load->library('gc_dependent_select');
         // settings
@@ -537,6 +541,8 @@ class Admin4765 extends CI_Controller {
         $crud->display_as('cod_sis','Subsistema');
         $crud->set_relation('cod_sis','subsistema','desc_sis');
 
+        $crud->display_as('cod_per','Trimestre');
+        $crud->set_relation('cod_per','periodo','des_per');
 
         $this->load->library('gc_dependent_select');
         // settings
