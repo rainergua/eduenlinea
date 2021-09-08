@@ -20,8 +20,7 @@ function inicio(){
      $.validator.addMethod('filesize', function (value, element, param) {
         return this.optional(element) || (element.files[0].size <= param)
     }, 'El archivo es demasiado grande, el tamaño no debe superar los 100 MB');
-
-     $("#video").validate({
+    $("#video").validate({
         ignore: false,
         debug: true,
         rules: {
@@ -51,6 +50,74 @@ function inicio(){
             'titulo': {required: "Debes ingresar un título de tu video"},
             'userfile': {required: "Debes elegir un video"}
             
+        },
+        submitHandler: function(form){
+            //alert("Sus estan siendo enviados");
+            /*url = base_url()+"cuestionario/guardar";
+            $(location).attr("href", url);
+            form.submit();
+            return false;*/
+            $('#mymodal').modal('toggle');
+            return false;
+        }
+    });
+
+    $("#talento").validate({
+        ignore: false,
+        debug: true,
+        rules: {
+            'rude': {required: true, minlength: 10},
+            'nombre': {required: true},
+            'carnet': {required: true},
+            'correo': {required: true, email: true},
+            'fecnac': {required: true},
+            'fono': {required: true, min:60000000, max: 79999999},
+            'tutor': {required: true},
+            'fonotut': {required: true},
+            'depto': {required: true},
+            'munic': {required: true},
+            'distrito': {required: true},
+            'ue': {required: true},
+            'fonoue': {required: true},
+            'dependencia': {required: true},
+            'nivel': {required: true},
+            'anio': {required: true},
+            'areapot': {required: true},
+            'desc': {required: true},
+            'videxp': {
+                required: true,
+                /*extension: "mp4,m4v",*/
+                /*filesize: 40000000*/
+                filesize: 104857600
+            },
+            'arcexp': {
+                required: true,
+                /*extension: "mp4,m4v",*/
+                /*filesize: 40000000*/
+                filesize: 51200000
+            }
+        },
+        messages: {
+            'rude': {required: "Ingresar codigo RUDE", minlength: "Debes ingresar un RUDE válido."},
+            'nombre':{required: "Ingresar Nombres"},
+            'carnet': {required: "Ingresar Carnet de Identidad"},
+            'correo':{required: "Ingresar Correo", email: "Ingrese email válido"},
+            'fecnac': {required: "Ingresar fecha de nacimiento del estudiante"},
+            'fono': {required: "El Teléfono es  obligatorio", min: "Teléfono Celular Inválido", max: "Teléfono Celular Inválido"},
+            'tutor': {required: "Ingresar Nombre del Madre/Padre/Tutor"},
+            'fonotut': {required: "Ingresar Teléfono del Madre/Padre/Tutor"},
+            'depto': {required: "Ingresar Departamentos"},
+            'munic': {required: "Ingresar Municipio"},
+            'distrito': {required: "Ingresar Distrito"},
+            'ue': {required: "Ingresar Unidad Educativa o Intsitución"},
+            'fonoue': {required: "Ingresar Teléfono de la Unidad Educativa o Intsitución"},
+            'dependencia': {required: "Ingresar Dependencia"},
+            'nivel': {required: "Ingresar Nivel"},
+            'anio': {required: "Ingresar Año de escolaridad"},
+            'areapot': {required: "Ingresar Área de su potencialidad"},
+            'desc': {required: "Ingresar Descripción"},
+            'videxp': {required: "Debes elegir un video", filesize: "Archivo demasiado grande, tamaño máximo 100 MB"},
+            'arcexp': {required: "Debes elegir un archivo de Power Point o PDF", filesize: "Archivo demasiado grande, tamaño máximo 45 MB"}  
         },
         submitHandler: function(form){
             //alert("Sus estan siendo enviados");
@@ -137,6 +204,9 @@ function inicio(){
     /*************/ 
 
 }
+
+
+
 function envVideo(){
     //console.log($('form')[0]);
     $('form')[0].submit();

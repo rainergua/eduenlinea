@@ -4,5 +4,11 @@
     padding:1px 20px 1px 5px;
 }
 .custom-file-input ~ .custom-file-label::after {
-    content: "Elegir video";
+    content: "Elegir archivo";
 }
+.bluebold {
+    color: #0000ff;
+    font-weight: bolder;
+    padding:1px 20px 1px 5px;
+    font-size: large;
+  }
