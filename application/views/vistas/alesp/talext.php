@@ -12,6 +12,9 @@
             $att = array('id' => 'talento', 'class' =>'form-group', 'enctype' => 'multipart/form-data' );
             echo form_open(base_url().'conales/savetal', $att);
         ?>
+    <div class="form-group">
+        <label for="error" class="error"><?=$error?></label>
+    </div>
     <hr>
     <div class="col-sm-12 col-md-12 col-ld-12 text-center bluebold">Datos del Estudiante</div>
     <hr>
