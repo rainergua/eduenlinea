@@ -8,21 +8,33 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <a href="<?php echo base_url().'libros';?>">
-                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/0.png';?>" alt="Pimer slide">
+                <a href="<?php echo base_url().'eduvit/regular';?>">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/0.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="<?php echo base_url().'assets/apps/ministerio4.apk';?>">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/1.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <!--a href="<php echo base_url().'libros';?>"-->
+                <a href="https://dgtic.minedu.gob.bo/dgtic/assets/files/concursotiktok.pdf" target="_blank">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/2.jpg';?>" alt="Ir al Memoria del Mundo" class="img-fluid">
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="<?php echo base_url().'educainnova';?>">
-                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/1.png';?>" alt="Pimer slide">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/3.jpg';?>" alt="Ir a Educa Innova">
                 </a>
             </div>
             <div class="carousel-item">
-            <a href="http://olimpiada.minedu.gob.bo/" target="_blank"><!--a href="https://dgtic.minedu.gob.bo/inscripcion/" target="_blank"-->
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/2.png';?>" alt="Ir a la Olimpiada">
+                <a href="http://olimpiada.minedu.gob.bo/frontend/mat_link/feria" target="_blank"><!--a href="https://dgtic.minedu.gob.bo/inscripcion/" target="_blank"-->
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/4.jpg';?>" alt="Ir a la Olimpiada" class="img-fluid">
             <!--div class="carousel-caption">
                 <h2>PARA MAESTROS</h2>
                 <p>Obten tu certificado respondiendo preguntas sencillas.</p>
@@ -30,18 +42,18 @@
             </a>
             </div>
             <div class="carousel-item">
-            <a href="<?php echo base_url().'tutoriales';?>" class="btn btn-primary">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/3.png';?>" alt="Ir a tutoriales">
-            </a>
+                <a href="<?php echo base_url().'tutoriales';?>" class="btn btn-primary">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/5.jpg';?>" alt="Ir a tutoriales" class="img-fluid">
+                </a>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/4.png';?>" alt="Educa televisión">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/6.jpg';?>" alt="Educa televisión" class="img-fluid">
             </div>
+            <!--div class="carousel-item">
+            <img class="d-block w-100" src="<php echo base_url().'/assets/img/slide/5.jpg';?>" alt="Educa libros">
+            </div-->
             <div class="carousel-item">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/5.jpg';?>" alt="Educa libros">
-            </div>
-            <div class="carousel-item">
-            <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/6.jpg';?>" alt="2021 Año por la recuparación del derecho a la educación">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/7.jpg';?>" alt="2021 Año por la recuparación del derecho a la educación" class="img-fluid">
             </div>
         </div>
         <!--a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -64,6 +76,9 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
+                <a class="nav-link" href="<?php echo base_url().'/assets/apps/ministerio4.apk';?>">Aplicación EducaBolivia</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url().'libros';?>">Memoria del Mundo Bolivia</a>
             </li>
             <li class="nav-item">
@@ -142,7 +157,7 @@
                         forman profesionales de alta competitividad con compromiso social y conciencia crítica al servicio del pueblo para el desarrollo del país. </p>
                         <div class="row">
                             <div class="col-6"><a href="<?php echo base_url().'eduvit/superior';?>" class="btn btn-success btn-block">Biblioteca</a></div>
-                            <div class="col-6"><a href="#" class="btn btn-info btn-block">Aula Superior</a></div>
+                            <div class="col-6"><a href="http://aula.minedu.gob.bo/superior/maestro" class="btn btn-info btn-block">Aula Superior</a></div>
                         </div>
                     </div>
                 </div>

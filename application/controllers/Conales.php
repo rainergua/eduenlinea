@@ -198,26 +198,33 @@ class Conales extends CI_Controller{
         $config['allowed_types'] = 'mp4|m4v|avi|mpeg|divx|flv|mkv|mpg';
         $video = $this->generaCodigo(6);
         $archexp = $this->generaCodigo(6);
+        $dname = explode(".", $_FILES["videxp"]["name"]);
+        $ext1 = end($dname);
+        $video = $video .'.'. $ext1;
         $config['file_name'] = $video;
         $config['max_size'] = '102400';
+        //$config['file_ext'] = pathinfo($_FILES["videxp"]["name"], PATHINFO_EXTENSION);
+        $dname = explode(".", $_FILES["videxp"]["name"]);
+        $ext2 = end($dname);
         $config2['upload_path'] = './assets/uploads/files/especial/talento/';
         $config2['allowed_types'] = 'pptx|ppt|pdf';
         $config2['max_size'] = '51200';
+        $archexp = $archexp.'.'.$ext2;
         $config2['file_name'] = $archexp;
+        //$config2['file_ext'] = pathinfo($_FILES["arcexp"]["name"], PATHINFO_EXTENSION);
         $this->load->library('upload');
         $this->upload->initialize($config);
         $sw = 0;
         if(!$this->upload->do_upload('videxp')){
             $sw++;
             $data1 = $this->upload->data();
+            print_r($data1);
         }
         $this->upload->initialize($config2);
         if(!$this->upload->do_upload('arcexp')){
             $sw++;
             $data2 = $this->upload->data();
         }
-        $this->upload->initialize($config2);
-        
         //$config['file_name'] = $codigo;
         $this->load->view('template/header');
         if ( $sw == 2){
@@ -234,47 +241,46 @@ class Conales extends CI_Controller{
             /* obtenemos los datos del upload del archivo en un array, lo 
             pasamos a la vista form_success */
             //$archivo = $info['upload_data']['file_name'];
-            $datos = array(
-                'rude' => $this->input->post('rude'),
-                'nombre' => $this->input->post('nombre'),
-                'carnet' => $this->input->post('carnet'),
-                'fecnac' => $this->input->post('fecnac'),
-                'fono' => $this->input->post('fono'),
-                'correo' => $this->input->post('correo'),
-                'tutor' => $this->input->post('tutor'),
-                'fonotut' => $this->input->post('fonotut'),
-                'depto' => $this->input->post('depto'),
-                'munic' => $this->input->post('munic'),
-                'distrito' => $this->input->post('distrito'),
-                'ue' => $this->input->post('ue'),
-                'fonoue' => $this->input->post('fonoue'),
-                'dependencia' => $this->input->post('dependencia'),
-                'nivel' => $this->input->post('nivel'),
-                'anio' => $this->input->post('anio'),
-                'cenesp' => $this->input->post('cenesp'),
-                'dircesp' => $this->input->post('dircesp'),
-                'areapot' => $this->input->post('areapot'),
-                'videxp' => $this->input->post('videxp'),
-                'desc' => $this->input->post('desc'),
-                'arcexp' => $this->input->post('arcexp'),
-                'descnec' => $this->input->post('descnec'),
-                'noment' => $this->input->post('noment'),
-                'fonoment' => $this->input->post('fonoment'),
-                'video' => $video,
-                'archexp' => $archexp,
-                'fecha' => date("Y-m-d H:i:s"),
-                'codigo' => $this->generaCodigo(5),
-            );
-            //$res = $this->otros_model->guardar($datos);
-            
-            if($datos){
-                $data['error'] = "Tu video ha sido guardado correctamente.<br><h4>TU CÓDIGO ES: ".$datos['codigo']."<br>DEBES CONSERVAR ESTE CÓDIGO</h4>";
+            //print_r($_POST);
+            if(!empty($_POST['rude'])){
+                $datos = array(
+                    'rude' => $this->input->post('rude'),
+                    'nombre' => $this->input->post('nombre'),
+                    'carnet' => $this->input->post('carnet'),
+                    'fecnac' => $this->input->post('fecnac'),
+                    'fono' => $this->input->post('fono'),
+                    'correo' => $this->input->post('correo'),
+                    'tutor' => $this->input->post('tutor'),
+                    'fonotut' => $this->input->post('fonotut'),
+                    'depto' => $this->input->post('depto'),
+                    'munic' => $this->input->post('munic'),
+                    'distrito' => $this->input->post('distrito'),
+                    'ue' => $this->input->post('ue'),
+                    'fonoue' => $this->input->post('fonoue'),
+                    'dependencia' => $this->input->post('dependencia'),
+                    'nivel' => $this->input->post('nivel'),
+                    'anio' => $this->input->post('anio'),
+                    'cenesp' => $this->input->post('cenesp'),
+                    'dircesp' => $this->input->post('dircesp'),
+                    'areapot' => $this->input->post('areapot'),
+                    'videxp' => $video,
+                    'desc_tal' => $this->input->post('desc'),
+                    'arcexp' => $archexp,
+                    'descnec' => $this->input->post('descnec'),
+                    'noment' => $this->input->post('noment'),
+                    'fonoment' => $this->input->post('fonoment'),
+                    'fecha' => date("Y-m-d H:i:s"),
+                    'codigo' => $this->generaCodigo(5),
+                );
+                $res = $this->conales_model->guardatal($datos);
+                $data['error'] = "Tus datos han sido guardados correctamente.<br><h4>TU CÓDIGO ES: ".$datos['codigo']."<br>DEBES CONSERVAR ESTE CÓDIGO</h4>";
             }else{
                 $data['error'] = "Algo salió mal por favor intenta de nuevo";
             }
+
         }
-        print_r($datos);
-        //$this->load->view('vistas/alesp/talext', $data);
+        //print_r($datos);
+        $this->load->view('vistas/alesp/talext', $data);
         $this->load->view('template/footer');
     }
 }

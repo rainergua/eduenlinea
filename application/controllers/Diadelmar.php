@@ -78,10 +78,11 @@ class Diadelmar extends CI_Controller{
     }
 
     public function vervideos(){
-        $data['res'] = $this->otros_model->sacavideo();
+        $this->index();
+        /*$data['res'] = $this->otros_model->sacavideo();
         $this->load->view('template/header');
         $this->load->view('vistas/ovis/vervideo', $data);
-        $this->load->view('template/footer');
+        $this->load->view('template/footer');*/
     }
 
     public function obtvideo(){

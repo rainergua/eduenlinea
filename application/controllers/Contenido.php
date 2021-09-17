@@ -81,7 +81,7 @@ class Contenido extends CI_Controller{
         $data['periodos'] = $this->contenido_model->getperiodo();
         //$data['enlace'] = $this->contenido_model->getlink($grado, $area);
         $this->load->view('template/header');
-        $this->load->view('vistas/contenido', $data);
+        $this->load->view('vistas/contenido2t', $data);
         $this->load->view('template/footer');
     }
 
@@ -91,7 +91,7 @@ class Contenido extends CI_Controller{
         $data['periodos'] = $this->contenido_model->getperiodo();
         //$data['enlace'] = $this->contenido_model->getlink($grado, $area);
         $this->load->view('template/header');
-        $this->load->view('vistas/contenido', $data);
+        $this->load->view('vistas/contenido2t', $data);
         $this->load->view('template/footer');
     }
 
@@ -103,7 +103,18 @@ class Contenido extends CI_Controller{
         $data['periodos'] = $this->contenido_model->getperiodo();
         //$data['enlace'] = $this->contenido_model->getlink($grado, $area);
         $this->load->view('template/header');
-        $this->load->view('vistas/contcam', $data);
+        $this->load->view('vistas/contcam2t', $data);
+        $this->load->view('template/footer');
+    }
+
+    public function contenidocampo2t($grado=11, $campo=1){
+        //$data['nivel'] = $this->contenido_model->getsisnivgracam($grado, $campo);
+        $data['nivel'] = $this->contenido_model->getsisnivgra($grado);
+        $data['contenidos'] = $this->contenido_model->getmatcampos($grado, $campo);
+        $data['periodos'] = $this->contenido_model->getperiodo();
+        //$data['enlace'] = $this->contenido_model->getlink($grado, $area);
+        $this->load->view('template/header');
+        $this->load->view('vistas/contcam2t', $data);
         $this->load->view('template/footer');
     }
 

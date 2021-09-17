@@ -72,3 +72,4 @@ application/config/production/*
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,codeigniter
 
 assets/libros/video/apertura.mp4
+assets/img/recursos/progpri.pdf

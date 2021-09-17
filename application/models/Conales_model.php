@@ -30,7 +30,9 @@ class Conales_Model extends CI_Model {
         $this->db->order_by('t.cod_tipo');
         return $this->db->get()->result(); 
     }
-
+    public function guardatal($datos){
+        $this->db->insert('talento', $datos);
+    }
     /*
     public function getsisniv($nivel){
         $this->db->select('desc_sis, des_niv, txt_niv, cod_niv, link_sis');
