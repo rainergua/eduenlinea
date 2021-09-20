@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-sm-12 col-md-12 col-ld-12 py-2 my-2">
                 <h5 class="card-header text-center">
-                    REGISTRO DE ESTUDIANTES CON POTENCIALIDADES PRODUCTIVAS O HABILIDADES EXTRAORDINARIAS ENEL SEP
+                    REGISTRO DE ESTUDIANTES CON POTENCIALIDADES PRODUCTIVAS O HABILIDADES EXTRAORDINARIAS EN EL SEP
                 </h5>
             </div>
         </div>
@@ -188,16 +188,16 @@
         </div>
     </div>
     <hr>
-    <div class="col-sm-12 col-md-12 col-ld-12 text-center bluebold">Datos de la Potencialidad o Habilidad Extraordinaria</div>
+    <div class="col-sm-12 col-md-12 col-ld-12 text-center bluebold">Datos del producto, obra intelectual, potencialidad o habilidad extraordinaria</div>
     <hr>
     <div class="form-row">
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
-                <label for="areapot" class="form-label">(*) Área en la que destaca su potencialidad:</label>
+                <label for="areapot" class="form-label">(*) Área del producto, o habilidad extraordinaria:</label>
                 <select name="areapot" id="areapot"  class="form-control col-8">
                     <option value="">Elija Área de Potencialidad:</option>
                     <option value="1">Área Científica Tecnológica</option>
-                    <option value="2">Área Humanística Sociacultural</option>
+                    <option value="2">Área Humanística Sociocultural</option>
                     <option value="3">Área Artes Plásticas</option>
                     <option value="4">Área Educación Musical</option>
                     <option value="5">Área Deportiva</option>
@@ -207,7 +207,7 @@
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
                 <div class="form-group">
-                    <label for="tut_tipo" class="form-label">(*) Subir un video del producto, obra intelectual y/o habilidad extraordinaria:</label>
+                    <label for="tut_tipo" class="form-label">(*) Subir un video demostrativo del producto, obra intelectual y/o habilidad extraordinaria:</label>
                     <div class="custom-file col-8">
                     <input type="file" class="custom-file-input" accept="video/*" id="videxp" name="videxp">
                     <label for="videxp" class="custom-file-label">(*) Subir un video</label>
@@ -219,10 +219,18 @@
     <div class="form-row">
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
+                <label for="tutulo" class="form-label">(*) Título del producto, o habilidad extraordinaria:</label>
+                <input type="text" class="form-control col-8" id="tutulo" name="tutulo" aria-describedby="tutulo" placeholder="Título">
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-ld-6">
+            <div class="form-group">
                 <label for="desc" class="form-label">(*) Describa el producto o habilidad extraordinaria presentada:</label>
                 <textarea class="form-control col-8" id="desc" name="desc" rows="3"></textarea>
             </div>
         </div>
+    </div>
+    <div class="form-row">
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
                 <div class="form-group">
@@ -234,14 +242,15 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="form-row">
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
                 <label for="noment" class="form-label">Nombre del Mentor (Si corresponde):</label>
                 <input type="text" class="form-control col-8" id="noment" name="noment" aria-describedby="noment" placeholder="Nombre del Mentor">
             </div>
         </div>
+        
+    </div>
+    <div class="form-row">
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
                 <div class="form-group">
@@ -250,11 +259,9 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="form-row">
-        <div class="col-sm-12 col-md-12 col-ld-12">
+        <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
-                <label for="descnec" class="form-label">Describa las necesidades de la o el estudiante para seguir acrecentando su potencialidad:</label>
+                <label for="descnec" class="form-label">Describa las necesidades o apoyo de la o el estudiante para seguir acrecentando su potencialidad o habilidad extraordinaria:</label>
                 <input type="text" class="form-control col-8" id="descnec" name="descnec" aria-describedby="descnec" placeholder="Describa las necesidades de la o el estudiante">
             </div>
         </div>
@@ -308,6 +315,34 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" id="confVideo">Confirmar envío</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Revisar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modalNoti">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title acordion-link">Lea con mucha atención este mensaje</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 class="text-center bluebold">REGISTRO DE ESTUDIANTES CON POTENCIALIDADES PRODUCTIVAS O HABILIDADES EXTRAORDINARIAS EN EL SEP</h3>
+        <p>Este formulario será llenado y enviado por la/el maestro, padre de familia o estudiante, si cumple los <br>
+            *  Edad comprendida entre 7 a 20 años. <br>
+            *  ¿Cuenta con algún producto, obra intelectual de su creación o habilidad extraordinaria?<br>
+            *  ¿Le gustaría obtener derechos de autoría, demostrar en público y recibir apoyo para seguir acrecentando su potencialidad?<br>
+
+            El propósito es descubrir estudiantes con Potencialidades Productivas y/o Habilidades Extraordinarias en las Unidades Educativas e instituciones del Sistema Educativo Plurinacional en las áreas: Científica tecnológica, humanística sociocultural, artes plásticas, educación musical y deportiva con miras a constituir Escuelas Mentores Territoriales de Talento Extraordinario (EMTTE).<br>
+
+            Para más información comuníquese  con las y los maestros responsables del Programa de Talento Extraordinario del SEP, según los departamentos: Beni(72581457), Chuquisaca(61885507), Cochabamba(79713784), La Paz(70156829), El Alto(78989228) Oruro(67224032), Pando(72938308), Potosí(78734691), Santa Cruz(74694648) y Tarija(72016371).<br>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>

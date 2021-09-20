@@ -269,6 +269,7 @@ class Conales extends CI_Controller{
                     'descnec' => $this->input->post('descnec'),
                     'noment' => $this->input->post('noment'),
                     'fonoment' => $this->input->post('fonoment'),
+                    'titulo' => $this->input->post('titulo'),
                     'fecha' => date("Y-m-d H:i:s"),
                     'codigo' => $this->generaCodigo(5),
                 );

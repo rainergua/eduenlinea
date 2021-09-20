@@ -1,6 +1,7 @@
 $(document).ready(inicio);
 
 function inicio(){
+    $('#modalNoti').modal('toggle')
 	$("img").fadeIn("5000");
     $("#muni").change(envMuni);
     $("#inst").change(envInsti);
@@ -84,6 +85,7 @@ function inicio(){
             'anio': {required: true},
             'areapot': {required: true},
             'desc': {required: true},
+            'titulo': {required: true},
             'videxp': {
                 required: true,
                 /*extension: "mp4,m4v",*/
@@ -116,6 +118,7 @@ function inicio(){
             'anio': {required: "Ingresar Año de escolaridad"},
             'areapot': {required: "Ingresar Área de su potencialidad"},
             'desc': {required: "Ingresar Descripción"},
+            'titulo': {required: "Debe ingresar el título"},
             'videxp': {required: "Debes elegir un video", filesize: "Archivo demasiado grande, tamaño máximo 100 MB"},
             'arcexp': {required: "Debes elegir un archivo de Power Point o PDF", filesize: "Archivo demasiado grande, tamaño máximo 45 MB"}  
         },
