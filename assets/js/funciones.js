@@ -268,8 +268,10 @@ function isMobile() {
 
 function base_url(){
 	var base = window.location.href.split('/');
-	var todo = window.location.href;
-	return base[0]+ '//' + base[2] + '/' + base[3] + '/';
+    var todo = window.location.href;
+    //local
+    return base[0]+ '//' + base[2] + '/' + base[3] + '/';
+    //arriba
     //return base[0]+ '//' + base[2] + '/';
 }
 

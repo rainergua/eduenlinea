@@ -219,8 +219,8 @@
     <div class="form-row">
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
-                <label for="tutulo" class="form-label">(*) Título del producto, o habilidad extraordinaria:</label>
-                <input type="text" class="form-control col-8" id="tutulo" name="tutulo" aria-describedby="tutulo" placeholder="Título">
+                <label for="titulo" class="form-label">(*) Título del producto, o habilidad extraordinaria:</label>
+                <input type="text" class="form-control col-8" id="titulo" name="titulo" aria-describedby="titulo" placeholder="Título">
             </div>
         </div>
         <div class="col-sm-12 col-md-6 col-ld-6">
