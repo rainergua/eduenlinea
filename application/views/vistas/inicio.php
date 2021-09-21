@@ -15,58 +15,58 @@
             <div class="carousel-item active">
                 <div class="row">
                     <div class="col">
-                        <a href="<?php echo base_url().'assets/img/ini/cont/49_2.pdf';?>" target="_blank">
-                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/ini/cont/49_2.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                        <a href="<?php echo base_url().'assets/img/ini/cont/49_3.pdf';?>" target="_blank">
+                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/ini/cont/49_3.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
                         <div class="carousel-caption">
-                        <p class="text-white bg-info">1ro de Inicial</p>
+                        <p class="text-white bg-info">1° de Inicial<br>3er Trimestre</p>
                         </div>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="<?php echo base_url().'assets/img/ini/cont/410_2.pdf';?>" target="_blank">
-                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/ini/cont/410_2.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                        <a href="<?php echo base_url().'assets/img/ini/cont/410_3.pdf';?>" target="_blank">
+                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/ini/cont/410_3.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
                         <div class="carousel-caption">
-                        <p class="text-white bg-info">2do de Inicial</p>
+                        <p class="text-white bg-info">2° de Inicial<br>3er Trimestre</p>
                         </div>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="<?php echo base_url().'assets/img/prim/cont/511_2.pdf';?>" target="_blank">
-                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/prim/cont/511_2.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                        <a href="<?php echo base_url().'assets/img/prim/cont/511_3.pdf';?>" target="_blank">
+                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/prim/cont/511_3.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
                         <div class="carousel-caption">
-                        <p class="text-white bg-danger">1ro de Primaria</p>
+                        <p class="text-white bg-danger">1° de Primaria<br>3er Trimestre</p>
                         </div>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="<?php echo base_url().'assets/img/prim/cont/512_2.pdf';?>" target="_blank">
-                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/prim/cont/512_2.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                        <a href="<?php echo base_url().'assets/img/prim/cont/512_3.pdf';?>" target="_blank">
+                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/prim/cont/512_3.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
                         <div class="carousel-caption">
-                        <p class="text-white bg-danger">2do de Primaria</p>
+                        <p class="text-white bg-danger">2° de Primaria<br>3er Trimestre</p>
                         </div>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="<?php echo base_url().'assets/img/prim/cont/513_2.pdf';?>" target="_blank">
-                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/prim/cont/513_2.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                        <a href="<?php echo base_url().'assets/img/prim/cont/513_3.pdf';?>" target="_blank">
+                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/prim/cont/513_3.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
                         <div class="carousel-caption">
-                        <p class="text-white bg-danger">3ro de Primaria</p>
+                        <p class="text-white bg-danger">3° de Primaria<br>3er Trimestre</p>
                         </div>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="<?php echo base_url().'assets/img/prim/cont/514_2.pdf';?>" target="_blank">
-                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/prim/cont/514_2.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                        <a href="<?php echo base_url().'assets/img/prim/cont/514_3.pdf';?>" target="_blank">
+                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/prim/cont/514_3.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
                         <div class="carousel-caption">
-                        <p class="text-white bg-danger">4to de Primaria</p>
+                        <p class="text-white bg-danger">4° de Primaria<br>3er Trimestre</p>
                         </div>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="<?php echo base_url().'assets/img/prim/cont/515_2.pdf';?>" target="_blank">
-                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/prim/cont/515_2.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                        <a href="<?php echo base_url().'assets/img/prim/cont/515_3.pdf';?>" target="_blank">
+                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/prim/cont/515_3.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
                         <div class="carousel-caption">
-                        <p class="text-white bg-danger">5to de Primaria</p>
+                        <p class="text-white bg-danger">5° de Primaria<br>3er Trimestre</p>
                         </div>
                         </a>
                     </div>
@@ -75,58 +75,58 @@
             <div class="carousel-item">
             <div class="row">
                     <div class="col">
-                        <a href="<?php echo base_url().'assets/img/prim/cont/516_2.pdf';?>" target="_blank">
-                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/prim/cont/516_2.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                        <a href="<?php echo base_url().'assets/img/prim/cont/516_3.pdf';?>" target="_blank">
+                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/prim/cont/516_3.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
                         <div class="carousel-caption">
-                        <p class="text-white bg-danger">6to de Primaria</p>
+                        <p class="text-white bg-danger">6° de Primaria<br>3er Trimestre</p>
                         </div>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="<?php echo base_url().'assets/img/sec/cont/617_2.pdf';?>" target="_blank">
-                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/sec/cont/617_2.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                        <a href="<?php echo base_url().'assets/img/sec/cont/617_3.pdf';?>" target="_blank">
+                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/sec/cont/617_3.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
                         <div class="carousel-caption">
-                        <p class="text-white bg-primary">1ro de Secundaria</p>
+                        <p class="text-white bg-primary">1° de Secundaria<br>3er Trimestre</p>
                         </div>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="<?php echo base_url().'assets/img/sec/cont/618_2.pdf';?>" target="_blank">
-                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/sec/cont/618_2.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                        <a href="<?php echo base_url().'assets/img/sec/cont/618_3.pdf';?>" target="_blank">
+                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/sec/cont/618_3.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
                         <div class="carousel-caption">
-                        <p class="text-white bg-primary">2do de Secundaria</p>
+                        <p class="text-white bg-primary">2° de Secundaria<br>3er Trimestre</p>
                         </div>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="<?php echo base_url().'assets/img/sec/cont/619_2.pdf';?>" target="_blank">
-                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/sec/cont/619_2.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                        <a href="<?php echo base_url().'assets/img/sec/cont/619_3.pdf';?>" target="_blank">
+                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/sec/cont/619_3.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
                         <div class="carousel-caption">
-                        <p class="text-white bg-primary">3ro de Secundaria</p>
+                        <p class="text-white bg-primary">3° de Secundaria<br>3er Trimestre</p>
                         </div>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="<?php echo base_url().'assets/img/sec/cont/620_2.pdf';?>" target="_blank">
-                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/sec/cont/620_2.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                        <a href="<?php echo base_url().'assets/img/sec/cont/620_3.pdf';?>" target="_blank">
+                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/sec/cont/620_3.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
                         <div class="carousel-caption">
-                        <p class="text-white bg-primary">4to de Secundaria</p>
+                        <p class="text-white bg-primary">4° de Secundaria<br>3er Trimestre</p>
                         </div>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="<?php echo base_url().'assets/img/sec/cont/621_2.pdf';?>" target="_blank">
-                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/sec/cont/621_2.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                        <a href="<?php echo base_url().'assets/img/sec/cont/621_3.pdf';?>" target="_blank">
+                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/sec/cont/621_3.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
                         <div class="carousel-caption">
-                        <p class="text-white bg-primary">5to de Secundaria</p>
+                        <p class="text-white bg-primary">5° de Secundaria<br>3er Trimestre</p>
                         </div>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="<?php echo base_url().'assets/img/sec/cont/622_2.pdf';?>" target="_blank">
-                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/sec/cont/622_2.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                        <a href="<?php echo base_url().'assets/img/sec/cont/622_3.pdf';?>" target="_blank">
+                        <img class="d-block w-100" src="<?php echo base_url().'assets/img/sec/cont/622_3.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
                         <div class="carousel-caption">
-                        <p class="text-white bg-primary">6to de Secundaria</p>
+                        <p class="text-white bg-primary">6° de Secundaria<br>3er Trimestre</p>
                         </div>
                         </a>
                     </div>
