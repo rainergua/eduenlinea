@@ -35,7 +35,6 @@
         </div>
     </div>
     <div class="form-row">
-        
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
                 <label for="carnet" class="form-label">(*) Carnet de Identidad:</label>
@@ -335,9 +334,7 @@
             *  Edad comprendida entre 7 a 20 años. <br>
             *  ¿Cuenta con algún producto, obra intelectual de su creación o habilidad extraordinaria?<br>
             *  ¿Le gustaría obtener derechos de autoría, demostrar en público y recibir apoyo para seguir acrecentando su potencialidad?<br>
-
             El propósito es descubrir estudiantes con Potencialidades Productivas y/o Habilidades Extraordinarias en las Unidades Educativas e instituciones del Sistema Educativo Plurinacional en las áreas: Científica tecnológica, humanística sociocultural, artes plásticas, educación musical y deportiva con miras a constituir Escuelas Mentores Territoriales de Talento Extraordinario (EMTTE).<br>
-
             Para más información comuníquese  con las y los maestros responsables del Programa de Talento Extraordinario del SEP, según los departamentos: Beni(72581457), Chuquisaca(61885507), Cochabamba(79713784), La Paz(70156829), El Alto(78989228) Oruro(67224032), Pando(72938308), Potosí(78734691), Santa Cruz(74694648) y Tarija(72016371).<br>
         </p>
       </div>

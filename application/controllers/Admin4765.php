@@ -605,6 +605,107 @@ class Admin4765 extends CI_Controller {
 
         $this->_example_output($output);
     }
+
+
+    public function alteresp()
+    {
+        $crud = new grocery_CRUD();
+        $crud->set_table('matanio');
+        $crud->set_subject('Material de Alternativa y Especial');
+        $crud->display_as('des_matanio','Descripción o título');
+        $crud->display_as('txt_matanio','Resumen');
+        $crud->display_as('img_concam','Imagen del material');
+        $crud->field_type('vis_matanio','dropdown', array('0' => 'No', '1' => 'Si'));
+        $crud->field_type('genes','dropdown', array('ESPECIFICAS' => 'ESPECIFICAS', 'GENERALES' => 'GENERALES'));
+        $crud->set_field_upload('img_matanio', 'assets/uploads/files/cont/ales/img');
+        $crud->display_as('arch_matanio','Archivo de material');
+        $crud->set_field_upload('arch_matanio', 'assets/uploads/files/cont/ales');
+        //RELACIONES 
+        //Imagenes->http://localhost/eduenlinea/assets/uploads/files/cont/ales/img/ales93lnr.png
+        //Archivos->http://localhost/eduenlinea/assets/uploads/files/cont/ales/ales9eyzw.mp3
+        $crud->display_as('tipo_cont','Tipo contenido');
+        $crud->set_relation('tipo_cont','tipo_contenido','{tipo_cont} - {tipo_arch}');
+
+        $crud->display_as('cod_dis','Discapacidad o Área');
+        $crud->set_relation('cod_dis','especial','{cod_esp} - {des_esp}');
+        
+        /*NIVEL
+        $crud->display_as('cod_cam','Campo de NIVEL');
+        $crud->set_relation('cod_cam','campo','desc_cam');*/
+        
+        $crud->display_as('cod_gra','Grado');
+        $crud->set_relation('cod_gra','grado','des_gra');
+        
+        $crud->display_as('cod_niv','Nivel');
+        $crud->set_relation('cod_niv','nivel','des_niv');
+        
+        $crud->display_as('cod_sis','Subsistema');
+        $crud->set_relation('cod_sis','subsistema','desc_sis');
+
+        $crud->display_as('cod_per','Trimestre');
+        $crud->set_relation('cod_per','periodo','des_per');
+
+        $this->load->library('gc_dependent_select');
+        // settings
+
+        $fields = array(
+
+        // first field:
+        'cod_sis' => array( // first dropdown name
+        'table_name' => 'subsistema', // table of country
+        'title' => 'desc_sis', // country title
+        'relate' => null, // the first dropdown hasn't a relation
+        'data-placeholder' => 'Selecione subsistema'
+        ),
+        // second field
+        'cod_niv' => array( // second dropdown name
+        'table_name' => 'nivel', // table of state
+        'title' => 'des_niv', // state title
+        'id_field' => 'cod_niv', // table of state: primary key
+        'relate' => 'cod_sis', // table of state:
+        'data-placeholder' => 'Selecione nivel' //dropdown's data-placeholder:
+
+        ),
+        // third field. same settings
+        'cod_gra' => array(
+        'table_name' => 'grado',
+        /*'where' =>"",  // string. It's an optional parameter.*/
+        'order_by'=>"cod_gra",  // string. It's an optional parameter.
+        'title' => '{des_gra}',  // now you can use this format )))
+        'id_field' => 'cod_gra',
+        'relate' => 'cod_niv',
+        'data-placeholder' => 'Seleccione grado'
+        ),
+        // third field. same settings
+        /*'cod_cam' => array(
+            'table_name' => 'campo',
+            /*'where' =>"",  // string. It's an optional parameter./
+            'order_by'=>"cod_cam",  // string. It's an optional parameter.
+            'title' => '{desc_cam}',  // now you can use this format )))
+            'id_field' => 'cod_cam',
+            'relate' => 'cod_gra',
+            'data-placeholder' => 'Seleccione Campo'
+            ), */
+        );
+
+        $config = array(
+        'main_table' => 'matanio',
+        'main_table_primary' => 'cod_matanio',
+        "url" => base_url() . __CLASS__ . '/' . __FUNCTION__ . '/', //path to method
+        'ajax_loader' => base_url() . 'assets/img/ajax-loader.gif', // path to ajax-loader image. It's an optional parameter
+        'segment_name' =>'Your_segment_name' // It's an optional parameter. by default "get_items"
+        );
+
+        $categories = new gc_dependent_select($crud, $fields, $config);
+
+        $js = $categories->get_js();
+
+        $crud->required_fields('des_matanio', 'txt_matanio', 'arch_matanio', 'cod_tipo','cod_sis');
+        $output = $crud->render();
+        $output->output.= $js;
+
+        $this->_example_output($output);
+    }
 }
 
 /* End of file Administrar.php */

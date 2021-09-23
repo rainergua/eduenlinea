@@ -71,14 +71,6 @@
     <div class="row text-center pad-top">
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
             <div class="div-square">
-                <a href="<?php echo base_url();?>admin4765/tema" class="subtitulo">
-                <i class="fas fa-book-reader fa-3x"></i>
-                <p>Temas</p>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-            <div class="div-square">
                 <a href="<?php echo base_url();?>admin4765/inicial" class="subtitulo">
                 <i class="fas fa-book-reader fa-3x"></i>
                 <p>Material de área (Inicial)</p>
@@ -98,6 +90,14 @@
                 <a href="<?php echo base_url();?>admin4765/material" class="subtitulo">
                 <i class="fas fa-book-open fa-3x"></i>
                 <p>Material de Área (Secundaria)</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <div class="div-square">
+                <a href="<?php echo base_url();?>admin4765/alteresp" class="subtitulo">
+                <i class="fas fa-book-reader fa-3x"></i>
+                <p>Material Alternativa y Especial</p>
                 </a>
             </div>
         </div>

@@ -69,6 +69,7 @@ class Conales extends CI_Controller{
         }else{
             $this->load->view('vistas/alesp/espe', $data);
         }
+        $this->load->view('template/footer');
         /*$data['nivel'] = $this->conales_model->getsisniv($nivel);
         $data['grados'] = $this->conales_model->getgrado($nivel);
         switch ($nivel) {
@@ -92,10 +93,10 @@ class Conales extends CI_Controller{
                 break;
 
         }*/
-        $this->load->view('template/footer');
+        
     }
     //TODO: Agregar en la vista Material de año de escolaridad getmatanio
-    public function areas($curso=0){
+    /*public function areas($curso=0){
         if($curso!=0){
             $data['nivel'] = $this->conales_model->getsisnivgra($curso);
             $data['areas'] = $this->conales_model->getareas($curso);
@@ -183,7 +184,7 @@ class Conales extends CI_Controller{
         }else{
             $this->index();
         }
-    }
+    }*/
     //Para el cargado de formulario de talento extraordinario
     public function formtal(){
         $data['error'] = '';
