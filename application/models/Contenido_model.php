@@ -7,8 +7,8 @@ class Contenido_Model extends CI_Model {
     	parent::__construct();
     }
     public function getperiodo(){
-        $this->db->where('cod_per', 2);
-        $this->db->or_where('cod_per', 3);
+        /*$this->db->where('cod_per', 2);
+        $this->db->or_where('cod_per', 3);*/
         $this->db->order_by('cod_per');
         return $this->db->get('periodo')->result();
     }

@@ -34,13 +34,16 @@
                     <div class="card-body">
                         <div class="row" id="row">
                         <?php foreach ($material as $mat) {
+                            $col=3;
+                            if($mat->img_matanio=="")
+                                $col=2;
                             if($tip->cod_tipo == 3)
                                 $icon = 'fa-file-video';
                             else
                                 $icon = 'fa-file-pdf';
                             if($mat->cod_tipo==$tip->cod_tipo){
                          ?>
-                            <div class="col-12 col-sm-12 col-md-3 col-ld-3">
+                            <div class="col-12 col-sm-12 col-md-<?=$col?> col-ld-<?=$col?>">
                                 <a href="<?php echo base_url().'assets/uploads/files/cont/ales/'.$mat->arch_matanio;?>" target="_blank">
                                 <?php
                                 $ext = explode('.', $mat->arch_matanio);

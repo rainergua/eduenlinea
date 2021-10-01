@@ -330,12 +330,23 @@
       </div>
       <div class="modal-body">
         <h3 class="text-center bluebold">REGISTRO DE ESTUDIANTES CON POTENCIALIDADES PRODUCTIVAS O HABILIDADES EXTRAORDINARIAS EN EL SEP</h3>
-        <p>Este formulario será llenado y enviado por la/el maestro, padre de familia o estudiante, si cumple los <br>
+        <p>Este formulario será llenado y enviado por la/el maestro, padre de familia o estudiante, si cumple los siguientes criterios:<br>
             *  Edad comprendida entre 7 a 20 años. <br>
             *  ¿Cuenta con algún producto, obra intelectual de su creación o habilidad extraordinaria?<br>
             *  ¿Le gustaría obtener derechos de autoría, demostrar en público y recibir apoyo para seguir acrecentando su potencialidad?<br>
             El propósito es descubrir estudiantes con Potencialidades Productivas y/o Habilidades Extraordinarias en las Unidades Educativas e instituciones del Sistema Educativo Plurinacional en las áreas: Científica tecnológica, humanística sociocultural, artes plásticas, educación musical y deportiva con miras a constituir Escuelas Mentores Territoriales de Talento Extraordinario (EMTTE).<br>
-            Para más información comuníquese  con las y los maestros responsables del Programa de Talento Extraordinario del SEP, según los departamentos: Beni(72581457), Chuquisaca(61885507), Cochabamba(79713784), La Paz(70156829), El Alto(78989228) Oruro(67224032), Pando(72938308), Potosí(78734691), Santa Cruz(74694648) y Tarija(72016371).<br>
+            Para más información comuníquese  con las y los maestros responsables del Programa de Talento Extraordinario del SEP, según los departamentos: <br>
+            <span class="error">Beni</span>- María Eugenia Yabeta Villarroel - Tel.: 72581457 - Email: maugita_1999@yahoo.com<br>
+            <span class="error">Chuquisaca</span>- Gloria Blas Pinto - Tel.: 72423244 - Email: gloria.blaspinto@gmail.com<br>
+            <span class="error">Cochabamba</span>- José Edwin Jimenez Casanovas - Tel.: 79713784 - Email: 79713784ed@gmail.com<br>
+            <span class="error">La Paz</span>- Joel Condori Vargas - Tel.: 70156829 - joelcondorivargas@gmail.com<br>
+            <span class="error">El Alto</span>- Maria Cristina Andia Soto - Tel.: 78989228 - Email: mariacristinaandiasoto3@gmail.com<br>
+            <span class="error">Oruro</span>- Madel Arcos Mendoza - Tel.: 67224032 - Email: madelitarcos@gmail.com<br>
+            <span class="error">Pando</span>- Margoth ElizabethAsunta Peláez Villa - Tel.: 72938308 - Email: margothpelaez@gmail.com<br>
+            <span class="error">Potosí</span>- Betty Karina Condori Rojas - Tel.: 79436513 - Email: bettykarinacondorirojas@gmail.com<br>
+            <span class="error">Santa Cruz</span>- Carlos Angel Narváez Flores - Tel.: 74694648 - Email: carlosangelnarvaez@gmail.com<br>
+            <span class="error">Tarija</span>- Doris Janeth Villagomez Laime - Tel.: 72016371 - Email: dorisvillagomez9@gmail.com<br>
+            
         </p>
       </div>
       <div class="modal-footer">

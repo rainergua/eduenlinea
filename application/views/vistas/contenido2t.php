@@ -72,7 +72,7 @@
             foreach ($periodos as $periodo) {
                 $clase = '';
                 $sym = 'fa-plus';
-                if($periodo->cod_per == 3){
+                if($periodo->cod_per == 4){
                     $clase = 'show';
                     $sym = 'fa-minus';
                 }
