@@ -13,10 +13,9 @@
             echo form_open(base_url().'conales/savetal', $att);
         ?>
     <div class="form-group">
+        <div class="col-sm-12 col-md-12 col-ld-12 text-center bluebold">Datos del Estudiante</div>
         <label for="error" class="error"><?=$error?></label>
     </div>
-    <hr>
-    <div class="col-sm-12 col-md-12 col-ld-12 text-center bluebold">Datos del Estudiante</div>
     <hr>
     <div class="form-row">
         <div class="col-sm-12 col-md-6 col-ld-6">
@@ -323,19 +322,25 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title acordion-link">Lea con mucha atención este mensaje</h5>
+        <h5 class="modal-title acordion-link error">Lea con mucha atención este mensaje</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <h3 class="text-center bluebold">REGISTRO DE ESTUDIANTES CON POTENCIALIDADES PRODUCTIVAS O HABILIDADES EXTRAORDINARIAS EN EL SEP</h3>
-        <p>Este formulario será llenado y enviado por la/el maestro, padre de familia o estudiante, si cumple los siguientes criterios:<br>
-            *  Edad comprendida entre 7 a 20 años. <br>
-            *  ¿Cuenta con algún producto, obra intelectual de su creación o habilidad extraordinaria?<br>
-            *  ¿Le gustaría obtener derechos de autoría, demostrar en público y recibir apoyo para seguir acrecentando su potencialidad?<br>
-            El propósito es descubrir estudiantes con Potencialidades Productivas y/o Habilidades Extraordinarias en las Unidades Educativas e instituciones del Sistema Educativo Plurinacional en las áreas: Científica tecnológica, humanística sociocultural, artes plásticas, educación musical y deportiva con miras a constituir Escuelas Mentores Territoriales de Talento Extraordinario (EMTTE).<br>
-            Para más información comuníquese  con las y los maestros responsables del Programa de Talento Extraordinario del SEP, según los departamentos: <br>
+        <h3 class="text-center bluebold">INSTRUCCIONES DE REGISTRO DE ESTUDIANTES CON POTENCIALIDADES PRODUCTIVAS Y HABILIDADES EXTRAORDINARIAS</h3>
+        <p>Lea con mucha atención las siguientes preguntas:<br>
+            1.	Este formulario será llenado y enviado por la/el maestro, padre de familia o estudiante, si cumple los siguientes criterios y requisitos:<br>
+                a.	¿Edad comprendida entre 7 a 20 años?.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;SI <i class="fas fa-solid fa-check text-success"></i> &nbsp;&nbsp;&nbsp;&nbsp;NO<br>
+                b.	¿Cuenta con algún producto, obra intelectual de su creación o habilidad extraordinaria?<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;SI <i class="fas fa-solid fa-check text-success"></i> &nbsp;&nbsp;&nbsp;&nbsp;NO<br>
+                c.	¿Le gustaría demostrar y recibir apoyo para seguir acrecentando su potencialidad?<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;SI <i class="fas fa-solid fa-check text-success"></i> &nbsp;&nbsp;&nbsp;&nbsp;NO<br>
+                De tener “SI” en las tres opciones, está habilitado para el registro en el formulario. <br>
+            2.	El propósito es descubrir estudiantes con Potencialidades Productivas y/o Habilidades Extraordinarias en instituciones del Sistema Educativo Plurinacional (primaria, secundaria y otros) en las áreas: Científica tecnológica, humanística sociocultural, artes plásticas, educación musical y deportiva con miras a constituir Atención Específica o Escuelas Mentores de Talento Extraordinario (EMTE).<br>
+            3.	Las y los estudiantes interesados que cumplan los requisitos y criterios, se registrarán de 21 de octubre al 10 de noviembre del presente año para ser tomados en cuenta en la primera fase y hasta el 11 de febrero de 2022 para la segunda fase. <br>
+            4.	Para más información comunicarse con maestros/as responsables del Programa de Talento Extraordinario del SEP, según los departamentos y regiones:<br>
             <span class="error">Beni</span>- María Eugenia Yabeta Villarroel - Tel.: 72581457 - Email: maugita_1999@yahoo.com<br>
             <span class="error">Chuquisaca</span>- Gloria Blas Pinto - Tel.: 72423244 - Email: gloria.blaspinto@gmail.com<br>
             <span class="error">Cochabamba</span>- José Edwin Jimenez Casanovas - Tel.: 79713784 - Email: 79713784ed@gmail.com<br>
@@ -346,7 +351,6 @@
             <span class="error">Potosí</span>- Betty Karina Condori Rojas - Tel.: 79436513 - Email: bettykarinacondorirojas@gmail.com<br>
             <span class="error">Santa Cruz</span>- Carlos Angel Narváez Flores - Tel.: 74694648 - Email: carlosangelnarvaez@gmail.com<br>
             <span class="error">Tarija</span>- Doris Janeth Villagomez Laime - Tel.: 72016371 - Email: dorisvillagomez9@gmail.com<br>
-            
         </p>
       </div>
       <div class="modal-footer">
