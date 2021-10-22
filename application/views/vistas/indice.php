@@ -77,7 +77,7 @@
                 <a class="nav-link" href="<?php echo base_url().'educainnova';?>">Educa Innova</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://olimpiada.minedu.gob.bo/">10ma OCEPB</a>
+                <a class="nav-link" href="<?php echo base_url().'ocepb';?>">Pruebas 10ma OCEPB</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url().'tutoriales';?>">Tutoriales para Maestros</a>
