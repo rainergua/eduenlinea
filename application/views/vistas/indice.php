@@ -13,32 +13,27 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="<?php echo base_url().'eduvit/regular';?>">
-                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/0.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/0.jpg';?>" alt="Accede a los textos del tercer trimestre" class="img-fluid">
                 </a>
             </div>
             <div class="carousel-item">
-                <a href="<?php echo base_url().'assets/apps/ministerio4.apk';?>">
-                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/1.jpg';?>" alt="Descarga Aplicacion Educa Bolivia" class="img-fluid">
+                <a href="http://olimpiada.minedu.gob.bo/" target="_blank">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/1.jpg';?>" alt="Accede a la decimia OCEPB" class="img-fluid">
                 </a>
             </div>
             <div class="carousel-item">
-                <!--a href="<php echo base_url().'libros';?>"-->
-                <a href="https://dgtic.minedu.gob.bo/dgtic/assets/files/concursotiktok.pdf" target="_blank">
-                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/2.jpg';?>" alt="Ir al Memoria del Mundo" class="img-fluid">
+                <a href="http://www.ctic.gob.bo/formularios/index.php/29156?lang=es" target="_blank">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/2.jpg';?>" alt="Inscribete a las niñas Robóticas" class="img-fluid">
                 </a>
             </div>
             <div class="carousel-item">
-                <a href="<?php echo base_url().'educainnova';?>">
-                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/3.jpg';?>" alt="Ir a Educa Innova">
+                <a href="<?php echo base_url().'libros';?>">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/3.jpg';?>" alt="Ingresar a MOWLAC">
                 </a>
             </div>
             <div class="carousel-item">
-                <a href="http://olimpiada.minedu.gob.bo/frontend/mat_link/feria" target="_blank"><!--a href="https://dgtic.minedu.gob.bo/inscripcion/" target="_blank"-->
-                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/4.jpg';?>" alt="Ir a la Olimpiada" class="img-fluid">
-            <!--div class="carousel-caption">
-                <h2>PARA MAESTROS</h2>
-                <p>Obten tu certificado respondiendo preguntas sencillas.</p>
-            </div-->
+                <a href="<?php echo base_url().'educainnova';?>" target="_blank">
+                <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/4.jpg';?>" alt="Ir a Educa Innova" class="img-fluid">
             </a>
             </div>
             <div class="carousel-item">
@@ -49,9 +44,6 @@
             <div class="carousel-item">
                 <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/6.jpg';?>" alt="Educa televisión" class="img-fluid">
             </div>
-            <!--div class="carousel-item">
-            <img class="d-block w-100" src="<php echo base_url().'/assets/img/slide/5.jpg';?>" alt="Educa libros">
-            </div-->
             <div class="carousel-item">
                 <img class="d-block w-100" src="<?php echo base_url().'/assets/img/slide/7.jpg';?>" alt="2021 Año por la recuparación del derecho a la educación" class="img-fluid">
             </div>
@@ -108,8 +100,7 @@
             <div class="col-sm-12 col-md-4 col-ld-4 text-justify">
 
                 <div class="card">
-                    <!--a href="<php echo base_url().'eduvit/regular';?>"></a-->
-                    <img src="<?php echo base_url().'/assets/img/btnreg.png';?>" class="card-img-top boton-sec" alt="Primaria">
+                    <img src="<?php echo base_url().'/assets/img/btnreg.png';?>" class="card-img-top boton-sec" alt="Educación regular">
                     <div class="card-body">
                         <h5 class="card-title">Regular</h5>
                         <p class="card-text">Educación Inicial en Familia Comunitaria, Educación Primaria Comunitaria Vocacional y Educación Secundaria Comunitaria Productiva. 
@@ -125,8 +116,7 @@
             <div class="col-sm-12 col-md-4 col-ld-4 text-justify">
                 
                 <div class="card">
-                    <!--a href="<php echo base_url().'eduvit/alternativa';?>"></a-->
-                    <img src="<?php echo base_url().'/assets/img/btnalt.png';?>" class="card-img-top boton-sec" alt="Primaria">
+                    <img src="<?php echo base_url().'/assets/img/btnalt.png';?>" class="card-img-top boton-sec" alt="Educación Alternativa y Especial">
                     
                     <div class="card-body">
                         <h5 class="card-title">Alternativa y Especial</h5>
@@ -149,7 +139,7 @@
                 
                 <div class="card">
                     <!--a href="<php echo base_url().'eduvit/superior';?>"></a-->
-                    <img src="<?php echo base_url().'/assets/img/btnsup.png';?>" class="card-img-top boton-sec" alt="Primaria">
+                    <img src="<?php echo base_url().'/assets/img/btnsup.png';?>" class="card-img-top boton-sec" alt="Educación Superior">
                     
                     <div class="card-body">
                         <h5 class="card-title">Superior</h5>
