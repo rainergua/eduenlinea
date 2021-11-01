@@ -50,13 +50,13 @@
     <div class="form-row">
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
-                <label for="fono" class="form-label">(*) Teléfono Celular:</label>
+                <label for="fono" class="form-label">Teléfono Celular:</label>
                 <input type="number" class="form-control col-8" id="fono" name="fono" aria-describedby="fono" placeholder="Teléfono Celular">
             </div>
         </div>
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
-                <label for="correo" class="form-label">(*) Correo Electrónico:</label>
+                <label for="correo" class="form-label">Correo Electrónico:</label>
                 <input type="email" class="form-control col-8" id="correo" name="correo" aria-describedby="correo" placeholder="Correo Electrónico">
             </div>
         </div>
@@ -85,7 +85,7 @@
     <div class="form-row">
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
-                <label for="depto"  class="form-label">Departamento:</label>
+                <label for="depto"  class="form-label">(*) Departamento:</label>
                 <select name="depto" id="tut_exp"  class="form-control col-8">
                     <option value="">Departamento:</option>
                     <option value="La Paz">La Paz</option>
@@ -126,7 +126,7 @@
     <div class="form-row">
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
-                <label for="fonoue" class="form-label">(*) Teléfono:</label>
+                <label for="fonoue" class="form-label">Teléfono:</label>
                 <input type="text" class="form-control col-8" id="fonoue" name="fonoue" aria-describedby="fonoue" placeholder="Teléfono">
             </div>
         </div>
@@ -179,7 +179,7 @@
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
                 <div class="form-group">
-                    <label for="dircesp" class="form-label">Dirección del Centro de Educación Especial:</label>
+                    <label for="dircesp" class="form-label">Dirección de la Unidad Educativa:</label>
                     <input type="dircesp" class="form-control col-8" id="dircesp" name="dircesp" aria-describedby="dircesp" placeholder="Unidad Educativa o Institución">
                 </div>
             </div>
@@ -205,7 +205,7 @@
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
                 <div class="form-group">
-                    <label for="tut_tipo" class="form-label">(*) Subir un video demostrativo del producto, obra intelectual y/o habilidad extraordinaria:</label>
+                    <label for="tut_tipo" class="form-label">(*) Subir un video demostrativo del producto, obra intelectual y/o habilidad extraordinaria (Filmación horizontal  de 3 a 5 min.)</label>
                     <div class="custom-file col-8">
                     <input type="file" class="custom-file-input" accept="video/*" id="videxp" name="videxp">
                     <label for="videxp" class="custom-file-label">(*) Subir un video</label>
