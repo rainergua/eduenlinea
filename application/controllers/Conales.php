@@ -274,16 +274,21 @@ class Conales extends CI_Controller{
                     'fecha' => date("Y-m-d H:i:s"),
                     'codigo' => $this->generaCodigo(5),
                 );
-                $res = $this->conales_model->guardatal($datos);
-                $data['error'] = "Tus datos han sido guardados correctamente.<br><h4>TU CÓDIGO ES: ".$datos['codigo']."<br>DEBES CONSERVAR ESTE CÓDIGO</h4>";
+                //$res = $this->conales_model->guardatal($datos);
+                //$data['error'] = "Tus datos han sido guardados correctamente.<br><h4>TU CÓDIGO ES: ".$datos['codigo']."<br>DEBES CONSERVAR ESTE CÓDIGO</h4>";
+                $this->gendoc($datos);
             }else{
                 $data['error'] = "Algo salió mal por favor intenta de nuevo";
             }
 
         }
         //print_r($datos);
-        $this->load->view('vistas/alesp/talext', $data);
-        $this->load->view('template/footer');
+        //$this->load->view('vistas/alesp/talext', $data);
+        //$this->load->view('template/footer');
+    }
+    private function gendoc($data){
+        $this->load->library('Pdf');
+		$this->load->view('vistas/alesp/gecomp', $data);
     }
 }
 ?>
