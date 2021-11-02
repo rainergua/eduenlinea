@@ -277,6 +277,7 @@ class Conales extends CI_Controller{
                 //$res = $this->conales_model->guardatal($datos);
                 //$data['error'] = "Tus datos han sido guardados correctamente.<br><h4>TU CÓDIGO ES: ".$datos['codigo']."<br>DEBES CONSERVAR ESTE CÓDIGO</h4>";
                 $this->gendoc($datos);
+                //print_r($datos);
             }else{
                 $data['error'] = "Algo salió mal por favor intenta de nuevo";
             }
