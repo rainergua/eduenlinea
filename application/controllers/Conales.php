@@ -280,12 +280,11 @@ class Conales extends CI_Controller{
                 //print_r($datos);
             }else{
                 $data['error'] = "Algo salió mal por favor intenta de nuevo";
+                $this->load->view('vistas/alesp/talext', $data);
+                $this->load->view('template/footer');
             }
 
         }
-        //print_r($datos);
-        //$this->load->view('vistas/alesp/talext', $data);
-        //$this->load->view('template/footer');
     }
     private function gendoc($data){
         $this->load->library('Pdf');
