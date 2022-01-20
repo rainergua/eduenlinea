@@ -205,7 +205,7 @@
         <div class="col-sm-12 col-md-6 col-ld-6">
             <div class="form-group">
                 <div class="form-group">
-                    <label for="tut_tipo" class="form-label">(*) Subir un video demostrativo del producto, obra intelectual y/o habilidad extraordinaria (Filmación horizontal  de 3 a 5 min.)</label>
+                    <label for="tut_tipo" class="form-label">(*) Subir un video demostrativo del producto, obra intelectual y/o habilidad extraordinaria (Filmación horizontal  de 3 a 5 min. que no supere los 100 MB)</label>
                     <div class="custom-file col-8">
                     <input type="file" class="custom-file-input" accept="video/*" id="videxp" name="videxp">
                     <label for="videxp" class="custom-file-label">(*) Subir un video</label>

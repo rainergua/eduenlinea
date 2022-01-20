@@ -5,7 +5,7 @@ function inicio(){
 	$("img").fadeIn("5000");
     $("#muni").change(envMuni);
     $("#inst").change(envInsti);
-    $('#btnlogin').click(respLogin);
+    //$('#btnlogin').click(respLogin);
     $('#confVideo').click(envVideo);
     $('[data-toggle="tooltip"]').tooltip();
     //$('#mymodal').modal('toggle');

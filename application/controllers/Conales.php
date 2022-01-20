@@ -69,122 +69,25 @@ class Conales extends CI_Controller{
         }else{
             $this->load->view('vistas/alesp/espe', $data);
         }
+        $this->load->view('template/footer');  
+    }
+    public function vertalento(){
+        $this->valido();
+        $carnet = $this->session->userdata('carnet');
+        $rda = $this->session->userdata('rda');
+        $rol = $this->session->userdata('perfil');
+        $data['error'] = '';
+        $data['user'] = $this->conales_model->getuser($carnet, $rda);
+        if($rol == 'a'){
+            $data['talent'] = $this->conales_model->getbol();
+        }else{
+            $data['talent'] = $this->conales_model->getdepto($data['user'][0]->departamento);
+        }
+        $data['user'] = $this->conales_model->getuser($carnet, $rda);
+        $this->load->view('template/header');
+        $this->load->view('vistas/alesp/vertalento', $data);
         $this->load->view('template/footer');
-        /*$data['nivel'] = $this->conales_model->getsisniv($nivel);
-        $data['grados'] = $this->conales_model->getgrado($nivel);
-        switch ($nivel) {
-            case 7:
-                $this->load->view('vistas/cursos_alesp', $data);
-                break;
-            case 8:
-                $this->load->view('vistas/cursos_aless', $data);
-                break;
-            case 9:
-                $this->load->view('vistas/cursos_alesa', $data);
-                break;
-            case 13:
-                redirect("http://cepead.educabolivia.bo/");
-                break;
-            case 14:
-                redirect("http://cepead.educabolivia.bo/");
-                break;
-            default:
-                $this->load->view('vistas/grados_alesp', $data);
-                break;
-
-        }*/
-        
     }
-    //TODO: Agregar en la vista Material de año de escolaridad getmatanio
-    /*public function areas($curso=0){
-        if($curso!=0){
-            $data['nivel'] = $this->conales_model->getsisnivgra($curso);
-            $data['areas'] = $this->conales_model->getareas($curso);
-            $data['matanio'] = $this->conales_model->getmatanio($curso);
-            $this->load->view('template/header');
-            $this->load->view('vistas/areas_ales', $data);
-            $this->load->view('template/footer');
-        }else{
-            $this->index();
-        }
-    }
-
-    public function contarea($grado=0, $area=0){
-        if($grado!=0){
-            $data['nivel'] = $this->conales_model->getsisnivgrarea($grado, $area);
-            $data['contenidos'] = $this->conales_model->getcontenidos($grado, $area);
-            $this->load->view('template/header');
-            $this->load->view('vistas/contenido', $data);
-            $this->load->view('template/footer');
-        }else{
-            $this->index();
-        }
-
-    }
-    public function vermaterial($area=0, $tema=0){
-        if($tema!=0){
-            $data['nivel'] = $this->conales_model->getsisnivgrareatema($area, $tema);
-            $data['tipo'] = $this->conales_model->gettipo($tema);
-            $data['archivos'] = $this->conales_model->getarchivoscon($tema);
-            $this->load->view('template/header');
-            $this->load->view('vistas/contemas', $data);
-            $this->load->view('template/footer');
-        }else{
-            $this->index();
-        }
-    }
-    //Para la pagina de los libros
-    public function dispcontarea($grado=0, $area=0){
-        if($grado!=0){
-            $data['nivel'] = $this->conales_model->getsisnivgrarea($grado, $area);
-            //$data['tipo'] = $this->conales_model->gettipo($tema);
-            $data['archivos'] = $this->conales_model->getlibroarea($grado, $area);
-            $this->load->view('template/header');
-            $this->load->view('vistas/dispareacont', $data);
-            $this->load->view('template/footer');
-        }else{
-            $this->index();
-        }
-    }
-    //Para la pagina de los libros de actividades
-    public function dispcontareaact($grado=0, $area=0){
-        if($grado!=0){
-            $data['nivel'] = $this->conales_model->getsisnivgrarea($grado, $area);
-            //$data['tipo'] = $this->conales_model->gettipo($tema);
-            //$data['archivos'] = $this->conales_model->getvidearea($grado, $area);
-            $this->load->view('template/header');
-            $this->load->view('vistas/dispareacontact', $data);
-            $this->load->view('template/footer');
-        }else{
-            $this->index();
-        }
-    }
-    //Para la pagina de los Videos
-    public function dispcontareavideo($grado=0, $area=0){
-        if($grado==0){
-            $data['nivel'] = $this->conales_model->getsisnivgrarea($grado, $area);
-            //$data['tipo'] = $this->conales_model->gettipo($tema);
-            $data['archivos'] = $this->conales_model->getvidearea($grado, $area);
-            $this->load->view('template/header');
-            $this->load->view('vistas/dispareacontvid', $data);
-            $this->load->view('template/footer');
-        }else{
-            $this->index();
-        }
-    }
-    //Para la pagina de los materiales varios(more)
-    public function dispcontareamas($grado=0, $area=0){
-        if($grado!=0){
-            $data['nivel'] = $this->conales_model->getsisnivgrarea($grado, $area);
-            //$data['tipo'] = $this->conales_model->gettipo($tema);
-            //$data['archivos'] = $this->conales_model->getarchivoscon($tema);
-            $this->load->view('template/header');
-            $this->load->view('vistas/dispareacontmas', $data);
-            $this->load->view('template/footer');
-        }else{
-            $this->index();
-        }
-    }*/
     //Para el cargado de formulario de talento extraordinario
     public function formtal(){
         $data['error'] = '';
@@ -205,7 +108,7 @@ class Conales extends CI_Controller{
         $config['file_name'] = $video;
         $config['max_size'] = '102400';
         //$config['file_ext'] = pathinfo($_FILES["videxp"]["name"], PATHINFO_EXTENSION);
-        $dname = explode(".", $_FILES["videxp"]["name"]);
+        $dname = explode(".", $_FILES["arcexp"]["name"]);
         $ext2 = end($dname);
         $config2['upload_path'] = './assets/uploads/files/especial/talento/';
         $config2['allowed_types'] = 'pptx|ppt|pdf';
@@ -219,7 +122,7 @@ class Conales extends CI_Controller{
         if(!$this->upload->do_upload('videxp')){
             $sw++;
             $data1 = $this->upload->data();
-            print_r($data1);
+            //print_r($data1);
         }
         $this->upload->initialize($config2);
         if(!$this->upload->do_upload('arcexp')){
@@ -274,18 +177,17 @@ class Conales extends CI_Controller{
                     'fecha' => date("Y-m-d H:i:s"),
                     'codigo' => $this->generaCodigo(5),
                 );
-                //$res = $this->conales_model->guardatal($datos);
+                $res = $this->conales_model->guardatal($datos);
                 //$data['error'] = "Tus datos han sido guardados correctamente.<br><h4>TU CÓDIGO ES: ".$datos['codigo']."<br>DEBES CONSERVAR ESTE CÓDIGO</h4>";
                 $this->gendoc($datos);
                 //print_r($datos);
             }else{
                 $data['error'] = "Algo salió mal por favor intenta de nuevo";
+                $this->load->view('vistas/alesp/talext', $data);
+                $this->load->view('template/footer');
             }
 
         }
-        //print_r($datos);
-        //$this->load->view('vistas/alesp/talext', $data);
-        //$this->load->view('template/footer');
     }
     private function gendoc($data){
         $this->load->library('Pdf');
