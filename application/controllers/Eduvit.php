@@ -49,6 +49,13 @@ class Eduvit extends CI_Controller{
         $this->load->view('vistas/indice', $data);
         $this->load->view('template/footer');
     }
+    public function index2(){
+        $data['sis'] = $this->eduvit_model->retsis();
+        $this->load->view('template/header');
+        $this->load->view('vistas/indiceS', $data);
+        $this->load->view('template/footer');
+    }
+
     public function regular(){
         //$this->valido();
         $data['sis'] = $this->eduvit_model->retselec(1);

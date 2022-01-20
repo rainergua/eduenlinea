@@ -19,14 +19,21 @@ class Contenido extends CI_Controller{
     public function index(){
         redirect(base_url());
     }
+    /////**CUENTA DESCARGAS***//////
+    public function contdownld(){
+        $cod_lib = $this->input->post('cod_lib');
+        $actual = $this->contenido_model->updcontdwn($cod_lib);
+        echo json_encode($actual);
+        //return;
+    }
     /****************DESPLIEGA LA VISTA POR NIVEL INI-PRIM-SEC***************** */
     public function nivel($nivel=5){
         $this->load->view('template/header');
         $data['nivel'] = $this->contenido_model->getsisniv($nivel);
         $data['grados'] = $this->contenido_model->getgrado($nivel);
         if($nivel==4){
-            $this->load->model('video_model');
-            $data['videos']=$this->video_model->sacavidini();
+            //$this->load->model('video_model');
+            //$data['videos']=$this->video_model->sacavidini();
             $this->load->view('vistas/inicial', $data);
         }elseif ($nivel==5) {
             $this->load->view('vistas/primaria', $data);
@@ -38,12 +45,7 @@ class Contenido extends CI_Controller{
     //******************DESPLIEGA LA VISTA DE LOS CAMPOS*/
     public function campos($curso=11){
         $data['curso'] = $curso;
-        /*if($curso >10 && $curso<17){
-            //$data['campos'] = $this->contenido_model->getmatcampos($curso);
-            $data['campos'] = $this->contenido_model->getmatcampos($curso);
-        }else{*/
         $data['campos'] = $this->contenido_model->getcampos();
-        //}
         $data['nivel'] = $this->contenido_model->getsisnivgra($curso);
         $this->load->view('template/header');
         $this->load->view('vistas/campos', $data);
@@ -60,7 +62,13 @@ class Contenido extends CI_Controller{
         $this->load->view('vistas/areas', $data);
         $this->load->view('template/footer');
     }
-    /**************DESPLIEGUE DE MATERAL NO UTILIZADO************** */
+    //***************DESPLIEGA LA PAGINA DE LIBROS************* */
+    public function textos(){
+        $this->load->view('template/header');
+        $this->load->view('vistas/libros');
+        $this->load->view('template/footer');
+    }
+    /**************DESPLIEGUE DE MATERAL NO UTILIZADO**************
     public function material($grado=11, $area=1){
         $data['curso'] = $curso;
         $data['campos'] = $this->contenido_model->getcampos();
@@ -73,18 +81,19 @@ class Contenido extends CI_Controller{
         $this->load->view('template/header');
         $this->load->view('vistas/content', $data);
         $this->load->view('template/footer');
-    }
+    } */
     /***************DESPLIEGUE DE CONTENIDO POR ÁREA INICIAL Y SECUNDARIA************ */
     public function contenidoarea($grado=11, $area=1){
         $data['nivel'] = $this->contenido_model->getsisnivgrarea($grado, $area);
         $data['contenidos'] = $this->contenido_model->getcontenidos($grado, $area);
+        $data['trimestres'] = $this->contenido_model->getrimestre();
         $data['periodos'] = $this->contenido_model->getperiodo();
         //$data['enlace'] = $this->contenido_model->getlink($grado, $area);
         $this->load->view('template/header');
         $this->load->view('vistas/contenido2t', $data);
         $this->load->view('template/footer');
     }
-
+/*
     public function contenidoarea2t($grado=11, $area=1){
         $data['nivel'] = $this->contenido_model->getsisnivgrarea($grado, $area);
         $data['contenidos'] = $this->contenido_model->getcontenidos($grado, $area);
@@ -93,7 +102,7 @@ class Contenido extends CI_Controller{
         $this->load->view('template/header');
         $this->load->view('vistas/contenido2t', $data);
         $this->load->view('template/footer');
-    }
+    }*/
 
     /*************DESPLIEGUE DE CONTENIDO POR CAMPO PRIMARIA******* */
     public function contenidocampo($grado=11, $campo=1){

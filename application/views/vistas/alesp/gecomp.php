@@ -45,7 +45,7 @@ $style = array(
 $codigo = base_url().'verifica/'.$codigo.'/'.$carnet;
 $pdf->write2DBarcode($codigo, 'QRCODE,H', 15, 170, 30, 30, $style, 'N');//Derecha
 //$pdf->write2DBarcode($codigo, 'QRCODE,H', 14, 110, 30, 30, $style, 'N');//Izquierda
-$html = '<p style="text-align: rigth"><a href="'.base_url().'">Volver al Formulario</a></p>';
+$html = '<p style="text-align: rigth"><a href="'.base_url().'/conales/formtal">Volver al Formulario</a></p>';
 $pdf->writeHTMLCell($w = 0, $h = 0, $x = '80', $y = '180', $html, $border = 0, $ln = 1, $fill = 0, $reseth = true, $align = '', $autopadding = true);
 ob_end_clean();
 $pdf->Output('micert.pdf', 'I');

@@ -12,9 +12,30 @@ class Contenido_Model extends CI_Model {
         $this->db->order_by('cod_per');
         return $this->db->get('periodo')->result();
     }
+    public function getrimestre(){
+        /*$this->db->where('cod_per', 2);
+        $this->db->or_where('cod_per', 3);*/
+        $this->db->order_by('cod_trim');
+        return $this->db->get('trimestre')->result();
+    }
+    private function existelib($cod_lib){
+        $this->db->where('cod_lib', $cod_lib);
+        return $this->db->get('libcontdes')->num_rows();
+    }
+    public function updcontdwn($cod_lib){
+        if($this->existelib($cod_lib) > 0){
+            $this->db->where('cod_lib', $cod_lib);
+            $this->db->set('descarga', 'descarga + 1', FALSE);
+            $this->db->update('libcontdes');
+            return true;
+        }else{
+            $this->db->insert("libcontdes", array('cod_lib' => $cod_lib, 'descarga' => 1));
+            return false;
+        }
+    }
     public function getcampos(){
         return $this->db->get('campo')->result();
-    }
+    }  
     public function getmatcampos($grado, $cod_cam){
 
         $this->db->distinct();
@@ -68,7 +89,8 @@ class Contenido_Model extends CI_Model {
         $this->db->select('a.cod_area, a.corto_area, a.img_area, a.cod_gra, a.cod_niv, a.des_area');
         $this->db->distinct();
         $this->db->from('area a');
-        $this->db->join('material_area m', 'a.cod_area=m.cod_area', 'inner');
+        //Permite desplegar áreas que tienen contenido
+        //$this->db->join('material_area m', 'a.cod_area=m.cod_area', 'inner');
         $this->db->where('a.cod_gra', $grado);
         $this->db->where('a.cod_cam', $campo);
         $this->db->where('a.hab', 1);
@@ -80,16 +102,19 @@ class Contenido_Model extends CI_Model {
         return $this->db->get('area')->result();
     }
     public function getcontenidos($grado, $area){
-        $this->db->select('m.arch_mat, m.des_mat, t.cod_tipo, t.tipo_cont, m.cod_per');
+        //$this->db->select('m.arch_mat, m.des_mat, t.cod_tipo, t.tipo_cont, m.cod_per');
+        //$this->db->select('m.arch_con, m.des_con, t.cod_tipo, t.tipo_cont, m.cod_per');
         $this->db->distinct();
-        $this->db->from('material_area m');
+        //$this->db->from('material_area m');
+        $this->db->from('contenido m');
         $this->db->join('tipo_contenido t', 'm.cod_tipo=t.cod_tipo', 'inner');
         $this->db->where('m.cod_area', $area);
         $this->db->where('m.cod_gra', $grado);
         //$this->db->where('cod_tipo', 2);
-        $this->db->order_by('cod_tipo');
-        $this->db->order_by('m.cod_mat');
-        return $this->db->get('material_area')->result();
+        $this->db->order_by('t.cod_tipo');
+        //$this->db->order_by('m.cod_mat');
+        $this->db->order_by('m.cod_con');
+        return $this->db->get()->result();
     }
     public function gettipocont($grado, $area){
         $this->db->select('t.tipo_cont, t.cod_tipo');
